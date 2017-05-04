@@ -12,5 +12,8 @@
             "email": "cees.vanegmond@wearejust.com"
         }
     ],
+    "autoload": {
+        "psr-4": { "Just\\SonataThemeBundle\\": "" }
+    },
     "minimum-stability": "stable"
 }
