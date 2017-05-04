@@ -1,0 +1,16 @@
+{
+    "name": "wearejust/sonata-theme-bundle",
+    "description": "A custom SonataAdminBundle theme",
+    "type": "symfony-bundle",
+    "require": {
+        "sonata-project/admin-bundle": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cees van Egmond",
+            "email": "cees.vanegmond@wearejust.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
