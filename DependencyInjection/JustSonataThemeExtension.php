@@ -8,6 +8,8 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
+use Symfony\Component\Yaml\Exception\ParseException;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * This is the class that loads and manages your bundle configuration.
@@ -31,29 +33,17 @@ class JustSonataThemeExtension extends Extension implements PrependExtensionInte
     public function prepend(ContainerBuilder $container)
     {
         $bundles = $container->getParameter('kernel.bundles');
-
-        if (! array_key_exists('SonataAdminBundle', $bundles)) {
+        
+        if (!array_key_exists('SonataAdminBundle', $bundles)) {
             throw new RuntimeException('SonataAdminBundle wasn\'t found, dit you registered it correctly?');
         }
 
-        // https://sonata-project.org/bundles/admin/master/doc/reference/configuration.html#full-configuration-options
-        /*
-        $config = [
-
-            'templates' => [
-                //
-            ],
-            'assets'    => [
-                'stylesheets'   => [
-                    //
-                ],
-                'javascripts'   => [
-                    //
-                ]
-            ]
-        ];
+        try {
+            $config = Yaml::parse(file_get_contents(__DIR__ . '/../Resources/config/theme.yml'));
+        } catch (ParseException $e) {
+            printf("Unable to parse the YAML string: %s", $e->getMessage());
+        }
 
         $container->prependExtensionConfig('sonata_admin', $config);
-        */
     }
 }
