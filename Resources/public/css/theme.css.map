@@ -1,0 +1,1 @@
+{"version":3,"sources":["theme.scss"],"names":[],"mappings":"AAAA,KACI,mBACA,WACA,YAAc,CACjB","file":"theme.css","sourcesContent":["body{\n    background: #cc0000;\n    color: #FFF;\n    display: none;\n}"]}

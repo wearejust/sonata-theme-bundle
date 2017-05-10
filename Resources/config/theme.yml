@@ -55,6 +55,7 @@ assets:
         - bundles/sonataadmin/css/layout.css
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
+        - bundles/justsonatatheme/css/theme.css        
 
     javascripts:
 

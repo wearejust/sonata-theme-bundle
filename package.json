@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "barba.js": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-postcss": "^6.0.1",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-webpack": "^1.5.0",
+    "trace.js": "^2.0.0",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "raf": "^3.3.0"
+  }
+}
