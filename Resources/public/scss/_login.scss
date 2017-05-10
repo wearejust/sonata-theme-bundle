@@ -4,4 +4,7 @@ body.login-page, .register-page{
 
 .login-logo a, .register-logo a{
     color: #F2F2F2;
+    &:hover{
+        color: #F2F2F2;
+    }
 }
