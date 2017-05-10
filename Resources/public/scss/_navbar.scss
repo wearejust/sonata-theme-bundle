@@ -1,0 +1,54 @@
+//Header
+.skin-just .main-header .navbar .navbar-nav>li>a{
+    background: $primary-color;
+    color: #FFF;
+}
+
+.skin-just .main-header .navbar .nav>li>a:hover, 
+.skin-just .main-header .navbar .nav>li>a:active, 
+.skin-just .main-header .navbar .nav>li>a:focus, 
+.skin-just .main-header .navbar .nav .open>a, 
+.skin-just .main-header .navbar .nav .open>a:hover, 
+.skin-just .main-header .navbar .nav .open>a:focus, 
+.skin-just .main-header .navbar .nav>.active>a,
+.skin-just .main-header .navbar .navbar-nav>li>a:hover
+{
+    background: #333;
+    color: #FFF;
+}
+
+.skin-just .main-header .navbar>.sidebar-toggle{
+    background: $primary-color;
+    color: #FFF;
+    &:hover{
+        background: #333;
+        color: #FFF;
+    }
+}
+
+.skin-just .wrapper, .skin-just .main-sidebar, .skin-just .left-side{
+    background-color: $primary-color;
+}
+.skin-just .sidebar-form input[type="text"], .skin-just .sidebar-form .btn{
+    background-color: #F2F2F2;
+}
+
+//Level 1
+.skin-just .sidebar-menu>li:hover>a, .skin-just .sidebar-menu>li.active>a{
+    background: #F2F2F2;
+    color: #000;
+}
+.skin-just .sidebar a{
+    color: #FFF;
+}
+
+//Menu level 2
+.skin-just .sidebar-menu>li>.treeview-menu{
+    background: #333;
+    a{
+        color: #FFF;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
