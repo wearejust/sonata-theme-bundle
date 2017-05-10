@@ -1,2 +1,12 @@
 @import 'variables';
+@import 'login';
 @import 'navbar';
+@import 'form';
+@import 'button';
+
+a{
+    color: #777;
+    &:hover, &:focus, &:active{
+        color: #333;
+    }
+}
