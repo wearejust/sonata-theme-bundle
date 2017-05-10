@@ -4,6 +4,16 @@
     color: #FFF;
 }
 
+.main-header .logo, .sidebar-toggle{display: none;}
+.main-header .navbar-custom-menu > ul > li:first-of-type{
+    display:none;
+}
+
+//Sidebar
+.main-sidebar{
+    padding-top: 0;
+}
+
 .skin-just .main-header .navbar .nav>li>a:hover, 
 .skin-just .main-header .navbar .nav>li>a:active, 
 .skin-just .main-header .navbar .nav>li>a:focus, 
