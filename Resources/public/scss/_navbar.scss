@@ -12,6 +12,14 @@
 //Sidebar
 .main-sidebar{
     padding-top: 0;
+    z-index: 9999;
+    box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.23);
+}
+
+.skin-just .sidebar-form,
+.skin-just .sidebar-form input[type="text"],
+.skin-just .sidebar-form .btn{
+    border-radius:0;
 }
 
 .skin-just .main-header .navbar .nav>li>a:hover, 
