@@ -6,3 +6,17 @@
 .icheckbox_square-blue, .iradio_square-blue{
     background: url('../images/black.png');
 }
+
+
+//Select2
+.select2-container-active .select2-choice, 
+.select2-container-multi.select2-container-active .select2-choices,
+.select2-drop-active
+{
+    border-color: $primary-color;
+}
+
+.select2-results .select2-highlighted{
+    background: #333;
+    
+}

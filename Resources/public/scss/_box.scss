@@ -1,0 +1,6 @@
+.box{
+    border-top: 3px solid $primary-color;
+    &.box-primary{
+        border-top-color: $primary-color;
+    }
+}

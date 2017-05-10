@@ -3,10 +3,15 @@
 @import 'navbar';
 @import 'form';
 @import 'button';
+@import 'box';
 
 a{
     color: #777;
     &:hover, &:focus, &:active{
         color: #333;
     }
+}
+
+.bg-aqua{
+    background-color: $primary-color!important;
 }
