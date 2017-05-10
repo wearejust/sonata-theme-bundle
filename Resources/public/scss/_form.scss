@@ -5,6 +5,11 @@
 .checkbox label, .radio label{font-weight: 300;}
 .icheckbox_square-blue, .iradio_square-blue{
     background: url('../images/black.png');
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+
+    &.checked, &.hover{background-position: -34px 0;}
 }
 
 
@@ -18,5 +23,4 @@
 
 .select2-results .select2-highlighted{
     background: #333;
-    
 }
