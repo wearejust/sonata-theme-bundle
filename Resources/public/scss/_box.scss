@@ -1,6 +1,14 @@
 .box{
-    border-top: 3px solid $primary-color;
+    border-top: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0;
     &.box-primary{
         border-top-color: $primary-color;
     }
+
+    .box-header{
+        background: lighten($primary-color,40%);
+        color: #FFF;
+    }
+
 }
