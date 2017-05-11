@@ -7,7 +7,7 @@
     }
 
     .box-header{
-        background: lighten($primary-color,40%);
+        background: $primary-color;
         color: #FFF;
     }
 
@@ -17,8 +17,10 @@
             border-color: $success;
         }
     }
-
 }
+
+.box.box-danger .box-header{background: $danger;}
+
 
 .nav-tabs-custom>.nav-tabs>li.active{
     border-top-color: #000;

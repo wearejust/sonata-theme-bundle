@@ -15,6 +15,11 @@ a{
 
 .alert{
     margin: 0 0 10px;
+    border-radius: 0;
+}
+
+.modal{
+    z-index: 2500;
 }
 
 .bg-aqua{
