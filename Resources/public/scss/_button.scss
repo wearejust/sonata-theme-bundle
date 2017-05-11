@@ -11,9 +11,13 @@
 
 
 .add_records a{
-    background: $success;
+    background: $success!important;
     color: #FFF!important;
     &:hover, &:active, &:focus{
         background: darken($success,5%)!important;
     }
+}
+
+.add_records ul li a{
+    background: lighten($success,2%)!important;
 }

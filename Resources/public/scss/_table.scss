@@ -10,7 +10,15 @@ table.table{
     font-weight: normal;
 }
 
+.sonata-ba-list tr th:first-child{width: 30px;}
+
+//Just show icons
 .view_link, .edit_link, .delete_link{
     font-size: 0;
     i{font-size: 14px;}
+}
+
+.delete_link, .delete_link:hover, .delete_link:focus{
+    background: #cc0000;
+    color: #FFF;
 }
