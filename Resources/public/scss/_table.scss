@@ -1,12 +1,3 @@
-.sonata-action-element{
-    background: $success;
-    color: #FFF!important;
-    margin: 0 10px;
-    &:hover, &:active, &:focus{
-        background: darken($success,5%)!important;
-    }
-}
-
 table.table{
     th{
         background-image: none;

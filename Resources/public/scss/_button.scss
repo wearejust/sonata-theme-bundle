@@ -8,3 +8,12 @@
         border-color: lighten($primary-color, 20%);
     }
 }
+
+
+.add_records a{
+    background: $success;
+    color: #FFF!important;
+    &:hover, &:active, &:focus{
+        background: darken($success,5%)!important;
+    }
+}
