@@ -9,6 +9,28 @@
     display:none;
 }
 
+//User dropdown
+.dropdown-user .user-header{
+    display: none;
+}
+.navbar-nav>.user-menu>.dropdown-menu{
+    width: 197px;
+    box-shadow: -1px 2px 1px 1px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #dedede;
+}
+.user-footer{
+    div:nth-child(2) a{
+        background: $danger;
+        border-color: $danger;
+        color: #FFF!important;
+        &:hover{
+            background: darken($danger,10%);
+        }
+    }
+}
+
+
+
 //Sidebar
 .main-sidebar{
     padding-top: 0;
