@@ -9,3 +9,8 @@ table.table{
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
     font-weight: normal;
 }
+
+.view_link, .edit_link, .delete_link{
+    font-size: 0;
+    i{font-size: 14px;}
+}
