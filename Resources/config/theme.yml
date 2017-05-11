@@ -10,7 +10,7 @@ templates:
 #    ajax:                 'SonataAdminBundle::ajax_layout.html.twig'
 #    dashboard:            'SonataAdminBundle:Core:dashboard.html.twig'
 #    search:               'SonataAdminBundle:Core:search.html.twig'
-#    list:                 'SonataAdminBundle:CRUD:list.html.twig'
+   list:                 'JustSonataThemeBundle:CRUD:list.html.twig'
 #    filter:               'SonataAdminBundle:Form:filter_admin_fields.html.twig'
 #    show:                 'SonataAdminBundle:CRUD:show.html.twig'
 #    show_compare:         'SonataAdminBundle:CRUD:show_compare.html.twig'
