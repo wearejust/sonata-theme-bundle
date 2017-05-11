@@ -5,11 +5,16 @@
 @import 'button';
 @import 'box';
 @import 'table';
+
 a{
     color: #777;
     &:hover, &:focus, &:active{
         color: #333;
     }
+}
+
+.alert{
+    margin: 0 0 10px;
 }
 
 .bg-aqua{
