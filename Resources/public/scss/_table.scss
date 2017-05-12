@@ -4,6 +4,11 @@ table.table{
     }
 
     th a{color:#000;}
+
+    tr:hover td{
+        background: #f2f2f2;
+    }
+
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
@@ -19,12 +24,21 @@ table.table{
     i{font-size: 14px;}
 }
 
-.delete_link, .delete_link:hover, .delete_link:focus{
+.view_link, .edit_link{
+    background: #FFF!important;
+    border-color: #bdbdbd!important;
+    &:hover, &:active, &:focus{
+        background: #f2f2f2!important;
+        border-color: #777!important;
+    }
+}
+
+.delete_link{
     background: $danger;
     border-color: $danger;
-    color: #FFF;
+    color: #FFF!important;
     &:hover, &:active, &:focus{
         background: darken($danger,5%);
-        border-color: darken($danger,5%);
+        border-color: darken($danger,15%);
     }
 }
