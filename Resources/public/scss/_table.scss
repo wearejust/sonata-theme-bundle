@@ -2,13 +2,15 @@ table.table{
     th{
         background-image: none;
     }
-
     th a{color:#000;}
 
     tr:hover td{
         background: #f2f2f2;
     }
+}
 
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    vertical-align: middle;
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
