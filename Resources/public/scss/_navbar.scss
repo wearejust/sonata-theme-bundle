@@ -75,7 +75,7 @@
 
 //Level 1
 .skin-just .sidebar-menu>li:hover>a, .skin-just .sidebar-menu>li.active>a{
-    background: #D4D4D4;
+    background: #FFF;
     color: #000;
 }
 .skin-just .sidebar a{
@@ -85,10 +85,9 @@
 //Menu level 2
 .skin-just .sidebar-menu>li>.treeview-menu{
     background: #333;
-    a{
+    a{color: #888;}
+    li:hover a, li.active a{
         color: #FFF;
-        &:hover{
-            text-decoration: underline;
-        }
+        text-decoration: underline;
     }
 }
