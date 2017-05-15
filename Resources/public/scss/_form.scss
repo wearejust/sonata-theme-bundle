@@ -1,5 +1,14 @@
+.form-group{
+    margin-bottom: 30px;
+    label{
+        font-weight: normal;
+        color: #222;
+    }
+}
+
 .form-control:focus{
-    border-color: #000;
+    border-color: #d2d6de;
+    background: #f5f5f5;
 }
 
 .checkbox label, .radio label{font-weight: 300;}
@@ -11,6 +20,7 @@
 
     &.checked, &.hover{background-position: -34px 0;}
 }
+
 
 
 //Select2

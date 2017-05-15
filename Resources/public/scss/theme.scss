@@ -7,8 +7,12 @@
 @import 'box';
 @import 'table';
 
+body{
+    color: #222;
+}
+
 a{
-    color: #777;
+    color: #222;
     &:hover, &:focus, &:active{
         color: #333;
     }
@@ -25,4 +29,16 @@ a{
 
 .bg-aqua{
     background-color: $primary-color!important;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.pagination>li>a, .pagination>li>span{
+    border: 0;
+    background: #fff;
+    color: $primary-color;
+    &:hover{color: $primary-color;}
 }

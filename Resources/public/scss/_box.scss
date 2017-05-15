@@ -1,15 +1,16 @@
 .box{
     border-top: 0;
-    border: 1px solid #ddd;
-    box-shadow: 0;
-    &.box-primary{
-        border-top-color: $primary-color;
-    }
+    border: 0;
+    box-shadow: none;
+    border-top-color: #ebebeb!important;
 
     .box-header{
-        background: $primary-color;
-        color: #FFF;
+        background: #ebebeb;
+        color: #222;
+        padding: 10px 0;
     }
+
+    .box-body{padding: 2em;}
 
     .box-footer{
         input[type="submit"]{

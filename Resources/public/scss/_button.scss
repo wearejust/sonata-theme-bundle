@@ -1,4 +1,4 @@
-.btn{border-radius: 0;}
+.btn{border-radius: 0;padding: 10px 20px;}
 
 .btn-primary{
     background-color: $primary-color;
@@ -10,7 +10,7 @@
 }
 
 
-.add_records a{
+.add_records:not(.dropdown-menu) > li > a{
     background: $success!important;
     color: #FFF!important;
     &:hover, &:active, &:focus{
@@ -18,9 +18,7 @@
     }
 }
 
-.add_records ul li a{
-    background: lighten($success,2%)!important;
-}
+
 
 .btn-seperator{
     margin: 0 10px;

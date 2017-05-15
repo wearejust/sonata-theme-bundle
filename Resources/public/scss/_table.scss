@@ -1,16 +1,29 @@
 table.table{
     th{
         background-image: none;
+        color: #222;
     }
-    th a{color:#000;}
+    th a{color:#222;}
 
-    tr:hover td{
+   
+
+    tr:nth-child(odd) td{
         background: #f2f2f2;
     }
+
+    tr:nth-child(even) td{
+
+    }
+
+    tr:hover td{
+        background: #d3d3d3;
+    }
+
 }
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
     vertical-align: middle;
+    padding: 15px 8px!important;
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
