@@ -28,7 +28,8 @@
 .select2-container-multi.select2-container-active .select2-choices,
 .select2-drop-active
 {
-    border-color: $primary-color;
+    border-color: #d2d6de;
+    outline: 0;
 }
 
 .select2-results .select2-highlighted{

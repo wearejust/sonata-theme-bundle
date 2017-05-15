@@ -65,8 +65,12 @@
             {{ form_rest(form) }}
 
             {% block formactions %}
+
                 <div class="sonata-ba-form-actions  form-actions">
-                {% block sonata_form_actions %}
+                <div class="containerdd">
+                    <div class="row">
+                        <div class="col-xs-12">
+{% block sonata_form_actions %}
                     {% if app.request.isxmlhttprequest %}
                         {% if admin.id(object) is not null %}
                             <button type="submit" class="btn btn-success" name="btn_update">{{ 'btn_update'|trans({}, 'SonataAdminBundle') }}</button>
@@ -106,6 +110,10 @@
                 {% endblock %}
                 </div>
             {% endblock formactions %}
+                        </div>
+                    </div>
+                </div>
+                
         </form>
     {% endif%}
 

@@ -42,3 +42,19 @@ a{
     color: $primary-color;
     &:hover{color: $primary-color;}
 }
+
+.content-wrapper, .right-side{
+    max-width: 90em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skin-just .wrapper{
+    background: #ebebeb;
+}
+
+.form-actions.stuck{
+    margin-left: 0;
+    background: #d2d2d2;
+    padding: 1.5em;
+}
