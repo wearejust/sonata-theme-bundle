@@ -1,2 +1,2 @@
-!function(t){function r(o){if(e[o])return e[o].exports;var n=e[o]={exports:{},id:o,loaded:!1};return t[o].call(n.exports,n,n.exports,r),n.loaded=!0,n.exports}var e={};r.m=t,r.c=e,r.p="",r(0)}([function(t,r,e){"use strict";e(1)},function(t,r){"use strict"}]);
+!function(t){function o(r){if(n[r])return n[r].exports;var e=n[r]={exports:{},id:r,loaded:!1};return t[r].call(e.exports,e,e.exports,o),e.loaded=!0,e.exports}var n={};o.m=t,o.c=n,o.p="",o(0)}([function(t,o,n){"use strict";n(1)},function(t,o){"use strict";$(window).on("scroll",function(t){})}]);
 //# sourceMappingURL=app.bundle.js.map
