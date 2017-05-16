@@ -102,3 +102,8 @@
 
 
 .navbar{border-radius: 0;}
+.navbar.stuck{
+    margin-left: 0!important;
+    width: 100%!important;
+    max-width: 87.95em;
+}
