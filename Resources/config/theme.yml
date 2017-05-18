@@ -22,7 +22,7 @@ templates:
 #    action:               'SonataAdminBundle:CRUD:action.html.twig'
 #    select:               'SonataAdminBundle:CRUD:list__select.html.twig'
 #    list_block:           'SonataAdminBundle:Block:block_admin_list.html.twig'
-#    search_result_block:  'SonataAdminBundle:Block:block_search_result.html.twig'
+   search_result_block:  'SonataAdminBundle:Block:block_search_result.html.twig'
 #    short_object_description:  'SonataAdminBundle:Helper:short-object-description.html.twig'
 #    delete:               'JustSonataThemeBundle:CRUD:delete.html.twig'
 #    batch:                'SonataAdminBundle:CRUD:list__batch.html.twig'
@@ -56,7 +56,8 @@ assets:
         - bundles/sonataadmin/css/layout.css
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
-        - bundles/justsonatatheme/css/theme.css        
+        - bundles/justsonatatheme/css/theme.css  
+        - bundles/justredactor/redactor.css              
 
     javascripts:
 
@@ -80,3 +81,9 @@ assets:
         - bundles/sonataadmin/Admin.js
         - bundles/sonataadmin/treeview.js
         - bundles/justsonatatheme/javascript/app.bundle.js
+        - bundles/justredactor/redactor.js
+        - bundles/justredactor/plugins/video.js
+        - bundles/justredactor/plugins/imagemanager.js
+        - bundles/justredactor/plugins/filemanager.js
+        - bundles/justredactor/langs/nl.js
+        - bundles/justredactor/init.js        
