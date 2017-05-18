@@ -103,7 +103,21 @@
 
 .navbar{border-radius: 0;}
 .navbar.stuck{
-    margin-left: 0!important;
+    margin:0 auto!important;
     width: 100%!important;
     max-width: 87.95em;
+    
+}
+
+.content-header .navbar{
+    padding: 0 13px;
+    width: auto!important;
+    left: 245px;
+    right: 15px;
+    position: static!important;
+    &.stuck{position: fixed!important;}
+}
+
+.content-header .navbar-nav.navbar-right:last-child{
+    margin-right: -15px;
 }

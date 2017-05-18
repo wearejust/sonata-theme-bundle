@@ -29,6 +29,8 @@ a{
     z-index: 2500;
 }
 
+.redactor-toolbar{z-index: 1!important;}
+
 .bg-aqua{
     background-color: $primary-color!important;
 }
@@ -44,6 +46,9 @@ a{
     color: $primary-color;
     &:hover{color: $primary-color;}
 }
+.pagination>li:first-child>a, .pagination>li:first-child>span{border-radius: 0!important;}
+
+
 
 .content-wrapper, .right-side{
     max-width: 90em;
@@ -53,4 +58,30 @@ a{
 
 .skin-just .wrapper{
     background: #ebebeb;
+}
+
+
+//Layout
+.main-sidebar, .content-wrapper{
+    position: static!important;
+    float: left;
+}
+.main-sidebar{
+    width: 230px;height: 100vh;
+    .slimScrollDiv{
+        background-color: #222;
+        height: 100vh!important;
+        position: fixed!important;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 230px;
+    }
+}
+.content-wrapper{
+    max-width: calc(100% - 230px);
+    section{
+        margin: 0 auto;
+        max-width: 90em;
+    }
 }

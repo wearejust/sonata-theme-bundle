@@ -37,22 +37,35 @@
 
 
 //Fixed form
-.form-actions.stuck{
-    position: static;
-    margin-left: 0;
-    
-}
 
 .form-actions.is-stuck{
     background: #d3d3d3;
-    padding: 1.5em;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    .fixed-button__wrapper{
-        max-width: 90em;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+    padding: 2em;
+    margin: 0 auto!important;
+    max-width: 87.95em;
+
+    width: auto !important;
+    left: 245px;
+    right: 15px;
+
 }
+
+// .form-actions.stuck{
+//     position: static;
+//     margin-left: 0;
+    
+// }
+
+// .form-actions.is-stuck{
+//     background: #d3d3d3;
+//     padding: 1.5em;
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     .fixed-button__wrapper{
+//         max-width: 90em;
+//         margin: 0 auto;
+//         padding: 0 15px;
+//     }
+// }
