@@ -41,7 +41,7 @@ class JustSonataThemeExtension extends Extension implements PrependExtensionInte
         try {
             $config = Yaml::parse(file_get_contents(__DIR__ . '/../Resources/config/theme.yml'));
         } catch (ParseException $e) {
-            printf("Unable to parse the YAML string: %s", $e->getMessage());
+            throw new RuntimeException(sprintf("Unable to parse the YAML string: %s", $e->getMessage()));
         }
 
         $container->prependExtensionConfig('sonata_admin', $config);
