@@ -59,6 +59,9 @@ assets:
         - bundles/justsonatatheme/css/theme.css  
         - bundles/justredactor/redactor.css              
 
+        - bundles/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload.css
+        - bundles/jbfileuploader/css/jbfileupload.css
+        - bundles/jbfileuploader/lib/jcrop/css/jquery.Jcrop.min.css
     javascripts:
 
         # Defaults:
@@ -86,4 +89,10 @@ assets:
         - bundles/justredactor/plugins/imagemanager.js
         - bundles/justredactor/plugins/filemanager.js
         - bundles/justredactor/langs/nl.js
-        - bundles/justredactor/init.js        
+        - bundles/justredactor/init.js
+
+        - bundles/jbfileuploader/lib/jquery-file-upload/js/vendor/jquery.ui.widget.js
+        - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.iframe-transport.js
+        - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.fileupload.js
+        - bundles/jbfileuploader/js/jbfileupload.js
+        - bundles/jbfileuploader/lib/jcrop/js/jquery.Jcrop.js
