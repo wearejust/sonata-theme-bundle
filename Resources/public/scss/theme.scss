@@ -56,10 +56,16 @@ a{
     margin: 0 auto;
 }
 
-.skin-just .wrapper{
-    background: #ebebeb;
-}
+.skin-just  {
+    .wrapper{
+        background: #ebebeb;
+    }
 
+    // Hide profile menu if loggedin user is an external user
+    &.skin-just-external-login .user-footer div:first-child {
+        display:none;
+    }
+}
 
 //Layout
 .main-sidebar, .content-wrapper{
