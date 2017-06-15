@@ -1,6 +1,6 @@
 {% extends 'SonataAdminBundle::standard_layout.html.twig' %}
 
-{% block body_attributes %}class="sonata-bc skin-black skin-just fixed"{% endblock %}
+{% block body_attributes %}class="sonata-bc skin-black skin-just fixed {{ not app.user.id ? 'skin-just-external-login' : '' }}"{% endblock %}
 
 {% block side_bar_after_nav %}
     
