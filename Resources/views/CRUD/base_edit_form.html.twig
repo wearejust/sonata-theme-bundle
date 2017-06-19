@@ -55,10 +55,48 @@
                     {% else %}
                         {{ form_helper.render_groups(admin, form, admin.formtabs['default'].groups, has_tab) }}
                     {% endif %}
+
+                    <div class="box">
+                        <div class="box-header">
+                            <h4 class="box-title">Last editted by</h4>
+                        </div>
+                        <div class="box-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Date of change</th>
+                                        <th>Name</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>20-06-2017 11:53:12</td>
+                                        <td>Michael Koelewijn</td>
+                                        <td>Updated content of article #695</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20-06-2017 11:13:44</td>
+                                        <td>Michael Koelewijn</td>
+                                        <td>Disable article #695</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20-06-2017 10:13:12</td>
+                                        <td>Michael Koelewijn</td>
+                                        <td>Enable article #695</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    
+
                 </div>
             {% endblock %}
 
             {% block sonata_post_fieldsets %}
+                
                 </div>
             {% endblock %}
 
