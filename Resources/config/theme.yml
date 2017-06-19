@@ -24,7 +24,7 @@ templates:
 #    list_block:           'SonataAdminBundle:Block:block_admin_list.html.twig'
     search_result_block:  'SonataAdminBundle:Block:block_search_result.html.twig'
 #    short_object_description:  'SonataAdminBundle:Helper:short-object-description.html.twig'
-#    delete:               'JustSonataThemeBundle:CRUD:delete.html.twig'
+    delete:               'JustSonataThemeBundle:CRUD:delete.html.twig'
 #    batch:                'SonataAdminBundle:CRUD:list__batch.html.twig'
 #    batch_confirmation:   'JustSonataThemeBundle:CRUD:batch_confirmation.html.twig'
 #    inner_list_row:       'SonataAdminBundle:CRUD:list_inner_row.html.twig'

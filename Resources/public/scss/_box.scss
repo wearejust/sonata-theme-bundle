@@ -8,7 +8,7 @@
     .box-header{
         background: #ebebeb;
         color: #222;
-        padding: 10px 0;
+        padding: 10px;
     }
 
     .box-body{padding: 2em;border-radius: 0;}
@@ -21,8 +21,7 @@
     }
 }
 
-.box.box-danger .box-header{background: $danger;}
-
+.box.box-danger .box-header{background: $danger;color:#FFF;}
 
 .nav-tabs-custom>.nav-tabs>li.active{
     border-top-color: #000;
