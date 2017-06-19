@@ -72,6 +72,9 @@ a{
     position: static!important;
     float: left;
 }
+
+.main-sidebar{ position: relative!important; }
+
 .main-sidebar{
     width: 230px;height: 100vh;
     .slimScrollDiv{
