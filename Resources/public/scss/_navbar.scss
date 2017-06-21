@@ -109,11 +109,16 @@
 }
 
 .content-header .navbar{
-    padding: 0 13px;
+    // padding: 0 13px;
     width: auto!important;
-    left: 245px;
+    max-width: calc(60em - 30px);
+
+    left: 330px;
     right: 15px;
     position: static!important;
+
+    border: 1px solid #ddd;
+    
     &.stuck{position: fixed!important;}
 }
 
