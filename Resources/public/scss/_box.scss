@@ -37,6 +37,11 @@
 
 .nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li:hover>a{
     background-color: #f2f2f2;
+    color: #000;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li.active:hover>a{
+    background-color: #f2f2f2;
 }
 
 .nav-tabs-custom>.nav-tabs li a:active{
