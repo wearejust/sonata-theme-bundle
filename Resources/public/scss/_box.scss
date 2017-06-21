@@ -1,9 +1,7 @@
 .box{
-    border-top: 0;
-    border: 0;
+    border: 1px solid #ddd;
     border-radius: 0;
     box-shadow: none;
-    border-top-color: #ebebeb!important;
 
     .box-header{
         background: #ebebeb;
@@ -20,7 +18,7 @@
         }
     }
 }
-
+.box.box-primary{ border-top-color: #ddd; }
 .box.box-danger .box-header{background: $danger;color:#FFF;}
 
 .nav-tabs-custom>.nav-tabs>li.active{

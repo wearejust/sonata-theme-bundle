@@ -71,6 +71,8 @@ a{
 //Layout
 .skin-just .main-header .navbar{
     background-color: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: 315px;
 }
 
 .main-sidebar, .content-wrapper{
@@ -96,6 +98,6 @@ a{
     max-width: calc(100% - 315px);
     section{
         margin: 0 auto;
-        max-width: 90em;
+        max-width: 60em;
     }
 }
