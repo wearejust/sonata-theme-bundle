@@ -64,6 +64,7 @@ table.sonata-ba-list td{
 .btn-group>.btn.delete_link{
     position: absolute;
     right: -58px;
+    width: 58px;
     top: 0;
     bottom: 0;
     background: $danger;
@@ -79,6 +80,11 @@ table.sonata-ba-list td{
 
     i{
         font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
     }
 }
 
