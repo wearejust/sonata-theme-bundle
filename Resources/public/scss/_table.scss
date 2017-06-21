@@ -57,7 +57,8 @@ table.sonata-ba-list td{
         border-color: #777!important;
     }
 }
-.btn-group>.btn.edit_link{
+.btn-group>.btn.edit_link,
+.btn-group>.btn.view_link{
     display: none;
 }
 .btn-group>.btn.delete_link{
