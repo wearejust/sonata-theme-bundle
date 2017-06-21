@@ -21,6 +21,18 @@
 .box.box-primary{ border-top-color: #ddd; }
 .box.box-danger .box-header{background: $danger;color:#FFF;}
 
+.box-footer{
+    .select2-container .select2-choice{
+        height: 42px;
+        padding: 7px 0;
+        line-height: 1;
+    }
+    .select2-container .select2-choice .select2-arrow{
+        top: 3px;
+    }
+} 
+
+
 
 .nav-tabs-custom{
     border-radius: 0;
