@@ -14,9 +14,9 @@
     }
 
     // Hide profile menu if loggedin user is an external user
-    // &.skin-just-external-login .user-footer div:first-child {
-    //     display:none;
-    // }
+    &.skin-just-external-login .user-footer div:first-child {
+        display:none;
+    }
 }
 
 .logo img{ display: none; }
