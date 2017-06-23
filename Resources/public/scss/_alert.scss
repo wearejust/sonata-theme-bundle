@@ -1,0 +1,10 @@
+.alert{
+    &:before{
+        display: inline-block;
+        font-family: "FontAwesome";
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        content: "\f00c";
+    }
+}

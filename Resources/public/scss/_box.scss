@@ -1,29 +1,69 @@
 .box{
-    border-top: 0;
-    border: 0;
-    border-radius: 0;
+    border: 1px solid #ebebeb;
     box-shadow: none;
-    border-top-color: #ebebeb!important;
-
-    .box-header{
-        background: #ebebeb;
-        color: #222;
-        padding: 10px 0;
-    }
-
-    .box-body{padding: 2em;border-radius: 0;}
-
-    .box-footer{
-        input[type="submit"]{
-            background: $success;
-            border-color: $success;
-        }
+    border-radius: 0;
+    &.box-primary{
+        border-top-color: #ebebeb;
     }
 }
 
-.box.box-danger .box-header{background: $danger;}
+.tab-pane .box{ border: 0; }
 
+.nav-tabs-custom{
+    border-radius: 0;
+}
+
+.nav-tabs-custom>.nav-tabs{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
 
 .nav-tabs-custom>.nav-tabs>li.active{
     border-top-color: #000;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li:hover>a{
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.nav-tabs-custom>.nav-tabs>li.active>a, .nav-tabs-custom>.nav-tabs>li.active:hover>a{
+    background-color: #f2f2f2;
+}
+
+.nav-tabs-custom>.nav-tabs li a:active{
+    box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs-custom>.nav-tabs>li{ 
+    border-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.nav-tabs-custom>.nav-tabs>li>a{
+    padding: 20px 25px;
+}
+
+.nav-tabs-custom>.nav-tabs li + li{
+    border-left: 1px solid #ddd;
+    margin-right: 0;
+}
+
+.sonata-ba-form{
+    margin: 0 0 85px 0;
+}
+.form-actions{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0!important;
+
+    border-radius: 0;
+
+    @media(min-width: 768px){
+        left: 230px;
+    }
 }

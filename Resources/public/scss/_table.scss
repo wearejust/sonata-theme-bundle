@@ -1,60 +1,18 @@
-table.table{
-    th{
-        background-image: none;
-        color: #222;
-    }
-    th a{color:#222;}
-
-   
-
-    tr:nth-child(odd) td{
-        background: #f2f2f2;
-    }
-
-    tr:nth-child(even) td{
-
-    }
-
-    tr:hover td{
-        background: #d3d3d3;
-    }
-
-}
-
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-    vertical-align: middle;
-    padding: 15px 8px!important;
-    border: 0;
+table.sonata-ba-list th{
+    background-image: none;
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
     font-weight: normal;
 }
 
-.sonata-ba-list tr th:first-child{width: 30px;}
-
-//Just show icons
-.view_link, .edit_link, .delete_link{
-    font-size: 0;
-    margin: 0 4px;
-    i{font-size: 14px;}
-}
-
-.view_link, .edit_link{
-    background: #FFF!important;
-    border-color: #bdbdbd!important;
-    &:hover, &:active, &:focus{
-        background: #f2f2f2!important;
-        border-color: #777!important;
+table.sonata-ba-list tr td a{
+    color: #888;
+    &:hover{
+        color: #000;
     }
 }
 
-.delete_link{
-    background: $danger;
-    border-color: $danger;
-    color: #FFF!important;
-    &:hover, &:active, &:focus{
-        background: darken($danger,5%);
-        border-color: darken($danger,15%);
-    }
+th.sonata-ba-list-field-header-order-desc a, th.sonata-ba-list-field-header-order-asc a{
+    color: #000;
 }
