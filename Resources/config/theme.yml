@@ -57,7 +57,8 @@ assets:
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
         - bundles/justsonatatheme/css/theme.css  
-        - bundles/justredactor/redactor.css              
+        - bundles/justredactor/redactor.css       
+               
 
         # - bundles/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload.css
         # - bundles/jbfileuploader/css/jbfileupload.css
