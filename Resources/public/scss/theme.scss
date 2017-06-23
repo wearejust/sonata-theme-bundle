@@ -20,5 +20,19 @@
 }
 
 .logo img{ display: none; }
+.content-wrapper{ 
+    padding-right: 50px; 
+}
+.icheckbox_square-blue, .iradio_square-blue{
+    background: url('../images/black.png');
+}
 
+.box-body.table-responsive{ overflow: visible; }
+.sonata-ba-list tr td:last-child{
+    position: relative;
+    overflow: visible;
+}
+.sonata-ba-list tr:hover .delete_link{
+    display: block;
+}
 

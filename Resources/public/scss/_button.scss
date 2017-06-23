@@ -20,33 +20,6 @@
     }
 }
 
-// .btn-primary{
-//     background-color: #000;
-//     border-color: #000;
-//     &:hover{
-//         background-color: lighten(#000, 20%);
-//         border-color: lighten(#000, 20%);
-//     }
-// }
-
-// .btn-danger{
-//     background-color: $danger;
-//     border-color: $danger;
-//     &:hover, &:active, &:focus{
-//         background: lighten($danger,5%)!important;
-//     }
-// }
-
-
-// .add_records:not(.dropdown-menu) > li > a{
-//     background: #000!important;
-//     color: #FFF!important;
-//     &:hover, &:active, &:focus{
-//         background: lighten(#000,20%)!important;
-//     }
-// }
-
-
 .sort_button{
     background-color: transparent;
     border-radius: 4px;
@@ -66,8 +39,31 @@
         width: 22px;
     }
 }
+.btn-group{ position: static; }
+.btn-group .delete_link{
+    position: absolute;
+    right: -58px;
+    width: 58px;
+    top: 0;
+    bottom: 0;
+    background: $danger;
+    border-color: $danger;
+    color: #fff !important;
+    padding: 15px 20px;
+    margin: 0;
+    display: none;
+    &:hover, &:active, &:focus{
+        background: darken($danger,5%);
+        border-color: darken($danger,15%);
+    }
 
-
-// .btn-seperator{
-//     margin: 0 10px;
-// }
+    i{
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+    }
+}
