@@ -4,37 +4,34 @@
     color: #FFF;
 }
 
-.main-header .logo, .sidebar-toggle{display: none;}
-.main-header .navbar-custom-menu > ul > li:first-of-type{
-    display:none;
-}
+// .main-header .navbar-custom-menu > ul > li:first-of-type{
+//     display:none;
+// }
 
 //User dropdown
-.dropdown-user .user-header{
-    display: none;
-}
-.navbar-nav>.user-menu>.dropdown-menu{
-    width: 197px;
-    border-top: 1px solid #dedede;
-}
-.user-footer{
-    div:nth-child(2) a{
-        background: $danger;
-        border-color: $danger;
-        color: #FFF!important;
-        &:hover{
-            background: darken($danger,10%);
-        }
-    }
-}
+// .dropdown-user .user-header{
+//     display: none;
+// }
+
+
+// .user-footer{
+//     div:nth-child(2) a{
+//         background: $danger;
+//         border-color: $danger;
+//         color: #FFF!important;
+//         &:hover{
+//             background: darken($danger,10%);
+//         }
+//     }
+// }
 
 
 
 //Sidebar
-.main-sidebar{
-    padding-top: 0;
-    z-index: 2000;
-}
+// .main-sidebar{
+//     padding-top: 0;
+//     z-index: 2000;
+// }
 
 .skin-just .sidebar-form,
 .skin-just .sidebar-form input[type="text"],
@@ -42,27 +39,27 @@
     border-radius:0;
 }
 
-.skin-just .main-header .navbar .nav>li>a:hover, 
-.skin-just .main-header .navbar .nav>li>a:active, 
-.skin-just .main-header .navbar .nav>li>a:focus, 
-.skin-just .main-header .navbar .nav .open>a, 
-.skin-just .main-header .navbar .nav .open>a:hover, 
-.skin-just .main-header .navbar .nav .open>a:focus, 
-.skin-just .main-header .navbar .nav>.active>a,
-.skin-just .main-header .navbar .navbar-nav>li>a:hover
-{
-    background: initial;
-    color: initial ;
-}
+// .skin-just .main-header .navbar .nav>li>a:hover, 
+// .skin-just .main-header .navbar .nav>li>a:active, 
+// .skin-just .main-header .navbar .nav>li>a:focus, 
+// .skin-just .main-header .navbar .nav .open>a, 
+// .skin-just .main-header .navbar .nav .open>a:hover, 
+// .skin-just .main-header .navbar .nav .open>a:focus, 
+// .skin-just .main-header .navbar .nav>.active>a,
+// .skin-just .main-header .navbar .navbar-nav>li>a:hover
+// {
+//     background: initial;
+//     color: initial ;
+// }
 
-.skin-just .main-header .navbar>.sidebar-toggle{
-    background: $primary-color;
-    color: #FFF;
-    &:hover{
-        background: #333;
-        color: #FFF;
-    }
-}
+// .skin-just .main-header .navbar>.sidebar-toggle{
+//     background: $primary-color;
+//     color: #FFF;
+//     &:hover{
+//         background: #333;
+//         color: #FFF;
+//     }
+// }
 
 .skin-just .wrapper, .skin-just .main-sidebar, .skin-just .left-side{
     background-color: $primary-color;
@@ -70,8 +67,8 @@
 .skin-just .sidebar-form input[type="text"], .skin-just .sidebar-form .btn{
     background-color: #222;
 }
-.skin-just .sidebar-form{border-color: transparent;}
-.skin-just .sidebar-form .btn{padding: 6px 12px;}
+// .skin-just .sidebar-form{border-color: transparent;}
+// .skin-just .sidebar-form .btn{padding: 6px 12px;}
 
 //Level 1
 .skin-just .sidebar-menu>li:hover>a, .skin-just .sidebar-menu>li.active>a{
@@ -102,30 +99,30 @@
 
 
 .navbar{border-radius: 0;}
-.navbar-right{ margin-right: -30px; margin-left: 30px; }
-.navbar.stuck{
-    margin:0 auto!important;
-    width: 100%!important;
-    max-width: 87.95em;
-}
+// .navbar-right{ margin-right: -30px; margin-left: 30px; }
+// .navbar.stuck{
+//     margin:0 auto!important;
+//     width: 100%!important;
+//     max-width: 87.95em;
+// }
 
-.content-header .navbar{
-    // padding: 0 13px;
-    width: auto!important;
-    max-width: calc(60em - 30px);
+// .content-header .navbar{
+//     // padding: 0 13px;
+//     width: auto!important;
+//     max-width: calc(60em - 30px);
 
-    left: 330px;
-    right: 15px;
-    position: static!important;
+//     left: 330px;
+//     right: 15px;
+//     position: static!important;
 
-    border: 1px solid #ddd;
+//     border: 1px solid #ddd;
     
-    &.stuck{position: fixed!important;}
-}
+//     &.stuck{position: fixed!important;}
+// }
 
-.content-header .navbar-nav.navbar-right:last-child{
-    margin-right: -30px;
-}
+// .content-header .navbar-nav.navbar-right:last-child{
+//     margin-right: -30px;
+// }
 
 .breadcrumb li{ 
     font-size: 0.9em;

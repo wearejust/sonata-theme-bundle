@@ -1,39 +1,3 @@
-.box{
-    border: 1px solid #ddd;
-    border-radius: 0;
-    box-shadow: none;
-
-    .box-header{
-        background: #ebebeb;
-        color: #222;
-        padding: 10px;
-    }
-
-    .box-body{padding: 2em;border-radius: 0;}
-
-    .box-footer{
-        input[type="submit"]{
-            background: #000;
-            border-color: #000;
-        }
-    }
-}
-.box.box-primary{ border-top-color: #ddd; }
-.box.box-danger .box-header{background: $danger;color:#FFF;}
-
-.box-footer{
-    .select2-container .select2-choice{
-        height: 42px;
-        padding: 7px 0;
-        line-height: 1;
-    }
-    .select2-container .select2-choice .select2-arrow{
-        top: 3px;
-    }
-} 
-
-
-
 .nav-tabs-custom{
     border-radius: 0;
 }
@@ -73,4 +37,22 @@
 .nav-tabs-custom>.nav-tabs li + li{
     border-left: 1px solid #ddd;
     margin-right: 0;
+}
+
+.sonata-ba-form{
+    margin: 0 0 85px 0;
+}
+.form-actions{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0!important;
+
+    border-radius: 0;
+
+    @media(min-width: 768px){
+        left: 230px;
+    }
 }

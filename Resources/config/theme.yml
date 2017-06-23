@@ -10,11 +10,11 @@ templates:
 #    ajax:                 'SonataAdminBundle::ajax_layout.html.twig'
 #    dashboard:            'SonataAdminBundle:Core:dashboard.html.twig'
 #    search:               'SonataAdminBundle:Core:search.html.twig'
-    list:                 'JustSonataThemeBundle:CRUD:list.html.twig'
+    # list:                 'JustSonataThemeBundle:CRUD:list.html.twig'
 #    filter:               'SonataAdminBundle:Form:filter_admin_fields.html.twig'
 #    show:                 'SonataAdminBundle:CRUD:show.html.twig'
 #    show_compare:         'SonataAdminBundle:CRUD:show_compare.html.twig'
-    edit:                 'JustSonataThemeBundle:CRUD:edit.html.twig'
+    # edit:                 'JustSonataThemeBundle:CRUD:edit.html.twig'
 #    preview:              'SonataAdminBundle:CRUD:preview.html.twig'
 #    history:              'SonataAdminBundle:CRUD:history.html.twig'
 #    acl:                  'SonataAdminBundle:CRUD:acl.html.twig'
@@ -22,9 +22,9 @@ templates:
 #    action:               'SonataAdminBundle:CRUD:action.html.twig'
 #    select:               'SonataAdminBundle:CRUD:list__select.html.twig'
 #    list_block:           'SonataAdminBundle:Block:block_admin_list.html.twig'
-    search_result_block:  'SonataAdminBundle:Block:block_search_result.html.twig'
+    # search_result_block:  'SonataAdminBundle:Block:block_search_result.html.twig'
 #    short_object_description:  'SonataAdminBundle:Helper:short-object-description.html.twig'
-    delete:               'JustSonataThemeBundle:CRUD:delete.html.twig'
+    # delete:               'JustSonataThemeBundle:CRUD:delete.html.twig'
 #    batch:                'SonataAdminBundle:CRUD:list__batch.html.twig'
 #    batch_confirmation:   'JustSonataThemeBundle:CRUD:batch_confirmation.html.twig'
 #    inner_list_row:       'SonataAdminBundle:CRUD:list_inner_row.html.twig'
@@ -33,18 +33,18 @@ templates:
 #    outer_list_rows_tree:  'SonataAdminBundle:CRUD:list_outer_rows_tree.html.twig'
 #    base_list_field:      'SonataAdminBundle:CRUD:base_list_field.html.twig'
 #    pager_links:          'SonataAdminBundle:Pager:links.html.twig'
-    pager_results:        'JustSonataThemeBundle:Pager:results.html.twig'
+    # pager_results:        'JustSonataThemeBundle:Pager:results.html.twig'
 #    tab_menu_template:    'SonataAdminBundle:Core:tab_menu_template.html.twig'
 #    knp_menu_template:    'SonataAdminBundle:Menu:sonata_menu.html.twig'
 
 assets:
     stylesheets:
         # Defaults:
-        # - bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
-        - bundles/justsonatatheme/css/bootstrap.min.css        
+        - bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+        # - bundles/justsonatatheme/css/bootstrap.min.css        
         - bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
         - bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
-        # - bundles/justsonatatheme/css/AdminLTE.css
+        - bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css 
         - bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
         - bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
         - bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
@@ -59,9 +59,9 @@ assets:
         - bundles/justsonatatheme/css/theme.css  
         - bundles/justredactor/redactor.css              
 
-        - bundles/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload.css
-        - bundles/jbfileuploader/css/jbfileupload.css
-        - bundles/jbfileuploader/lib/jcrop/css/jquery.Jcrop.min.css
+        # - bundles/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload.css
+        # - bundles/jbfileuploader/css/jbfileupload.css
+        # - bundles/jbfileuploader/lib/jcrop/css/jquery.Jcrop.min.css
     javascripts:
 
         # Defaults:
@@ -91,8 +91,8 @@ assets:
         - bundles/justredactor/langs/nl.js
         - bundles/justredactor/init.js
 
-        - bundles/jbfileuploader/lib/jquery-file-upload/js/vendor/jquery.ui.widget.js
-        - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.iframe-transport.js
-        - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.fileupload.js
-        - bundles/jbfileuploader/js/jbfileupload.js
-        - bundles/jbfileuploader/lib/jcrop/js/jquery.Jcrop.js
+        # - bundles/jbfileuploader/lib/jquery-file-upload/js/vendor/jquery.ui.widget.js
+        # - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.iframe-transport.js
+        # - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.fileupload.js
+        # - bundles/jbfileuploader/js/jbfileupload.js
+        # - bundles/jbfileuploader/lib/jcrop/js/jquery.Jcrop.js
