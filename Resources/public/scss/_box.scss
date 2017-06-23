@@ -1,3 +1,14 @@
+.box{
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 0;
+    &.box-primary{
+        border-top-color: #ebebeb;
+    }
+}
+
+.tab-pane .box{ border: 0; }
+
 .nav-tabs-custom{
     border-radius: 0;
 }

@@ -1,45 +1,14 @@
-table.table{
-    th{
-        background-image: none;
-        color: #222;
-    }
-    th a{color:#222;}
-
-   
-
-    tr:nth-child(odd) td{
-        background: #f2f2f2;
-    }
-
-    tr:nth-child(even) td{
-
-    }
-
-    tr:hover td{
-        background: #d3d3d3;
-    }
-
-}
-
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-    vertical-align: middle;
-    padding: 15px 8px!important;
-    border: 0;
+table.sonata-ba-list th{
+    background-image: none;
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
     font-weight: normal;
 }
 
-.sonata-ba-list td:last-of-type{
-    position: relative;
-    .btn-group{ position: static; }
+table.sonata-ba-list tr td a{
+    color: #888;
+    &:hover{
+        color: #000;
+    }
 }
-.sonata-ba-list tr th:first-child{width: 30px;}
-
-.box-body.table-responsive,
-table.sonata-ba-list td{
-    overflow: visible;
-}
-
-
