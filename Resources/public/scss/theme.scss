@@ -114,18 +114,24 @@
 }
 
 
+.select2-container.per-page .select2-chosen{
+    padding: 9px 0 9px 12px;
+}
+
 .select2-results .select2-highlighted{
-    background-color: #000;
+    background-color: #333;
 }
 
 .select2-drop-active,
 .select2-drop-auto-width, .select2-drop.select2-drop-above.select2-drop-active{
-    border-color: #000;
+    border-color: #333;
 }
 
 .select2-dropdown-open.select2-drop-above [class^=select2-choice],
 .pagination>li:first-child>a, .pagination>li:first-child>span,
-.pagination>li:last-child>a, .pagination>li:last-child>span
+.pagination>li:last-child>a, .pagination>li:last-child>span,
+.select2-container-multi .select2-choices .select2-search-choice,
+.select2-search input
 {
     border-radius: 0!important;
 }
