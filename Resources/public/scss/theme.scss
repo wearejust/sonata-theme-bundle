@@ -23,6 +23,7 @@
 }
 
 .bg-aqua{ background-color: #000!important; }
+.required:after{ color: $danger; font-size: 1.3em; }
 
 .logo img{ display: none; }
 .content-wrapper{ 
