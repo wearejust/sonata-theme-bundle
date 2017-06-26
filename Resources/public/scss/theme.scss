@@ -24,7 +24,11 @@
 .logo img{ display: none; }
 .content-wrapper{ 
     padding-right: 50px; 
+    .content-header{
+        .nav.navbar-right.btn-group{ display: none; }
+    }
 }
+
 .icheckbox_square-blue, .iradio_square-blue{
     background: url('../images/black.png');
 }
