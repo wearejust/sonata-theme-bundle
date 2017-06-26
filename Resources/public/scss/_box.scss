@@ -60,10 +60,12 @@
     right: 0;
     z-index: 5;
     margin: 0!important;
-
     border-radius: 0;
-
+    font-size: 0;
     @media(min-width: 768px){
         left: 230px;
     }
+
+    .btn + .btn{ margin-left: 5px; }
+
 }
