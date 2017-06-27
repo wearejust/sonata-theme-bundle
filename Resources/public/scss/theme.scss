@@ -8,12 +8,17 @@
 @import 'article';
 @import 'pagination';
 
+html {
+    -webkit-font-smoothing: antialiased;
+}
+body, .content-wrapper, .right-side, .wrapper {
+    background-color: #ebebeb;
+}
 .skin-just  {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
     .wrapper{
         background: #ebebeb;
     }
-
     .sidebar-form{
         border: 1px solid #656565;
     }

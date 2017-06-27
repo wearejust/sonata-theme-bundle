@@ -1,6 +1,6 @@
 # Full configuration options can be found here:
 # https://sonata-project.org/bundles/admin/master/doc/reference/configuration.html#full-configuration-options
-title:                'Just CMS'
+title:                'CONTENT'
 title_logo:           bundles/sonataadmin/logo_title.png
 
 templates:
