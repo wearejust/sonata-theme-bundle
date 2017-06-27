@@ -23,11 +23,16 @@ th.sonata-ba-list-field-header-order-desc a, th.sonata-ba-list-field-header-orde
 
 .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{
     border: 1px solid transparent;
-    padding: 1.375rem;
+    padding: 1.375rem 12px;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
 	background-color: #f2f2f2;
 }
 .table-striped tbody tr.sonata-ba-list-row-selected td, .table-striped tbody tr.sonata-ba-list-row-selected th {
 	background-color: #ddd;
+}
+@media screen and (min-width: 48em) {
+	.box-body>.table {
+		table-layout: fixed;
+	}
 }
