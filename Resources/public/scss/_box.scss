@@ -67,5 +67,11 @@
     }
 
     .btn + .btn{ margin-left: 5px; }
-
 }
+
+.box-footer .form-inline{
+    .btn-group.open{ position: relative; }
+    .control-label, .select2-container{
+        display: none;
+    }
+} 
