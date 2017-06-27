@@ -28,8 +28,7 @@
 .required:after{ color: $danger; font-size: 1.3em; line-height: 0;}
 
 .logo img{ display: none; }
-.content-wrapper{ 
-    padding-right: 50px; 
+.content-wrapper{     
     .content-header{
         .nav.navbar-right.btn-group{ display: none; }
     }
@@ -89,7 +88,7 @@
     background: url('../images/black.png');
 }
 
-.box-body.table-responsive{ overflow: visible; }
+.box-body.table-responsive{ overflow-x: scroll; }
 .sonata-ba-list tr td:last-child{
     position: relative;
     overflow: visible;
@@ -141,4 +140,16 @@
 .select2-search input
 {
     border-radius: 0!important;
+}
+
+@media screen and (min-width: 50em) {
+    .content-wrapper {
+        padding-right: 50px;
+    }
+    .box-body.table-responsive {
+        overflow: visible;
+        overflow-x: visible;
+    }
+
+
 }

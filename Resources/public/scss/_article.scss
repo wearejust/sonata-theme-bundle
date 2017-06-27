@@ -1,3 +1,10 @@
+.content-wrapper, .right-side { 
+	background-color: #ebebeb;
+
+}
+
+
+
 .nav-tabs-custom > .tab-content {
 	background: #F2F2F2;
 }
@@ -20,8 +27,8 @@ textarea {
 	clear: both;
 }
 
-.sonata-ba-field {
-	margin: -0.825em 0;
+.sonata-ba-field {	
+	margin: 0.5em 0 0 0;
 	input {
 		padding: 0.75em 1em;
 		min-height: 2.7857142857em;
@@ -46,6 +53,14 @@ textarea {
 	}
 }
 
+
+.control-label__text { 
+	display: inline-block;
+	max-width: 89.9%;
+	vertical-align: top;
+	
+}
+
 @media screen and (min-width: 50em) {
 	.nav-tabs-custom > .tab-content {
 	}
@@ -57,7 +72,12 @@ textarea {
 		width: 33.333%;
 	}
 	.sonata-ba-field {
+		margin: -0.825em 0;
 		float: right;
 		width: 66.667%;
+	}
+
+	.control-label__text {
+		max-width: none;
 	}
 }
