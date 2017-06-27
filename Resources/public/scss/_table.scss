@@ -16,3 +16,7 @@ table.sonata-ba-list tr td a{
 th.sonata-ba-list-field-header-order-desc a, th.sonata-ba-list-field-header-order-asc a{
     color: #000;
 }
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{
+    border: 1px solid transparent;
+}
