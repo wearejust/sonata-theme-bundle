@@ -1,0 +1,29 @@
+label {
+	font-weight: 400;
+}
+.form-control {
+	padding: .75em 1em;
+}
+.form-control input:focus {
+	background-color: #eee;
+	outline: none;
+}
+.sonata-ba-form {
+	.sonata-ba-form-actions.well {
+	    background-color: #dbdbdb;
+	    border: none;
+	        padding-bottom: 6px;
+            padding-top: 6px;
+	}
+}
+.icheckbox_square-blue, .iradio_square-blue {
+	transform: scale(0.7);
+}
+@media only screen and (min-width: 50em) {
+	.sonata-ba-form-actions {
+		.btn-danger {
+			position: absolute;
+	    	right: 4em;
+		}
+	}
+}

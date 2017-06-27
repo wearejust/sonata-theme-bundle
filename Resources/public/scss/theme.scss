@@ -1,10 +1,12 @@
 @import 'variables';
 @import 'navbar';
 @import 'button';
+@import 'forms';
 @import 'box';
 @import 'alert';
 @import 'table';
 @import 'article';
+@import 'pagination';
 
 .skin-just  {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
@@ -140,4 +142,3 @@
 {
     border-radius: 0!important;
 }
-

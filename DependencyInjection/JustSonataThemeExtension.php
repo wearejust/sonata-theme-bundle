@@ -34,7 +34,7 @@ class JustSonataThemeExtension extends Extension implements PrependExtensionInte
     {
         // return;
         $bundles = $container->getParameter('kernel.bundles');
-        
+
         if (!array_key_exists('SonataAdminBundle', $bundles)) {
             throw new RuntimeException('SonataAdminBundle wasn\'t found, dit you registered it correctly?');
         }
