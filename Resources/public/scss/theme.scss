@@ -5,6 +5,7 @@
 @import 'box';
 @import 'alert';
 @import 'table';
+@import 'article';
 @import 'pagination';
 
 .skin-just  {
@@ -24,11 +25,10 @@
 }
 
 .bg-aqua{ background-color: #000!important; }
-.required:after{ color: $danger; font-size: 1.3em; }
+.required:after{ color: $danger; font-size: 1.3em; line-height: 0;}
 
 .logo img{ display: none; }
-.content-wrapper{ 
-    padding-right: 50px; 
+.content-wrapper{     
     .content-header{
         .nav.navbar-right.btn-group{ display: none; }
     }
@@ -88,7 +88,7 @@
     background: url('../images/black.png');
 }
 
-.box-body.table-responsive{ overflow: visible; }
+.box-body.table-responsive{ overflow-x: scroll; }
 .sonata-ba-list tr td:last-child{
     position: relative;
     overflow: visible;
@@ -137,3 +137,14 @@
 }
 
 label ~ input[type="submit"] { margin: 0 0.5em; }
+@media screen and (min-width: 50em) {
+    .content-wrapper {
+        padding-right: 50px;
+    }
+    .box-body.table-responsive {
+        overflow: visible;
+        overflow-x: visible;
+    }
+
+
+}
