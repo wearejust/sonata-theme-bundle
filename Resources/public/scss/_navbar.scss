@@ -15,7 +15,8 @@
     background-color: #f2f2f2;
 }
 
-.skin-just .main-header>.logo{
+.skin-just .main-header>.logo,
+.skin-just .main-header>.logo:hover{
     background-color: #222;
     border-right: 1px solid #000;
     color: #FFF;
