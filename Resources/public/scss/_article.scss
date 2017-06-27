@@ -1,13 +1,11 @@
-.content-wrapper, .right-side { 
-	background-color: #ebebeb;
-
+.content-wrapper, .right-side {
+	background-color: #EBEBEB;
 }
-
-
 
 .nav-tabs-custom > .tab-content {
 	background: #F2F2F2;
 }
+
 textarea {
 	max-width: 100%;
 	min-height: 200px;
@@ -19,19 +17,23 @@ textarea {
 	margin: 0;
 	padding: 1.1em;
 }
-.form-group:before, .form-group:after {
+
+.container-fluid {
+	display: block;
+}
+.container-fluid:before, .container-fluid:after, .form-group:before, .form-group:after {
 	content: " ";
 	display: table;
 }
-.form-group:after {
+.container-fluid:after, .form-group:after {
 	clear: both;
 }
 
-.sonata-ba-field {	
+.sonata-ba-field {
 	margin: 0.5em 0 0 0;
 	input {
-		padding: 0.75em 1em;
 		min-height: 2.7857142857em;
+		padding: 0.75em 1em;
 	}
 }
 
@@ -41,24 +43,25 @@ textarea {
 }
 
 .sonata-ba-form {
-	margin: 0;
-	max-width: 80em;
+	
 	.box {
 		background-color: #F2F2F2;
 	}
 	.box-body {
-		padding: 0;
 		margin: 0 -0.5rem;
-
+		padding: 0;
 	}
 }
 
 
-.control-label__text { 
+.control-label__text {
 	display: inline-block;
 	max-width: 89.9%;
 	vertical-align: top;
-	
+}
+
+.box-header {
+	display: none;
 }
 
 @media screen and (min-width: 50em) {
@@ -72,12 +75,12 @@ textarea {
 		width: 33.333%;
 	}
 	.sonata-ba-field {
-		margin: -0.825em 0;
 		float: right;
+		margin: -0.825em 0;
 		width: 66.667%;
 	}
 
 	.control-label__text {
-		max-width: none; 
+		max-width: none;
 	}
 }
