@@ -2,8 +2,12 @@ table.sonata-ba-list th{
     background-image: none;
 }
 
-.sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier{
-    font-weight: 300;
+.sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
+	color: #000;
+    font-weight: normal;
+    &:hover, &:focus, &:active {
+    	color: #888;
+    }
 }
 
 table.sonata-ba-list tr td a{
@@ -19,8 +23,11 @@ th.sonata-ba-list-field-header-order-desc a, th.sonata-ba-list-field-header-orde
 
 .table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{
     border: 1px solid transparent;
+    padding: 1.375rem;
 }
-//selected row
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #f2f2f2;
+}
 .table-striped tbody tr.sonata-ba-list-row-selected td, .table-striped tbody tr.sonata-ba-list-row-selected th {
 	background-color: #ddd;
 }

@@ -97,11 +97,6 @@
     display: block;
 }
 
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
-    background-color: #000;
-    border-color: #000;
-}
-
 .datepicker td, .datepicker th,
 .datepicker table tr td span{
     border-radius: 0;
@@ -118,7 +113,6 @@
 .datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover,{
     background-image: none;
 }
-
 
 .select2-container.per-page .select2-chosen{
     padding: 9px 0 9px 12px;
@@ -141,3 +135,5 @@
 {
     border-radius: 0!important;
 }
+
+label ~ input[type="submit"] { margin: 0 0.5em; }

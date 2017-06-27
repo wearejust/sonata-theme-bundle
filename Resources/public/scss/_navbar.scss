@@ -36,28 +36,34 @@ body.fixed .content-header .navbar.stuck{
 }
 
 //Level 1
+.skin-just .sidebar-menu li { border-top: 1px solid transparent;border-bottom: 1px solid #2d2d2d; }
 .skin-just .sidebar-menu>li:hover>a, .skin-just .sidebar-menu>li.active>a{
     background: #1a1a1a;
     color: #FFF;
 }
-.skin-just .sidebar a{
+.skin-black .sidebar-menu>li:hover>a, .skin-black .sidebar-menu>li.active>a {
+    background-color: #2d2d2d;
+    border-left-color: transparent;
+}
+.skin-just .sidebar a {
     color: #f2f2f2;
-    font-weight: 300;
-    i{display: none;}
+    font-weight: normal;
+    padding: 1em 1.5em;
+    i { display: none; }
 }
 
-.skin-just .sidebar-menu li{
-    border-top: 1px solid #3a3a3a;
-}
 
 //Menu level 2
 .skin-just .sidebar-menu>li>.treeview-menu{
-    background: #333;
+    background: #2d2d2d;
     padding: 0;
-    a{
-        color: #888;padding: 7px 5px 7px 30px;
+    a {
+        color: #fff;
+        padding: 0.5em 1em 0.5em 3em;
     }
-    li:hover a, li.active a{
+    li {
+        border: none;
+        &:hover a, &.active a{
         color: #FFF;
         text-decoration: none;
     }
