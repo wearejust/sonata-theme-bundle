@@ -1,6 +1,6 @@
 {% extends 'SonataAdminBundle::standard_layout.html.twig' %}
 
-{% block body_attributes %}class="sonata-bc skin-black skin-just fixed {{ not app.user.id ? 'skin-just-external-login' : '' }}"{% endblock %}
+{% block body_attributes %}class="sonata-bc skin-black skin-just fixed"{% endblock %}
 
 {% block side_bar_after_nav %}
     {% spaceless %}
@@ -17,3 +17,50 @@
     {% endspaceless %}
 {% endblock %}
 
+
+{% block sonata_page_content_nav %}
+    {% if _tab_menu is not empty or _actions is not empty or _list_filters_actions is not empty %}
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                {% block tab_menu_navbar_header %}
+                    {% if _navbar_title is not empty %}
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">{{ _navbar_title|raw }}</a>
+                        </div>
+                    {% endif %}
+                {% endblock %}
+
+                <div class="navbar-collapse">
+                    {% if _tab_menu is not empty %}
+                        <div class="navbar-left">
+                            {{ _tab_menu|raw }}
+                        </div>
+                    {% endif %}
+
+                    
+
+                    {% block sonata_admin_content_actions_wrappers %}
+                        {% if _actions|replace({ '<li>': '', '</li>': '' })|trim is not empty %}
+                            <ul class="nav navbar-nav navbar-right add_records">
+                            {% if _actions|split('</a>')|length > 2 %}
+                                <li class="dropdown sonata-actions">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ 'link_actions'|trans({}, 'SonataAdminBundle') }} <b class="caret"></b></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        {{ _actions|raw }}
+                                    </ul>
+                                </li>
+                            {% else %}
+                                {{ _actions|raw }}
+                            {% endif %}
+                            </ul>
+                        {% endif %}
+                    {% endblock sonata_admin_content_actions_wrappers %}
+
+                    {% if _list_filters_actions is not empty %}
+                        {{ _list_filters_actions|raw }}
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+    {% endif %}
+{% endblock sonata_page_content_nav %}
