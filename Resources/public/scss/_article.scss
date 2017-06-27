@@ -1,0 +1,63 @@
+.nav-tabs-custom > .tab-content {
+	background: #F2F2F2;
+}
+textarea {
+	max-width: 100%;
+	min-height: 200px;
+}
+
+.form-group {
+	border-top: 1px solid white;
+	display: block;
+	margin: 0;
+	padding: 1.1em;
+}
+.form-group:before, .form-group:after {
+	content: " ";
+	display: table;
+}
+.form-group:after {
+	clear: both;
+}
+
+.sonata-ba-field {
+	margin: -0.825em 0;
+	input {
+		padding: 0.75em 1em;
+		min-height: 2.7857142857em;
+	}
+}
+
+.control-label {
+	font-weight: normal;
+	line-height: 1;
+}
+
+.sonata-ba-form {
+	margin: 0;
+	max-width: 80em;
+	.box {
+		background-color: #F2F2F2;
+	}
+	.box-body {
+		padding: 0;
+		margin: 0 -0.5rem;
+
+	}
+}
+
+@media screen and (min-width: 50em) {
+	.nav-tabs-custom > .tab-content {
+	}
+
+	.control-label {
+		float: left;
+		margin-bottom: 0;
+		padding-right: 2em;
+		width: 33.333%;
+	}
+	.sonata-ba-field {
+		float: right;
+		width: 66.667%;
+	}
+}

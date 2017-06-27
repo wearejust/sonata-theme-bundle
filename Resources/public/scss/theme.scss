@@ -4,7 +4,7 @@
 @import 'box';
 @import 'alert';
 @import 'table';
-
+@import 'article';
 
 .skin-just  {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
@@ -23,7 +23,7 @@
 }
 
 .bg-aqua{ background-color: #000!important; }
-.required:after{ color: $danger; font-size: 1.3em; }
+.required:after{ color: $danger; font-size: 1.3em; line-height: 0;}
 
 .logo img{ display: none; }
 .content-wrapper{ 
