@@ -25,9 +25,10 @@
 .skin-just .wrapper, .skin-just .main-sidebar, .skin-just .left-side {
     background-color: $primary-color;
 }
+
 .skin-just .main-sidebar {
     // max-width: 32rem;
-    // width: auto;
+     //width: auto;
 }
 .skin-just .sidebar-form input[type="text"], .skin-just .sidebar-form .btn {
     background-color: #222222;
@@ -71,8 +72,8 @@ body.fixed .content-header .navbar.stuck {
     background: #2D2D2D;
     padding: 0;
     padding-bottom: 1em;
-    a {
-        color: #FFFFFF;
+    a {    
+        color: #ccc;
         padding: 0.25em 1em 0.25em 3em;
     }
     li {
