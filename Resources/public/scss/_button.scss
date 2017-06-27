@@ -1,9 +1,15 @@
-.btn{
+
+.btn {
     border-radius: 0;
     padding: .8em 1.1em;
-    i{ display: none; }
+    &:active {
+        box-shadow: none;
+    }
+    i {
+        display: none;
+    }
 }
-.btn-primary, .btn-success{
+.btn-primary, .btn-success {
     background-color: #000;
     border-color: #000;
     &:hover{
@@ -15,7 +21,7 @@
 .btn-danger{
     background-color: $danger;
     border-color: $danger;
-    &:hover{
+    &:hover, &:focus, &:active {
         background: lighten($danger,5%)!important;
         border-color: lighten($danger,5%)!important;
     }
