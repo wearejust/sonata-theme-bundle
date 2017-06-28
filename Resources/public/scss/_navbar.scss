@@ -40,6 +40,10 @@ body.fixed .content-header .navbar.stuck {
     top: 51px;
 }
 
+.content-header > .sticky-wrapper {
+    height: auto !important;
+}
+
 //Level 1
 .skin-just .sidebar-menu li {
     border-bottom: 1px solid #2D2D2D; 
@@ -90,6 +94,29 @@ body.fixed .content-header .navbar.stuck {
         }
     }
 }
+
+.navbar.navbar-default {
+    background-color: #FFFFFF;
+    margin-bottom: -1.1em;
+    border: none;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: -1.1em;
+    padding-left: 2.1428571429em;
+    padding-right: 2.1428571429em;
+    width: auto !important;
+}
+
+body.fixed .content-header .navbar.stuck {
+    border-radius: 0;
+    margin-left: 0;
+    position: relative;
+    top: auto;
+    width: auto !important;
+    z-index: 1;
+}
+
+
 
 .navbar {
     border-radius: 0;
@@ -156,6 +183,9 @@ body.fixed .content-header .navbar.stuck {
 
 
 @media screen and (min-width: 50em) {
+    .nav-tabs-custom>.nav-tabs>li>a {
+        padding: 1.5em 2.5em;
+    }
     .navbar-default .navbar-brand {
         font-size: 3.5em;
     }
