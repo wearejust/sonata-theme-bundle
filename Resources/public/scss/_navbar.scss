@@ -117,6 +117,9 @@ body.fixed .content-header .navbar.stuck {
 .navbar-header {
     padding: 2.5em 3.1428571429em;
 }
+body.fixed .content-header .navbar {
+    border-bottom: none !important;
+}
 body.fixed .content-header .navbar.stuck {
     border-radius: 0;
     margin-left: 0;
@@ -124,6 +127,7 @@ body.fixed .content-header .navbar.stuck {
     top: auto;
     width: auto !important;
     z-index: 1;
+    border-bottom: none;
 }
 
 .breadcrumb li {

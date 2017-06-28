@@ -1,5 +1,13 @@
 $side-width: 315px;
 
+.sonata-filters-box {
+    .box {
+        &.box-primary {
+            border-top: 0;
+        }
+    }
+}
+
 .box{
     border: 1px solid #ebebeb;
     box-shadow: none;
@@ -11,7 +19,8 @@ $side-width: 315px;
 .box-footer {
     padding: 1.375em;
 }
-.tab-pane .box{ border: 0; }
+
+.tab-pane .box { border: 0; }
 
 .nav-tabs-custom{
     border-radius: 0;
