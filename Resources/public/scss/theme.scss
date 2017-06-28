@@ -1,38 +1,52 @@
 @import 'variables';
 @import 'navbar';
 @import 'button';
+@import 'forms';
 @import 'box';
+@import 'breadcrumbs';
+@import 'tabs';
 @import 'alert';
 @import 'table';
+@import 'article';
+@import 'pagination';
 
-
+html {
+    -webkit-font-smoothing: antialiased;
+    word-break: break-all;
+}
+html, body {
+    font-size: 100%;
+    color: #000;
+}
+body {
+    font-size: 87.5%;
+}
+body, .content-wrapper, .right-side, .wrapper {
+    background-color: #ebebeb;
+}
 .skin-just  {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
     .wrapper{
         background: #ebebeb;
     }
-
     .sidebar-form{
         border: 1px solid #656565;
     }
 
     // Hide profile menu if loggedin user is an external user
     &.skin-just-external-login .user-footer div:first-child {
-        display:none;
+        display: none;
     }
 }
+.bg-aqua { background-color: #000!important; }
+.required:after { color: $danger; font-size: 1.3em; line-height: 0; }
 
-.bg-aqua{ background-color: #000!important; }
-.required:after{ color: $danger; font-size: 1.3em; }
-
-.logo img{ display: none; }
-.content-wrapper{ 
-    padding-right: 50px; 
-    .content-header{
-        .nav.navbar-right.btn-group{ display: none; }
+.logo img { display: none; }
+.content-wrapper {     
+    .content-header {
+        .nav.navbar-right.btn-group { display: none; }
     }
 }
-
 .accesibility{
     position: absolute;
     left: -100px;
@@ -81,24 +95,17 @@
     }
 }
 
-
-
 .icheckbox_square-blue, .iradio_square-blue{
     background: url('../images/black.png');
 }
 
-.box-body.table-responsive{ overflow: visible; }
+.box-body.table-responsive{ overflow-x: scroll; }
 .sonata-ba-list tr td:last-child{
     position: relative;
     overflow: visible;
 }
 .sonata-ba-list tr:hover .delete_link{
     display: block;
-}
-
-.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
-    background-color: #000;
-    border-color: #000;
 }
 
 .datepicker td, .datepicker th,
@@ -117,7 +124,6 @@
 .datepicker table tr td span.active, .datepicker table tr td span.active:hover, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover,{
     background-image: none;
 }
-
 
 .select2-container.per-page .select2-chosen{
     padding: 9px 0 9px 12px;
@@ -141,3 +147,20 @@
     border-radius: 0!important;
 }
 
+label ~ input[type="submit"] { margin: 0 0.5em; }
+
+@media screen and (min-width: 50em) {
+    .content-wrapper {
+        padding-right: 50px;
+    }
+    .box-body.table-responsive {
+        overflow: visible;
+        overflow-x: visible;
+    }
+}
+@media screen and (min-width: 80em) {
+    .content, .content-header { 
+        max-width: 1024px;
+        margin: auto; 
+    }
+}

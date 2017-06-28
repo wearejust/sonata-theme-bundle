@@ -1,8 +1,16 @@
-.btn{
+
+.btn {
     border-radius: 0;
-    i{ display: none; }
+    padding: .8em 1.1em;
+    &:active {
+        box-shadow: none;
+    }
+    i {
+        display: none;
+    }
 }
-.btn-primary, .btn-success{
+
+.btn-primary, .btn-success {
     background-color: #000;
     border-color: #000;
     &:hover{
@@ -14,13 +22,13 @@
 .btn-danger{
     background-color: $danger;
     border-color: $danger;
-    &:hover{
+    &:hover, &:focus, &:active {
         background: lighten($danger,5%)!important;
         border-color: lighten($danger,5%)!important;
     }
 }
 
-.sort_button{
+.sort_button {
     background-color: transparent;
     border-radius: 4px;
     margin: 0 auto;
@@ -43,8 +51,12 @@
         width: 22px;
     }
 }
-.btn-group{ position: static; }
-.btn-group .delete_link{
+
+.btn-group {
+    position: static;
+}
+
+.btn-group .delete_link {
     position: absolute;
     right: -58px;
     width: 58px;

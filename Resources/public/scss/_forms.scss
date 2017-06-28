@@ -1,0 +1,94 @@
+.sidebar-form[role="search"] {
+	display: none;
+}
+label, .control-label__text {
+	font-weight: normal;
+}
+.control-label {
+	font-weight: normal;
+	line-height: 1;
+}
+.control-label__text {
+	display: inline-block;
+	max-width: 89.9%;
+	vertical-align: top;
+}
+.form-control {
+	padding: .75em 1em;
+	border-color: #dadada;
+}
+.form-control:focus {
+	border-color: darken(#dadada, 10%);
+	outline: none;
+}
+.form-group {
+	border-bottom: 1px solid white;
+	display: block;
+	margin: 0;
+	padding: 1.1em;
+	&:after {
+		clear: both;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+}
+textarea {
+	max-width: 100%;
+	min-height: 200px;
+}
+.sonata-ba-field {
+	margin: 0.5em 0 0 0;
+	input {
+		min-height: 2.7857142857em;
+		padding: 0.75em 1em;
+	}
+}
+.sonata-ba-form {
+	margin: 0 0 85px 0;
+	.sonata-ba-form-actions.well {
+	    background-color: #dbdbdb;
+	    border: none;
+		border-radius: 0;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		z-index: 5;
+    	font-size: 0;
+		margin: 0;
+		padding: 6px;
+		width: 100% !important;
+        .btn {
+			margin: 0.15em;
+		}
+	}
+}
+.icheckbox_square-blue, .iradio_square-blue {
+	transform: scale(0.7);
+}
+
+@media only screen and (min-width: 50em) {
+	.sonata-ba-form-actions {
+		.btn-danger {
+			position: fixed;
+	    	right: 4em;
+		}
+	}
+	.form-group {
+		padding: 1.1em 3.21428em;
+	}
+	.control-label {
+		float: left;
+		margin-bottom: 0;
+		padding-right: 2em;
+		width: 33.333%;
+	}
+	.sonata-ba-field {
+		float: right;
+		margin: -0.825em 0;
+		width: 66.667%;
+	}
+	.control-label__text {
+		max-width: none;
+	}
+}

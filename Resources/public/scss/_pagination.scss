@@ -1,0 +1,11 @@
+.pagination>li>a, .pagination>li>span{
+	background-color: transparent; 
+    border: 0;
+    padding: 0.8em 1.05em;
+    line-height: 1;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #000;
+    border-color: #000;
+}
+

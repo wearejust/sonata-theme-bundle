@@ -1,0 +1,35 @@
+.content-wrapper, .right-side {
+	background-color: #EBEBEB;
+}
+.container-fluid {
+	display: block;
+}
+.container-fluid:before, .container-fluid:after, .form-group:before, .form-group:after {
+	content: " ";
+	display: table;
+}
+.container-fluid:after {
+	clear: both;
+}
+.content-header { 
+	padding: 15px 16px 0 16px;
+}
+
+//unstick titel container on article detail
+body.fixed .content-header .navbar {
+	width: auto !important;
+	&.stuck {
+		border-radius: 0;
+		margin-left: 0;
+		position: relative;
+		top: auto;
+		width: auto !important;
+		z-index: 1;
+	}
+	.content-header > .sticky-wrapper {
+		height: auto !important;
+	}
+}
+
+
+

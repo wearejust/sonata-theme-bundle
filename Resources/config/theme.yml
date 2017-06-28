@@ -1,6 +1,6 @@
 # Full configuration options can be found here:
 # https://sonata-project.org/bundles/admin/master/doc/reference/configuration.html#full-configuration-options
-title:                'Just CMS'
+title:                'CONTENT'
 title_logo:           bundles/sonataadmin/logo_title.png
 
 templates:
@@ -33,7 +33,7 @@ templates:
 #    outer_list_rows_tree:  'SonataAdminBundle:CRUD:list_outer_rows_tree.html.twig'
 #    base_list_field:      'SonataAdminBundle:CRUD:base_list_field.html.twig'
 #    pager_links:          'SonataAdminBundle:Pager:links.html.twig'
-    # pager_results:        'JustSonataThemeBundle:Pager:results.html.twig'
+    pager_results:        'JustSonataThemeBundle:Pager:results.html.twig'
 #    tab_menu_template:    'SonataAdminBundle:Core:tab_menu_template.html.twig'
 #    knp_menu_template:    'SonataAdminBundle:Menu:sonata_menu.html.twig'
 
@@ -41,7 +41,6 @@ assets:
     stylesheets:
         # Defaults:
         - bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
-        # - bundles/justsonatatheme/css/bootstrap.min.css        
         - bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
         - bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
         - bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css 
@@ -59,10 +58,6 @@ assets:
         - bundles/justsonatatheme/css/theme.css  
         - bundles/justredactor/redactor.css       
                
-
-        # - bundles/jbfileuploader/lib/jquery-file-upload/css/jquery.fileupload.css
-        # - bundles/jbfileuploader/css/jbfileupload.css
-        # - bundles/jbfileuploader/lib/jcrop/css/jquery.Jcrop.min.css
     javascripts:
 
         # Defaults:
@@ -84,16 +79,3 @@ assets:
         - bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
         - bundles/sonataadmin/Admin.js
         - bundles/sonataadmin/treeview.js
-        - bundles/justsonatatheme/javascript/app.bundle.js
-        - bundles/justredactor/redactor.js
-        - bundles/justredactor/plugins/video.js
-        - bundles/justredactor/plugins/imagemanager.js
-        - bundles/justredactor/plugins/filemanager.js
-        - bundles/justredactor/langs/nl.js
-        - bundles/justredactor/init.js
-
-        # - bundles/jbfileuploader/lib/jquery-file-upload/js/vendor/jquery.ui.widget.js
-        # - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.iframe-transport.js
-        # - bundles/jbfileuploader/lib/jquery-file-upload/js/jquery.fileupload.js
-        # - bundles/jbfileuploader/js/jbfileupload.js
-        # - bundles/jbfileuploader/lib/jcrop/js/jquery.Jcrop.js
