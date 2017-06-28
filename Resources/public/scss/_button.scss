@@ -9,6 +9,7 @@
         display: none;
     }
 }
+
 .btn-primary, .btn-success {
     background-color: #000;
     border-color: #000;
@@ -27,7 +28,7 @@
     }
 }
 
-.sort_button{
+.sort_button {
     background-color: transparent;
     border-radius: 4px;
     margin: 0 auto;
@@ -50,8 +51,12 @@
         width: 22px;
     }
 }
-.btn-group{ position: static; }
-.btn-group .delete_link{
+
+.btn-group {
+    position: static;
+}
+
+.btn-group .delete_link {
     position: absolute;
     right: -58px;
     width: 58px;

@@ -3,6 +3,8 @@
 @import 'button';
 @import 'forms';
 @import 'box';
+@import 'breadcrumbs';
+@import 'tabs';
 @import 'alert';
 @import 'table';
 @import 'article';
@@ -36,7 +38,6 @@ body, .content-wrapper, .right-side, .wrapper {
         display: none;
     }
 }
-
 .bg-aqua { background-color: #000!important; }
 .required:after { color: $danger; font-size: 1.3em; line-height: 0; }
 
