@@ -12,10 +12,13 @@ textarea {
 }
 
 .form-group {
-	border-top: 1px solid white;
+	border-bottom: 1px solid white;
 	display: block;
 	margin: 0;
 	padding: 1.1em;
+	&:last-child {
+		border-bottom: none;
+	}
 }
 
 .container-fluid {
@@ -37,6 +40,10 @@ textarea {
 	}
 }
 
+.nav-tabs-custom>.tab-content {
+	padding: 0;
+}
+
 .control-label {
 	font-weight: normal;
 	line-height: 1;
@@ -48,7 +55,7 @@ textarea {
 		background-color: #F2F2F2;
 	}
 	.box-body {
-		margin: 0 -0.5rem;
+		margin: 0;
 		padding: 0;
 	}
 }
@@ -66,6 +73,10 @@ textarea {
 
 @media screen and (min-width: 50em) {
 	.nav-tabs-custom > .tab-content {
+	}
+
+	.form-group {
+		padding: 1.1em 3.21428em;
 	}
 
 	.control-label {
