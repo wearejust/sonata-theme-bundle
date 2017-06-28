@@ -126,6 +126,11 @@ body.fixed .content-header .navbar.stuck {
 }
 .breadcrumb li:first-child {
     line-height: 1;
+    a {
+        font-size: 1.3em;
+        text-align: center;
+        padding-right: 0.85em;
+    }
 }
 .breadcrumb, .breadcrumb > .active {
     color: #000000!important;
@@ -151,6 +156,13 @@ body.fixed .content-header .navbar.stuck {
     position: relative;
     text-align: center;
     min-height: 0;
+}
+.breadcrumb li > a {
+    transition: color 0.1s;
+    &:hover, &:focus, &:active {
+        background-color: transparent !important;
+        color: #666 !important;
+    }
 }
 
 .navbar-default .navbar-brand {

@@ -17,6 +17,10 @@ $side-width: 315px;
     border-radius: 0;
 }
 
+.nav-tabs-custom .has-errors{
+    color: $danger;
+}
+
 .nav-tabs-custom>.nav-tabs{
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
