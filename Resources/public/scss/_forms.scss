@@ -1,8 +1,7 @@
 .sidebar-form[role="search"] {
 	display: none;
 }
-
-label {
+label, .control-label__text {
 	font-weight: normal;
 }
 .form-control {
