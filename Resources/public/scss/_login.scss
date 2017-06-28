@@ -1,0 +1,20 @@
+.login-page, .register-page {
+	background-color: #EBEBEB;
+	.form-control  {
+		font-size: 18px;
+		height: auto;
+		padding: 0.75em 1em;
+	}
+	.form-group {
+		.glyphicon {
+			display: none;
+		}
+	}
+	.login-box-msg {
+		display: none;
+	}
+
+	.login-box-body {
+		background-color: transparent;
+	}
+}

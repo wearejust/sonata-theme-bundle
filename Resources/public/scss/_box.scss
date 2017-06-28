@@ -39,3 +39,39 @@
         }
     }
 }
+
+.info-box {
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+.info-box-icon {
+    display: none;
+}
+.info-box-content {
+    background: #f2f2f2;
+    margin-left: 0;
+    padding: 1.2em 1.5em;
+}
+
+.info-box .progress {
+    display: none;
+}
+
+.info-box-text {
+    font-size: 1.2em;
+    border-bottom: 1px solid #dedede;
+    padding: 0 0 0.4em 0;
+}
+
+.progress-description .sonata-action-element {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 1em 0 0;
+    background-color: $primary-color;
+    color: #FFF;
+    &:hover {
+        background-color: lighten($primary-color, 10%);
+    }
+}
