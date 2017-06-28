@@ -12,6 +12,10 @@ html {
     -webkit-font-smoothing: antialiased;
     word-break: break-all;
 }
+html, body {
+    font-size: 100%;
+    color: #000;
+}
 body, .content-wrapper, .right-side, .wrapper {
     background-color: #ebebeb;
 }
@@ -26,12 +30,12 @@ body, .content-wrapper, .right-side, .wrapper {
 
     // Hide profile menu if loggedin user is an external user
     &.skin-just-external-login .user-footer div:first-child {
-        display:none;
+        display: none;
     }
 }
 
-.bg-aqua{ background-color: #000!important; }
-.required:after{ color: $danger; font-size: 1.3em; line-height: 0;}
+.bg-aqua { background-color: #000!important; }
+.required:after { color: $danger; font-size: 1.3em; line-height: 0; }
 
 .logo img{ display: none; }
 .content-wrapper {     
@@ -39,7 +43,6 @@ body, .content-wrapper, .right-side, .wrapper {
         .nav.navbar-right.btn-group { display: none; }
     }
 }
-
 .accesibility{
     position: absolute;
     left: -100px;
@@ -154,7 +157,8 @@ label ~ input[type="submit"] { margin: 0 0.5em; }
     }
 }
 @media screen and (min-width: 80em) {
-    // .content-wrapper {
-    //     max-width: 80rem;
-    // }
+    .content, .content-header { 
+        max-width: 1024px;
+        margin: auto; 
+    }
 }
