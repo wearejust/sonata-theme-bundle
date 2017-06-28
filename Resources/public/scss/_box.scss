@@ -32,3 +32,10 @@
 .box-header {
     display: none;
 }
+.sonata-filters-box {
+    .box {
+        &.box-primary {
+            border-top: 0;
+        }
+    }
+}
