@@ -1,11 +1,16 @@
+.sidebar-form[role="search"] {
+	display: none;
+}
+
 label {
 	font-weight: normal;
 }
 .form-control {
 	padding: .75em 1em;
+	border-color: #dadada;
 }
-.form-control input:focus {
-	background-color: #eee;
+.form-control:focus {
+	border-color: darken(#dadada, 10%);
 	outline: none;
 }
 .sonata-ba-form {
