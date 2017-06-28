@@ -17,7 +17,7 @@
     border-right: 1px solid #000000;
     color: #FFFFFF;
     font-weight: bold;
-    padding-left: 2.375rem;
+    padding-left: 1.175em;
     text-align: left;
     text-transform: uppercase;
 }
@@ -96,11 +96,9 @@ body.fixed .content-header .navbar.stuck {
 }
 
 .breadcrumb li {
-    font-size: 0.9em;
     vertical-align: middle;
 }
 .breadcrumb li:first-child {
-    font-size: 1.5em;
     line-height: 1;
 }
 .breadcrumb, .breadcrumb > .active {
@@ -117,6 +115,16 @@ body.fixed .content-header .navbar.stuck {
     display: inline-block;
     height: 48px;
     vertical-align: middle;
+}
+.breadcrumb li > a, .breadcrumb li > span {
+    color: inherit;
+    font-size: .875em;
+    line-height: 1rem;
+    padding: 1rem .85em;
+    padding-right: 1.75em;
+    position: relative;
+    text-align: center;
+    min-height: 0;
 }
 
 .navbar-default .navbar-brand {

@@ -16,6 +16,9 @@ html, body {
     font-size: 100%;
     color: #000;
 }
+body {
+    font-size: 87.5%;
+}
 body, .content-wrapper, .right-side, .wrapper {
     background-color: #ebebeb;
 }
@@ -37,7 +40,7 @@ body, .content-wrapper, .right-side, .wrapper {
 .bg-aqua { background-color: #000!important; }
 .required:after { color: $danger; font-size: 1.3em; line-height: 0; }
 
-.logo img{ display: none; }
+.logo img { display: none; }
 .content-wrapper {     
     .content-header {
         .nav.navbar-right.btn-group { display: none; }
@@ -90,8 +93,6 @@ body, .content-wrapper, .right-side, .wrapper {
         }
     }
 }
-
-
 
 .icheckbox_square-blue, .iradio_square-blue{
     background: url('../images/black.png');
