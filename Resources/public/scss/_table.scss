@@ -64,6 +64,17 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
 
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: #f2f2f2;
+     &:hover, &:focus, &:active {
+        background-color: #ddd;
+    }
+}
+
+.sonata-ba-list tr {
+    cursor: pointer;
+    transition: background-color 0.1s;
+    &:hover, &:focus, &:active {
+        background-color: #ddd;
+    }
 }
 
 .table-striped tbody tr.sonata-ba-list-row-selected td,
