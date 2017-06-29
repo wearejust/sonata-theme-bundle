@@ -2,6 +2,15 @@ table.sonata-ba-list th {
     background-image: none;
 }
 
+.box-body.table-responsive{ overflow-x: scroll; }
+.sonata-ba-list tr td:last-child{
+    position: relative;
+    overflow: visible;
+}
+.sonata-ba-list tr:hover .delete_link{
+    display: block;
+}
+
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
 	color: #000;
     font-weight: normal;
@@ -35,3 +44,10 @@ td.sonata-ba-list-field.sonata-ba-list-field-currency, td.sonata-ba-list-field.s
 	background-color: #ddd;
 }
 .label { font-size: 100%; border-radius: 0; }
+
+@media screen and (min-width: 50em) {
+    .box-body.table-responsive {
+        overflow: visible;
+        overflow-x: visible;
+    }
+}
