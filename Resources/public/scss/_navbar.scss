@@ -123,10 +123,10 @@
 .navbar-header {
     padding: 1em;
 }
-
-.navbar-right.add_records {
-    // display: none;
-}
+.sticky-wrapper
+    .navbar-right:not(.add_records) {
+        display: none;
+    }
 
 @media screen and (min-width: 48em) {
     .sidebar-toggle {
