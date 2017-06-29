@@ -47,10 +47,6 @@ button {
     .sidebar-form {
         border: 1px solid #656565;
     }
-    // Hide profile menu if loggedin user is an external user
-    &.skin-just-external-login .user-footer div:first-child {
-        display: none;
-    }
 }
 
 .bg-aqua {
