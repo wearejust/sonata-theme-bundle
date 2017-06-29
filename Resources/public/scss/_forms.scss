@@ -97,6 +97,7 @@ label ~ input[type="submit"] { margin: 0 0.5em; }
 		border-radius: 0;
 		position: fixed;
 		bottom: 0;
+		left: 230px;
 		right: 0;
 		z-index: 5;
 		font-size: 0;
@@ -137,5 +138,11 @@ label ~ input[type="submit"] { margin: 0 0.5em; }
 	}
 	.control-label__text {
 		max-width: none;
+	}
+}
+
+@media only screen and (min-width: 95em) {
+	.sonata-ba-form .sonata-ba-form-actions.well {
+		left: 315px;
 	}
 }
