@@ -118,18 +118,20 @@
 }
 
 //new nav width
-$side-width: 315px;
 @media screen and (min-width: 95em) {
     .sidebar-collapse .main-sidebar, .sidebar-collapse .left-side {
-        transform: translate(-$side-width, 0);
+        transform: translate(-$nav-width, 0);
     }
     .main-header .logo, .main-sidebar, .left-side {
-        width: $side-width;
+        width: $nav-width;
     }
     .main-header .navbar {
-        margin-left: $side-width;
+        margin-left: $nav-width;
     }
     .form-actions {
-         left: $side-width;
+         left: $nav-width;
+    }
+    .content-wrapper, .right-side, .main-footer {
+        margin-left: $nav-width;
     }
 }

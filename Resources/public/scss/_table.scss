@@ -2,53 +2,80 @@ table.sonata-ba-list th {
     background-image: none;
 }
 
-.box-body.table-responsive{ overflow-x: scroll; }
+.box-body.table-responsive {
+    overflow-x: scroll;
+}
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
     vertical-align: middle;
 }
 
-.sonata-ba-list tr td:last-child{
+.sonata-ba-list tr td:last-child {
     position: relative;
     overflow: visible;
 }
-.sonata-ba-list tr:hover .delete_link{
+
+.sonata-ba-list tr:hover .delete_link {
     display: block;
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
-	color: #000;
+    color: #000;
     font-weight: normal;
-    &:hover, &:focus, &:active {
-    	color: #888;
+    &:hover,
+    &:focus,
+    &:active {
+        color: #888;
     }
 }
 
 table.sonata-ba-list tr td a {
     color: #888;
-    &:hover{
+    &:hover {
         color: #000;
     }
 }
 
-th.sonata-ba-list-field-header-order-desc a, th.sonata-ba-list-field-header-order-asc a{
+th.sonata-ba-list-field-header-order-desc a,
+th.sonata-ba-list-field-header-order-asc a {
     color: #000;
 }
 
-.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td{
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
     border: 1px solid transparent;
     padding: 1.375em;
 }
-td.sonata-ba-list-field.sonata-ba-list-field-currency, td.sonata-ba-list-field.sonata-ba-list-field-percent, td.sonata-ba-list-field.sonata-ba-list-field-integer {
-	text-align: left;
+
+td.sonata-ba-list-field.sonata-ba-list-field-currency,
+td.sonata-ba-list-field.sonata-ba-list-field-percent,
+td.sonata-ba-list-field.sonata-ba-list-field-integer {
+    text-align: left;
 }
+
 .table-striped>tbody>tr:nth-of-type(odd) {
-	background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
-.table-striped tbody tr.sonata-ba-list-row-selected td, .table-striped tbody tr.sonata-ba-list-row-selected th {
-	background-color: #ddd;
+
+.table-striped tbody tr.sonata-ba-list-row-selected td,
+.table-striped tbody tr.sonata-ba-list-row-selected th {
+    background-color: #ddd;
+    border-color: #ddd;
 }
-.label { font-size: 100%; border-radius: 0; }
+
+.label {
+    font-size: 100%;
+    border-radius: 0;
+}
 
 @media screen and (min-width: 50em) {
     .box-body.table-responsive {
