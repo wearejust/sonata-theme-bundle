@@ -79,3 +79,4 @@ assets:
         - bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
         - bundles/sonataadmin/Admin.js
         - bundles/sonataadmin/treeview.js
+        - bundles/justsonatatheme/javascript/app.bundle.js 
