@@ -124,6 +124,10 @@
     padding: 1em;
 }
 
+.navbar-right.add_records {
+    // display: none;
+}
+
 @media screen and (min-width: 48em) {
     .sidebar-toggle {
         display: none;
