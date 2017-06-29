@@ -83,6 +83,28 @@
 	border-radius: 0!important;
 }
 
+.select2-container .select2-choice,
+select {
+	height: 45px;
+}
+
+.select2-choice>span:first-child,
+.select2-chosen,
+.select2-container .select2-choices .select2-search-field input {
+	padding: 0.75em 1em;
+}
+
+.select2-container .select2-choice .select2-arrow {
+	top: 5px;
+	right: 7px;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-multi.select2-container-active .select2-choices {
+	border-color: #000;
+	box-shadow: none;
+}
+
 .popover {
 	border: none;
 	border-radius: 0;

@@ -10,6 +10,8 @@
 @import 'pagination';
 @import 'login';
 @import 'miscplugins';
+
+
 html {
     -webkit-font-smoothing: antialiased;
     word-break: break-all;
@@ -73,6 +75,7 @@ button {
         }
     }
 }
+
 .content-wrapper,
 .right-side {
     background-color: #EBEBEB;
@@ -89,11 +92,12 @@ button {
     content: " ";
     display: table;
 }
+
 .container-fluid:after {
     clear: both;
 }
 
-//unstick titel container on article detail
+//unstick titel container on article detail and lst view
 body.fixed .content-header .navbar {
     width: auto !important;
     &.stuck {
