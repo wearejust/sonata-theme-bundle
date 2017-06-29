@@ -118,8 +118,15 @@
     height: auto;
     line-height: 1;
     padding: 0;
+    pointer-events: none;
+    &:hover, &:focus, &:active {
+        color: #000000;
+        cursor: default;
+    }
 }
-
+.navbar-header + .navbar-collapse {
+    display: none;
+}
 .navbar-header {
     padding: 1em;
 }
@@ -139,7 +146,7 @@
         font-size: 3.5em;
     }
     .navbar-header {
-        padding: 2.5em 3.1428571429em;
+        padding: 3.1428571429em;
     }
 }
 
