@@ -26,10 +26,9 @@ body.fixed .content-header .navbar {
 		width: auto !important;
 		z-index: 1;
 	}
-	.content-header > .sticky-wrapper {
-		height: auto !important;
-	}
 }
 
-
+body.fixed .content-header > .sticky-wrapper {
+	height: auto !important;
+}
 
