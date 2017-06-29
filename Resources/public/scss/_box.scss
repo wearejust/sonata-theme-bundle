@@ -2,21 +2,30 @@
     border: 1px solid #ebebeb;
     box-shadow: none;
     border-radius: 0;
-    &.box-primary{
+    &.box-primary {
         border-top-color: #ebebeb;
     }
 }
+
+.box-body {
+    padding: 20px;
+}
+
 .box-footer {
     padding: 1.375em;
 }
-.box-footer .form-inline{
-    .btn-group.open{ position: relative; }
-} 
+
+.box-footer .form-inline {
+    .btn-group.open {
+        position: relative;
+    }
+}
+
 .tab-pane .box {
     border: 0;
 }
+
 .sonata-ba-form {
-    
     .box {
         background-color: #F2F2F2;
     }
@@ -25,9 +34,11 @@
         padding: 0;
     }
 }
+
 .box-header {
     display: none;
 }
+
 .sonata-filters-box {
     .box {
         &.box-primary {
@@ -45,6 +56,7 @@
 .info-box-icon {
     display: none;
 }
+
 .info-box-content {
     background: #f2f2f2;
     margin-left: 0;

@@ -1,48 +1,54 @@
-.login-box, .register-box {
-    max-width: 400px;
-    width: 100%;
+.login-box,
+.register-box {
+	max-width: 400px;
+	width: 100%;
 }
+
 .login-box {
-    .login-box-body {
-        background-color: transparent;
-    }
-    .login-box-msg,
-    .form-control-feedback,
-    .login-logo {
-        display: none;
-    }
-    input, button {
-        font-size: 18px;
-        height: auto;
-    }
-    button:focus, button:active {
-        background-color: #222;
-    }
-    .form-group {
-        padding: 0;
-    }
-    .form-group + .row > .col-xs-8,
-    .form-group + .row > .col-xs-4,
-    .form-group + .row > .col-xs-4 button {
-        float: none;
-        width: 100%;
-    }
-    .checkbox label,
-    .radio label {
-        font-weight: normal;
-        font-size: 0.875em;
-    }
-    form + a {
-        display: inline-block;
-        margin: 2.5em 0 0;
-        font-size: 0.875em;
-        color: #000;
-        text-decoration: underline;
-        &:visited {
-            color: #000;
-        }
-        &:hover, &:focus, &:active {
-            text-decoration: none;
-        }
-    }
+	.login-box-body {
+		background-color: transparent;
+	}
+	.login-box-msg,
+	.form-control-feedback,
+	.login-logo {
+		display: none;
+	}
+	input,
+	button {
+		font-size: 18px;
+		height: auto;
+	}
+	button:focus,
+	button:active {
+		background-color: #222;
+	}
+	.form-group {
+		padding: 0;
+	}
+	.form-group+.row>.col-xs-8,
+	.form-group+.row>.col-xs-4,
+	.form-group+.row>.col-xs-4 button {
+		float: none;
+		width: 100%;
+	}
+	.checkbox label,
+	.radio label {
+		font-weight: normal;
+		font-size: 0.875em;
+	}
+	form+a {
+		display: inline-block;
+		margin: 2.5em 0 0;
+		font-size: 0.875em;
+		color: #000;
+		text-decoration: underline;
+		&:visited {
+			color: #000;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+		}
+	}
 }
