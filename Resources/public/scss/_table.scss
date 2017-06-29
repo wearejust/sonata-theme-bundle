@@ -3,6 +3,11 @@ table.sonata-ba-list th {
 }
 
 .box-body.table-responsive{ overflow-x: scroll; }
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+
 .sonata-ba-list tr td:last-child{
     position: relative;
     overflow: visible;

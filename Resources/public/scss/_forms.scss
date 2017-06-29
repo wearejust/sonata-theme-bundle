@@ -190,3 +190,52 @@ label ~ input[type="submit"] { margin: 0 0.5em; }
 		left: 315px;
 	}
 }
+
+
+.form-field-checkbox{
+	.btn { 
+		padding: 0;
+		border: 0;
+	}
+
+	.form-single-checkbox {
+		position: absolute;
+		opacity: 0;
+	}
+
+	.form-single-checkbox.switch + .switch{
+		background-color: #fff;
+		border: 1px solid #dadada;
+		border-radius: 9999em;
+		display: block;
+		font-size: 1.8em;
+		height: 1.05em;
+		margin: -0.25em 0;
+		overflow: hidden;
+		transition-duration: .4s;
+		transition-property: padding, width;
+		width: 1.8em;
+	}
+
+	.form-single-checkbox.switch:checked + .switch{
+		background-color: #529948;
+		border-color: #529948;
+		padding-left: .8em;
+	}
+
+	.form-single-checkbox.switch + .switch:before {
+		background: #fff;
+		border: 1px solid #dadada;
+		border-radius: inherit;
+		-webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.125);
+		-moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.125);
+		box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.125);
+		content: "";
+		display: block;
+		height: 1.05em;
+		margin: -1px;
+		width: 1em;
+	}
+
+
+}
