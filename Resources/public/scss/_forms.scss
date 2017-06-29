@@ -1,26 +1,33 @@
 .sidebar-form[role="search"] {
 	display: none;
 }
-label, .control-label__text {
+
+label,
+.control-label__text {
 	font-weight: normal;
 }
+
 .control-label {
 	font-weight: normal;
 	line-height: 1;
 }
+
 .control-label__text {
 	display: inline-block;
 	max-width: 89.9%;
 	vertical-align: top;
 }
+
 .form-control {
-	padding: .75em 1em;
+	padding: 0.75em 1em;
 	border-color: #dadada;
 }
+
 .form-control:focus {
 	border-color: darken(#dadada, 10%);
 	outline: none;
 }
+
 .form-group {
 	border-bottom: 1px solid white;
 	display: block;
@@ -33,10 +40,47 @@ label, .control-label__text {
 		border-bottom: none;
 	}
 }
+
+.form-inline .checkbox,
+.form-inline .radio {
+	margin-right: 1em;
+}
+
+.select2-container .select2-choice,
+select {
+	height: 45px;
+}
+
+.select2-choice>span:first-child,
+.select2-chosen,
+.select2-container .select2-choices .select2-search-field input {
+	padding: 0.75em 1em;
+}
+
+.select2-container .select2-choice .select2-arrow {
+	top: 5px;
+	right: 7px;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-multi.select2-container-active .select2-choices {
+	border-color: #000;
+	box-shadow: none;
+}
+
+//hide items per page unit
+.per-page,
+label[for*="per_page"] {
+	display: none;
+}
+
 textarea {
 	max-width: 100%;
 	min-height: 200px;
 }
+
+label ~ input[type="submit"] { margin: 0 0.5em; }
+
 .sonata-ba-field {
 	margin: 0.5em 0 0 0;
 	input {
@@ -44,26 +88,29 @@ textarea {
 		padding: 0.75em 1em;
 	}
 }
+
 .sonata-ba-form {
 	margin: 0 0 85px 0;
 	.sonata-ba-form-actions.well {
-	    background-color: #dbdbdb;
-	    border: none;
+		background-color: #dbdbdb;
+		border: none;
 		border-radius: 0;
 		position: fixed;
 		bottom: 0;
 		right: 0;
 		z-index: 5;
-    	font-size: 0;
+		font-size: 0;
 		margin: 0;
 		padding: 6px;
 		width: 100% !important;
-        .btn {
+		.btn {
 			margin: 0.15em;
 		}
 	}
 }
-.icheckbox_square-blue, .iradio_square-blue {
+
+.icheckbox_square-blue,
+.iradio_square-blue {
 	transform: scale(0.7);
 }
 
@@ -71,7 +118,7 @@ textarea {
 	.sonata-ba-form-actions {
 		.btn-danger {
 			position: fixed;
-	    	right: 4em;
+			right: 4em;
 		}
 	}
 	.form-group {
