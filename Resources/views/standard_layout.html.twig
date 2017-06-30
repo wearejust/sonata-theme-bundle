@@ -35,7 +35,7 @@
                             {{ _tab_menu|raw }}
                         </div>
                     {% endif %}
-
+                    
                     {% block sonata_admin_content_actions_wrappers %}
                         {% if _actions|replace({ '<li>': '', '</li>': '' })|trim is not empty %}
                             <ul class="nav navbar-nav navbar-right add_records">

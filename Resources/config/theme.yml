@@ -85,6 +85,7 @@ assets:
         - bundles/justredactor/plugins/filemanager.js
         - bundles/justredactor/langs/nl.js
         - bundles/justredactor/init.js
+        - bundles/justsonatatheme/javascript/app.bundle.js 
 
         - bundles/pixsortablebehavior/js/jquery-ui.min.js // if you haven't got jQuery UI yet.
         - bundles/pixsortablebehavior/js/init.js

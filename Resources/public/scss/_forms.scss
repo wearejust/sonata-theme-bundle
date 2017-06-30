@@ -1,4 +1,4 @@
-.sidebar-form[role="search"] {
+.form-logout, .sidebar-form[role="search"] {
 	display: none;
 }
 
@@ -84,6 +84,10 @@ textarea {
 			margin: 0.15em;
 		}
 	}
+}
+
+.sonata-filter-form {
+	display: none !important;
 }
 
 .icheckbox_square-blue,
