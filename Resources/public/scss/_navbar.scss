@@ -11,7 +11,7 @@
 }
 
 .skin-just .main-header .navbar {
-    background-color: #F2F2F2;
+    background-color: $light-gray;
 }
 
 .skin-just .main-header>.logo,
@@ -38,7 +38,7 @@
 
 //Level 1
 .skin-just .sidebar-menu li {
-    border-bottom: 1px solid #2D2D2D;
+    border-bottom: 1px solid $off-black;
     border-top: 1px solid transparent;
 }
 
@@ -50,12 +50,12 @@
 
 .skin-black .sidebar-menu>li:hover>a,
 .skin-black .sidebar-menu>li.active>a {
-    background-color: #2D2D2D;
+    background-color: $off-black;
     border-left-color: transparent;
 }
 
 .skin-just .sidebar a {
-    color: #F2F2F2;
+    color: $lighter-gray;
     font-weight: normal;
     padding: 1em 1.5em;
     i {
@@ -69,12 +69,12 @@
 }
 
 .skin-just .form-logout li+li {
-    border-left: 1px solid #2D2D2D;
+    border-left: 1px solid $off-black;
 }
 
 //Menu level 2
 .skin-just .sidebar-menu>li>.treeview-menu {
-    background: #2D2D2D;
+    background: $off-black;
     padding: 0;
     padding-bottom: 1em;
     a {

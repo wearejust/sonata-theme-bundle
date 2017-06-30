@@ -20,11 +20,11 @@ label,
 
 .form-control {
 	padding: 0.75em 1em;
-	border-color: #dadada;
+	border-color: $gray;
 }
 
 .form-control:focus {
-	border-color: darken(#dadada, 10%);
+	border-color: darken($gray, 10%);
 	outline: none;
 }
 
@@ -68,7 +68,7 @@ textarea {
 .sonata-ba-form {
 	margin: 0 0 85px 0;
 	.sonata-ba-form-actions.well {
-		background-color: #dbdbdb;
+		background-color: $gray;
 		border: none;
 		border-radius: 0;
 		position: fixed;
@@ -111,7 +111,7 @@ textarea {
 			width: 50px;
 		}
 		&+li {
-			border-left: 1px solid #dedede;
+			border-left: 1px solid $gray;
 		}
 	}
 	a {
@@ -174,7 +174,7 @@ textarea {
 	}
 	.form-single-checkbox.switch+.switch {
 		background-color: #fff;
-		border: 1px solid #dadada;
+		border: 1px solid $gray;
 		border-radius: 9999em;
 		display: block;
 		font-size: 1.8em;
@@ -192,7 +192,7 @@ textarea {
 	}
 	.form-single-checkbox.switch+.switch:before {
 		background: #fff;
-		border: 1px solid #dadada;
+		border: 1px solid $gray;
 		border-radius: inherit;
 		-webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.125);
 		-moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.125);

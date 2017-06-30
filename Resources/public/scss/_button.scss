@@ -44,7 +44,7 @@
     border: 0;
     outline: 0;
     &:hover{
-        background-color: #ebebeb;
+        background-color: $light-gray;
     }
     &:before{
         content: "";
