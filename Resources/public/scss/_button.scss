@@ -1,6 +1,7 @@
 .btn {
     border-radius: 0;
     padding: .8em 1.1em;
+    font-weight: bold;
     &:active {
         box-shadow: none;
     }
@@ -8,9 +9,11 @@
         display: none;
     }
 }
+
 .add_records {
-    margin-top: 3em; 
+    margin: 1.5em;
 }
+
 .add_records .sonata-action-element {
     border-radius: 0;
     padding: .8em 1.1em;
@@ -22,15 +25,19 @@
     display: block;
 }
 
+.btn-default {
+    background-color: #fff;
+}
+
 .btn-primary,
 .btn-success,
 .add_records .sonata-action-element {
     color: #fff !important;
-    background-color: #000 !important;
-    border-color: #000 !important;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
     &:hover, &:focus, &:active, &:active:focus {
-        background-color: lighten(#000, 20%) !important;
-        border-color: lighten(#000, 20%) !important;
+        background-color: lighten($primary-color, 20%) !important;
+        border-color: lighten($primary-color, 20%) !important;
         outline: none;
     }
 }

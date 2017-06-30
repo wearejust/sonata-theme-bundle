@@ -4,7 +4,7 @@ title:                'CONTENT'
 title_logo:           bundles/sonataadmin/logo_title.png
 
 templates:
-    user_block:           'JustSonataThemeBundle:CRUD:user_block.html.twig'
+#    user_block:           'SonataUserBundle:Admin:Core:user_block.html.twig'
 #    add_block:            'SonataAdminBundle:Core:add_block.html.twig'
     layout:               'JustSonataThemeBundle::standard_layout.html.twig'
 #    ajax:                 'SonataAdminBundle::ajax_layout.html.twig'
