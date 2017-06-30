@@ -1,21 +1,21 @@
 //Header
-.skin-just .main-header .navbar .navbar-nav>li>a {
+.skin-black .main-header .navbar .navbar-nav>li>a {
 	background: $primary-color;
 	color: #FFFFFF;
 }
 
-.skin-just .sidebar-form,
-.skin-just .sidebar-form input[type="text"],
-.skin-just .sidebar-form .btn {
+.skin-black .sidebar-form,
+.skin-black .sidebar-form input[type="text"],
+.skin-black .sidebar-form .btn {
 	border-radius: 0;
 }
 
-.skin-just .main-header .navbar {
+.skin-black .main-header .navbar {
 	background-color: $lighter-gray;
 }
 
-.skin-just .main-header>.logo,
-.skin-just .main-header>.logo:hover {
+.skin-black .main-header>.logo,
+.skin-black .main-header>.logo:hover {
 	background-color: #000000;
 	border-right: 1px solid #000000;
 	color: #FFFFFF;
@@ -23,27 +23,28 @@
 	padding-left: 1.175em;
 	text-align: left;
 	text-transform: uppercase;
+    line-height: 2.1;
 }
 
-.skin-just .wrapper,
-.skin-just .main-sidebar,
-.skin-just .left-side {
+.skin-black .wrapper,
+.skin-black .main-sidebar,
+.skin-black .left-side {
 	background-color: $primary-color;
 }
 
-.skin-just .sidebar-form input[type="text"],
-.skin-just .sidebar-form .btn {
+.skin-black .sidebar-form input[type="text"],
+.skin-black .sidebar-form .btn {
 	background-color: #222222;
 }
 
 //Level 1
-.skin-just .sidebar-menu li {
+.skin-black .sidebar-menu li {
 	border-bottom: 1px solid $off-black;
 	border-top: 1px solid transparent;
 }
 
-.skin-just .sidebar-menu>li:hover>a,
-.skin-just .sidebar-menu>li.active>a {
+.skin-black .sidebar-menu>li:hover>a,
+.skin-black .sidebar-menu>li.active>a {
 	background: #1A1A1A;
 	color: #FFFFFF;
 }
@@ -54,7 +55,7 @@
 	border-left-color: transparent;
 }
 
-.skin-just .sidebar a {
+.skin-black .sidebar a {
 	color: $lighter-gray;
 	font-weight: normal;
 	padding: 1em 1.5em;
@@ -63,17 +64,8 @@
 	}
 }
 
-.skin-just .form-logout a,
-.skin-just .form-logout span {
-	padding: 0;
-}
-
-.skin-just .form-logout li+li {
-	border-left: 1px solid $off-black;
-}
-
 //Menu level 2
-.skin-just .sidebar-menu>li>.treeview-menu {
+.skin-black .sidebar-menu>li>.treeview-menu {
 	background: $off-black;
 	padding: 0;
 	padding-bottom: 1em;
