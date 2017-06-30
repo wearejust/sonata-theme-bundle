@@ -18,6 +18,10 @@ label,
 	vertical-align: top;
 }
 
+.form-logout {
+	display: none;
+}
+
 .form-control {
 	padding: 0.75em 1em;
 	border-color: $gray;

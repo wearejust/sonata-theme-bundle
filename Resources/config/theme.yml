@@ -4,7 +4,7 @@ title:                'CONTENT'
 title_logo:           bundles/sonataadmin/logo_title.png
 
 templates:
-    user_block:           'SonataAdminBundle:Core:user_block.html.twig'
+    user_block:           'JustSonataThemeBundle:CRUD:user_block.html.twig'
 #    add_block:            'SonataAdminBundle:Core:add_block.html.twig'
     layout:               'JustSonataThemeBundle::standard_layout.html.twig'
 #    ajax:                 'SonataAdminBundle::ajax_layout.html.twig'
@@ -43,7 +43,7 @@ assets:
         - bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
         - bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
         - bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
-        - bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css 
+        - bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
         - bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
         - bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
         - bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
@@ -55,9 +55,9 @@ assets:
         - bundles/sonataadmin/css/layout.css
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
-        - bundles/justsonatatheme/css/theme.css  
-        - bundles/justredactor/redactor.css       
-               
+        - bundles/justsonatatheme/css/theme.css
+        - bundles/justredactor/redactor.css
+
     javascripts:
 
         # Defaults:
@@ -85,7 +85,7 @@ assets:
         - bundles/justredactor/plugins/filemanager.js
         - bundles/justredactor/langs/nl.js
         - bundles/justredactor/init.js
-        - bundles/justsonatatheme/javascript/app.bundle.js 
+        - bundles/justsonatatheme/javascript/app.bundle.js
 
         - bundles/pixsortablebehavior/js/jquery-ui.min.js // if you haven't got jQuery UI yet.
         - bundles/pixsortablebehavior/js/init.js
