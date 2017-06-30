@@ -1,19 +1,6 @@
 {% extends 'SonataAdminBundle::standard_layout.html.twig' %}
 
-{% block side_bar_after_nav %}
-    {% spaceless %}
-    <ul class="form-logout">
-        <li>
-            <span>We are JUST</span>
-        </li>
-        <li>
-            <a href="">
-                <span class="accessibility">Log out</span>
-            </a>
-        </li>
-    </ul>
-    {% endspaceless %}
-{% endblock %}
+{% block side_bar_after_nav %}{% endblock %}
 
 {% block sonata_page_content_nav %}
     {% if _tab_menu is not empty or _actions is not empty or _list_filters_actions is not empty %}
