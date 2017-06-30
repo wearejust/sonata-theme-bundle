@@ -13,7 +13,8 @@
 
 .nav-tabs-custom > .tab-content {
     padding: 0;
-    background: #F2F2F2;
+    padding-bottom: 3em;
+    background: $lighter-gray;
 }
 
 .nav-tabs-custom > .nav-tabs > li.active {
@@ -22,17 +23,17 @@
 
 .nav-tabs-custom > .nav-tabs > li.active > a,
 .nav-tabs-custom > .nav-tabs > li:hover > a {
-    background-color: #ddd;
+    background-color: $gray;
     color: #000;
 }
 
 .nav-tabs-custom > .nav-tabs > li.active > a,
 .nav-tabs-custom > .nav-tabs > li.active:hover > a {
-    background-color: #f2f2f2;
+    background-color: $lighter-gray;;
 }
 
 .nav-tabs-custom>.nav-tabs li a:active {
-    background-color: #ddd;
+    background-color: $gray;
     box-shadow: none;
 }
 
@@ -49,7 +50,7 @@
 }
 
 .nav-tabs-custom > .nav-tabs li + li {
-    border-left: 1px solid #f2f2f2;
+    border-left: 1px solid $lighter-gray;;
     margin-right: 0;
 }
 

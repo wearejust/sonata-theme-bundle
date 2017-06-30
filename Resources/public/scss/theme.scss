@@ -31,7 +31,7 @@ body,
 .content-wrapper,
 .right-side,
 .wrapper {
-    background-color: #ebebeb;
+    background-color: $light-gray;
 }
 
 a,
@@ -39,17 +39,13 @@ button {
     transition: color 0.1s, background-color 0.1s;
 }
 
-.skin-just {
+.skin-black {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
     .wrapper {
-        background: #ebebeb;
+        background: $light-gray;
     }
     .sidebar-form {
         border: 1px solid #656565;
-    }
-    // Hide profile menu if loggedin user is an external user
-    &.skin-just-external-login .user-footer div:first-child {
-        display: none;
     }
 }
 
@@ -78,7 +74,7 @@ button {
 
 .content-wrapper,
 .right-side {
-    background-color: #EBEBEB;
+    background-color: $light-gray;
 }
 
 .container-fluid {
@@ -104,7 +100,7 @@ body.fixed .content-header .navbar {
         border-radius: 0;
         margin-left: 0;
         position: relative;
-        top: auto;
+        top: 1px;
         width: auto !important;
         z-index: 1;
     }

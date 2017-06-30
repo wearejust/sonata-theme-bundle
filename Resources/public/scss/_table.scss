@@ -63,13 +63,24 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #f2f2f2;
+    background-color: $lighter-gray;
+     &:hover, &:focus, &:active {
+        background-color: $gray;
+    }
+}
+
+.sonata-ba-list tr {
+    cursor: pointer;
+    transition: background-color 0.1s;
+    &:hover, &:focus, &:active {
+        background-color: $gray;
+    }
 }
 
 .table-striped tbody tr.sonata-ba-list-row-selected td,
 .table-striped tbody tr.sonata-ba-list-row-selected th {
-    background-color: #ddd;
-    border-color: #ddd;
+    background-color: $gray;
+    border-color: $gray;
 }
 
 .label {

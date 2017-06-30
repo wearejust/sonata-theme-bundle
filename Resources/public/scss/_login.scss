@@ -1,7 +1,18 @@
+.login-page,
+.register-page {
+	background-color: #ebebeb !important;
+}
+
 .login-box,
 .register-box {
+	margin-top: 30vh;
 	max-width: 400px;
 	width: 100%;
+}
+
+.login-page,
+.register-page {
+	background-color: $light-gray;
 }
 
 .login-box {
@@ -25,9 +36,9 @@
 	.form-group {
 		padding: 0;
 	}
-	.form-group+.row>.col-xs-8,
-	.form-group+.row>.col-xs-4,
-	.form-group+.row>.col-xs-4 button {
+	.form-group + .row > .col-xs-8,
+	.form-group + .row > .col-xs-4,
+	.form-group + .row > .col-xs-4 button {
 		float: none;
 		width: 100%;
 	}
