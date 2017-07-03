@@ -1,3 +1,22 @@
+.ui-sortable-helper {
+	background-color: #bfbfbf!important;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	td {
+		border: 0;
+	}
+}
+
+
+
+.ui-sortable-placeholder {
+	visibility: visible!important;
+	background-color: #777!important;
+	td{
+		padding: 35px 12px!important;
+	}
+} 
+
+
 .datepicker td,
 .datepicker th,
 .datepicker table tr td span {
