@@ -23,11 +23,13 @@ $(function(){
 
             el.on('click', function(e){
                 if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
-                    // window.location.href=linkEl.attr('href')
+                    window.location.href=linkEl.attr('href')
                 }
             })
         }
     });
+
+    $('input').iCheck('uncheck');
 
     let inputChecks = $('.sonata-ba-list input');
     let actionsEl = $('.box-footer .form-inline');
