@@ -62,7 +62,10 @@ th.sonata-ba-list-field-header-order-asc a {
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>td {
     border: 1px solid transparent;
-    padding: 1.375em;
+    padding: 0.75em;
+    &:first-child {
+        padding-left: 2.375em
+    }
 }
 
 td.sonata-ba-list-field.sonata-ba-list-field-currency,
