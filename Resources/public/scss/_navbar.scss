@@ -1,4 +1,7 @@
 //Header
+.logo img + span {
+	width: auto!important;
+}
 .skin-black .main-header .navbar .navbar-nav>li>a {
 	background: $primary-color;
 	color: #FFFFFF;
