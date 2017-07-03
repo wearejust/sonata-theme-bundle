@@ -21,7 +21,8 @@ $(function(){
         let linkEl = el.find('a.edit_link');
         if(linkEl.length) {
 
-            el.on('click', function(e){
+            el.on('mousedown', function(e){
+                e.preventDefault();
                 if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
                     window.location.href=linkEl.attr('href')
                 }
