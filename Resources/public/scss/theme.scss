@@ -10,6 +10,7 @@
 @import 'pagination';
 @import 'login';
 @import 'miscplugins';
+@import 'icons_overrides';
 
 
 html {
@@ -100,9 +101,9 @@ body.fixed .content-header .navbar {
         border-radius: 0;
         margin-left: 0;
         position: relative;
-        top: 1px;
+        top: 0;
         width: auto !important;
-        z-index: 1;
+        z-index: 0;
     }
 }
 
