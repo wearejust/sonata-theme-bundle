@@ -2,6 +2,10 @@ table.sonata-ba-list th {
     background-image: none;
 }
 
+table.sonata-ba-list td {
+    overflow: initial;
+}
+
 .box-body.table-responsive {
     overflow-x: scroll;
 }
