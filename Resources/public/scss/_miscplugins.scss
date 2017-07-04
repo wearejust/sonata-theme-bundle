@@ -1,6 +1,8 @@
 .ui-sortable-helper {
-	background-color: #bfbfbf!important;
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	background-color: #bfbfbf !important;
+	// box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+
 	td {
 		border: 0;
 	}
@@ -10,7 +12,7 @@
 
 .ui-sortable-placeholder {
 	visibility: visible!important;
-	background-color: #777!important;
+	background-color: #ddd !important;
 	td{
 		padding: 35px 12px!important;
 	}
@@ -126,6 +128,12 @@ select {
 .select2-container-multi.select2-container-active .select2-choices {
 	border-color: #000;
 	box-shadow: none;
+}
+
+.editable-click,
+a.editable-click,
+a.editable-click:hover {
+	border: none;
 }
 
 .popover {

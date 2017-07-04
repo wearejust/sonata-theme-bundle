@@ -135,6 +135,10 @@
 }
 
 //user menu
+.user-footer .pull-left,
+.user-header img {
+	display: none;
+}
 .navbar-custom-menu {
 	.navbar-nav>li:not(.user-menu) {
 		display: none;

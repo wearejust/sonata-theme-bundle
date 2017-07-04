@@ -18,3 +18,32 @@
 .alert-success {
 	border-color: $success !important;
 }
+
+.bg-red,
+.callout.callout-danger,
+.alert-danger,
+.alert-error,
+.label-danger,
+.modal-danger .modal-body {
+    background-color: $danger !important;
+}
+
+.sonata-ba-list-field-boolean .label-success {
+	background-color: transparent !important;
+	color: $success !important;
+	transition: 0.1s;
+	&:hover {
+		background-color: #999 !important;
+		color: #fff !important;
+	}
+}
+
+.sonata-ba-list-field-boolean .label-danger {
+	background-color: transparent !important;
+	color: $danger !important;
+	transition: 0.1s;
+	&:hover {
+		background-color: #999 !important;
+		color: #fff !important;
+	}
+}
