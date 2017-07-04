@@ -147,6 +147,45 @@ textarea {
 	max-width: 100%;
 }
 
+.vich-image {
+	position: relative;
+	a { display: block; }
+	.checkbox {
+		position: absolute;
+		top: 4.6rem;
+		right: 0;
+		margin: 0;
+		font-size: 0;
+	}
+
+	.checkbox .icheckbox_square-blue {
+		background: url('../images/icons/ic_close_white.svg') $danger no-repeat center;
+		width: 5rem;
+		height: 5rem;
+		margin-right: 0;
+		transform: scale(1);
+
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+
+		transition: 0.25s ease-in-out;
+		&.checked {
+			visibility: visible!important;
+			opacity: 1!important;
+			pointer-events: initial!important;
+		}
+	}
+
+	&:hover {
+		.checkbox .icheckbox_square-blue {
+			visibility: visible;
+			opacity: 0.6;
+			pointer-events: initial;
+		}
+	}
+}
+
 @media only screen and (min-width: 50em) {
 	.sonata-ba-form-actions {
 		.btn-danger {
