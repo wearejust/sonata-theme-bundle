@@ -123,6 +123,13 @@ body.fixed .content-header>.sticky-wrapper {
     z-index: -1;
 }
 
+.info-box-text {
+    font-size: 24px;
+    border-bottom: 1px solid transparent;
+    padding: 0 0 0.4em 0;
+    text-transform: inherit;
+}
+
 @media screen and (min-width: 50em) {
     .content-wrapper {
         padding-right: 50px;
