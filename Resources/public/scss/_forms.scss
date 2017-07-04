@@ -160,15 +160,14 @@ textarea {
 
 	.checkbox .icheckbox_square-blue {
 		background: url('../images/icons/ic_close_white.svg') $danger no-repeat center;
-		width: 5rem;
-		height: 5rem;
+		background-size: 18px;
+		width: 3.75rem;
+		height: 3.75rem;
 		margin-right: 0;
 		transform: scale(1);
-
 		visibility: hidden;
 		opacity: 0;
 		pointer-events: none;
-
 		transition: 0.25s ease-in-out;
 		&.checked {
 			visibility: visible!important;
