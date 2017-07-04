@@ -12,12 +12,39 @@
 }
 
 .box-footer {
-    padding: 1.375em;
+    border-top-color: transparent;
+    padding: 1.375em 2.375em;
 }
 
 .box-footer .form-inline {
     .btn-group.open {
         position: relative;
+    }
+}
+
+.sonata-ba-delete {
+    .box-danger {
+        border-top-color: transparent;
+        .box-header {
+            display: block;
+            padding: 0.75em 2.375em;
+        }
+        .box-title {
+            font-size: 24px; 
+        }
+        .box-body {
+            padding: 0 2.375em 0.75em;
+        }
+        .box-footer {
+            padding: 0 2.375em 2.375em
+        }
+        form {
+            font-size: 0;
+            margin: 0 -2em;
+        }
+        .btn {
+            margin: 0.5em 1em 0 0;
+        }
     }
 }
 
@@ -28,6 +55,7 @@
 .sonata-ba-form {
     .box {
         background-color: $lighter-gray;
+        padding-bottom: 3em;
     }
     .box-body {
         margin: 0;
@@ -81,5 +109,15 @@
     color: #FFF;
     &:hover {
         background-color: lighten($primary-color, 10%);
+    }
+}
+
+.box-footer .form-inline {
+    .pull-left {
+        opacity: 0;
+        transition: 0.25s ease-in-out;
+    }
+    &.is-visible .pull-left {
+        opacity: 1;
     }
 }

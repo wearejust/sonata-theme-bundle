@@ -10,6 +10,7 @@
 @import 'pagination';
 @import 'login';
 @import 'miscplugins';
+@import 'icons_overrides';
 
 
 html {
@@ -25,6 +26,11 @@ body {
 
 body {
     font-size: 87.5%;
+    padding-bottom: 5em;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body,
@@ -40,7 +46,6 @@ button {
 }
 
 .skin-black {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
     .wrapper {
         background: $light-gray;
     }
@@ -100,9 +105,9 @@ body.fixed .content-header .navbar {
         border-radius: 0;
         margin-left: 0;
         position: relative;
-        top: 1px;
+        top: 0;
         width: auto !important;
-        z-index: 1;
+        z-index: 0;
     }
 }
 
@@ -116,6 +121,13 @@ body.fixed .content-header>.sticky-wrapper {
     visibility: hidden;
     opacity: 0;
     z-index: -1;
+}
+
+.info-box-text {
+    font-size: 24px;
+    border-bottom: 1px solid transparent;
+    padding: 0 0 0.4em 0;
+    text-transform: inherit;
 }
 
 @media screen and (min-width: 50em) {

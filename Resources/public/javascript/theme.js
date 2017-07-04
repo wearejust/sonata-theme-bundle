@@ -21,12 +21,37 @@ $(function(){
         let linkEl = el.find('a.edit_link');
         if(linkEl.length) {
 
-            el.on('click', function(e){
+            el.on('mousedown', function(e){
+                e.preventDefault();
                 if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
                     window.location.href=linkEl.attr('href')
                 }
             })
         }
+    });
+
+    
+
+    let inputChecks = $('.sonata-ba-list input');
+    inputChecks.iCheck('uncheck');
+    let actionsEl = $('.box-footer .form-inline');
+    inputChecks.on('ifToggled', function(){
+        let showActions = false;
+        for(i=0; i < inputChecks.length; i++)
+        {
+            if($(inputChecks[i]).prop('checked'))
+            {
+                showActions = true;
+                break;
+            }
+        }
+
+        actionsEl.removeClass('is-visible');
+        if(showActions)
+        {
+            actionsEl.addClass('is-visible');
+        }
+        
     });
 
 });

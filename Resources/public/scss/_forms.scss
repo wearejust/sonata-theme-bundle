@@ -79,7 +79,7 @@ textarea {
 		bottom: 0;
 		left: 230px;
 		right: 0;
-		z-index: 5;
+		z-index: 100;
 		font-size: 0;
 		margin: 0;
 		padding: 6px;
@@ -94,10 +94,14 @@ textarea {
 	display: none !important;
 }
 
+.sonata-ba-list-field-text .edit_link {
+	display: none;
+}
+
 .icheckbox_square-blue,
 .iradio_square-blue {
 	transform: scale(0.7);
-	background: url('../images/black.png');
+	background-image: url('../images/black.png');
 }
 
 .form-logout {
@@ -135,6 +139,49 @@ textarea {
 			opacity: .7;
 			vertical-align: top;
 			width: 16px;
+		}
+	}
+}
+
+.vich-image img {
+	max-width: 100%;
+}
+
+.vich-image {
+	position: relative;
+	a { display: block; }
+	.checkbox {
+		position: absolute;
+		top: 4.6rem;
+		right: 0;
+		margin: 0;
+		font-size: 0;
+	}
+
+	.checkbox .icheckbox_square-blue {
+		background: url('../images/icons/ic_close_white.svg') $danger no-repeat center;
+		width: 5rem;
+		height: 5rem;
+		margin-right: 0;
+		transform: scale(1);
+
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+
+		transition: 0.25s ease-in-out;
+		&.checked {
+			visibility: visible!important;
+			opacity: 1!important;
+			pointer-events: initial!important;
+		}
+	}
+
+	&:hover {
+		.checkbox .icheckbox_square-blue {
+			visibility: visible;
+			opacity: 0.6;
+			pointer-events: initial;
 		}
 	}
 }

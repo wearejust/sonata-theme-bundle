@@ -1,0 +1,64 @@
+.fa-plus-circle:before,
+.delete_link i:before,
+.fa-home:before,
+.fa-user:before,
+.alert .close:before,
+.alert-success:before,
+.glyphicon-remove:before,
+.glyphicon-ok:before {
+	content:'';
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.fa-user:before {
+    background-image: url('../images/icons/ic_person.svg');
+    vertical-align: middle;
+}
+
+.fa-home:before {
+    background-image: url('../images/icons/ic_home.svg');
+    vertical-align: middle;
+}
+
+.fa-plus-circle:before {
+    background-image: url('../images/icons/ic_add_white.svg');
+    margin-right: 0.5em;
+    vertical-align: -0.25em;
+}
+
+.delete_link i:before,
+.alert .close:before {
+    background-image: url('../images/icons/ic_close_white.svg');
+}
+
+.glyphicon-remove:before {
+    background-image: url('../images/icons/ic_close.svg');
+    background-size: 10px;
+}
+
+.alert .close:before {
+	display: block;
+    position: absolute;
+    right: 0.25em;
+    top: 0.25em;
+}
+
+.alert-success .close  {
+	top: 0.4em;
+}
+
+.alert-success:before {
+	background-image: url('../images/icons/ic_check_white.svg');
+	width: 28px;
+    height: 28px;
+    vertical-align: -0.5em;
+}
+
+.glyphicon-ok:before {
+	background-image: url('../images/icons/ic_check_white.svg');
+}
