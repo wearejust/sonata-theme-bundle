@@ -82,6 +82,10 @@
 	background-image: none;
 }
 
+.select2-container {
+	max-width: 20rem;
+}
+
 .select2-container.per-page .select2-chosen {
 	padding: 9px 0 9px 12px;
 }
