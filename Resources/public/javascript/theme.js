@@ -30,9 +30,10 @@ $(function(){
         }
     });
 
-    $('input').iCheck('uncheck');
+    
 
     let inputChecks = $('.sonata-ba-list input');
+    inputChecks.iCheck('uncheck');
     let actionsEl = $('.box-footer .form-inline');
     inputChecks.on('ifToggled', function(){
         let showActions = false;
