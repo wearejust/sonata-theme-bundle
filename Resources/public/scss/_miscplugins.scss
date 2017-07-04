@@ -165,3 +165,7 @@ a.editable-click:hover {
 		height: 33px;
 	}
 }
+
+.redactor-toolbar li a:hover {
+	background-color: $light-gray !important;
+}
