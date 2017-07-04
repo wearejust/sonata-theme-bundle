@@ -43,6 +43,10 @@ table.sonata-ba-list td {
     }
 }
 
+.sonata-ba-list-field-header-text:last-child {
+    display: none;
+}
+
 table.sonata-ba-list tr td a {
     color: #888;
     &:hover {
@@ -88,7 +92,12 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
         background-color: $gray;
     }
 }
-
+.sonata-ba-list thead tr {
+    cursor: default;
+     &:hover, &:focus, &:active {
+        background-color: transparent;
+    }
+} 
 .table-striped tbody tr.sonata-ba-list-row-selected td,
 .table-striped tbody tr.sonata-ba-list-row-selected th {
     background-color: $gray;
