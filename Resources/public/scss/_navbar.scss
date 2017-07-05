@@ -172,6 +172,9 @@
 	background-color: $gray;
 }
 
+.navbar-header + .navbar-collapse .navbar-right {
+	display: none;
+}
 .navbar-default .navbar-nav>li>a {
 	color: $primary-color;
 }

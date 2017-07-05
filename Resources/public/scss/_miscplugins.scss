@@ -228,7 +228,8 @@ a.editable-click:hover {
   cursor: auto; }
 
 .mfp-ajax-cur {
-  cursor: progress; }
+  cursor: default;
+}
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
   cursor: -moz-zoom-out;
@@ -537,6 +538,7 @@ img.mfp-img {
 		background-color: #fff;
 		border-radius: 50%;
 		content: '';
+		opacity: 0.8;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -548,17 +550,11 @@ img.mfp-img {
 @keyframes pulse {
   0% {
   	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
-		width: 0px;
-		height: 0px;
   }
   70% {
   	box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
-		width: 20px;
-		height: 20px;
   }
   100% {
   	box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-		width: 0px;
-		height: 0px;
   }
 }
