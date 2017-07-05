@@ -122,10 +122,6 @@
 	}
 }
 
-// .navbar-header+.navbar-collapse {
-// 	display: none;
-// }
-
 .navbar-header {
 	padding: 1em;
 }
@@ -163,6 +159,21 @@
 			background-color: #fff !important;
 		}
 	}
+}
+
+.has_tabs .navbar-left .navbar-nav>li.first,
+.has_tabs .navbar-left .navbar-nav>li.active {
+	background-color: $lighter-gray;
+}
+
+.has_tabs .navbar-left .navbar-nav>li:hover,
+.has_tabs .navbar-left .navbar-nav>li:focus,
+.has_tabs .navbar-left .navbar-nav>li:active {
+	background-color: $gray;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: $primary-color;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {

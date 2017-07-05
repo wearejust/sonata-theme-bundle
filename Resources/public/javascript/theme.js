@@ -1,19 +1,23 @@
 $(function(){
-    /* 
-        Trigger calendar on input click
-        without changing existing HTML
-    */
+
+    // Trigger calendar on input click
+    // without changing existing HTML
     $('.date input').on('click', function(){
         $(this).next('span').click();
     });
 
+    $('.delete_link, .sonata-ba-form-actions .btn-danger').magnificPopup({
+        type: 'ajax',
+        closeBtnInside: true
+    });
 
     //Make complete TR linkable
     let preventNavigation = [
         'INPUT',
         'A',
         'BUTTON',
-        'SPAN'
+        'SPAN',
+        'I'
     ];
 
     $('.box-body table tr:not(.sonata-ba-list-field-header)').each(function(index, item){
@@ -23,6 +27,7 @@ $(function(){
 
             el.on('mousedown', function(e){
                 e.preventDefault();
+                console.log($(e.target).prop('tagName'));
                 if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
                     window.location.href=linkEl.attr('href')
                 }
@@ -30,7 +35,6 @@ $(function(){
         }
     });
 
-    
 
     let inputChecks = $('.sonata-ba-list input');
     inputChecks.iCheck('uncheck');

@@ -21,10 +21,14 @@
         position: relative;
     }
 }
-
 .sonata-ba-delete {
+    margin: auto;
+    max-width: 330px;
+    position: relative;
     .box-danger {
         border-top-color: transparent;
+        padding-bottom: 1.75em;
+        padding-top: 1.75em;
         .box-header {
             display: block;
             padding: 0.75em 2.375em;
@@ -36,7 +40,7 @@
             padding: 0 2.375em 0.75em;
         }
         .box-footer {
-            padding: 0 2.375em 2.375em
+            padding: 0 2.375em 0.75em;
         }
         form {
             font-size: 0;
@@ -103,7 +107,7 @@
 
 .progress-description .sonata-action-element {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: .8em 1.1em;
     margin: 1em 0 0;
     background-color: $primary-color;
     color: #FFF;

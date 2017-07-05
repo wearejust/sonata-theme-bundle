@@ -5,7 +5,8 @@
 .alert .close:before,
 .alert-success:before,
 .glyphicon-remove:before,
-.glyphicon-ok:before {
+.glyphicon-ok:before,
+.mfp-close:before {
 	content:'';
 	background-position: center;
     background-size: contain;
@@ -61,4 +62,15 @@
 
 .glyphicon-ok:before {
 	background-image: url('../images/icons/ic_check_white.svg');
+}
+
+.mfp-close-btn-in .mfp-close {
+	font-size: 0;
+	&:before {
+		background-image: url('../images/icons/ic_close.svg');
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate3D(-50%, -50%, 0)
+	}
 }
