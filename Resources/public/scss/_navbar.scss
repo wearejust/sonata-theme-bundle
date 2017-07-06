@@ -174,11 +174,17 @@
 	background-color: $gray;
 }
 
+.navbar.navbar-default.has_tabs {
+	border-bottom: 2px solid $lighter-gray;
+}
+
 .navbar-header + .navbar-collapse .navbar-right {
 	display: none;
 }
 .navbar-default .navbar-nav>li>a {
 	color: $primary-color;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
@@ -216,6 +222,7 @@
 	}
 	.navbar-header {
 		padding: 3.1428571429em 2.4em;
+		word-break: normal;
 	}
 }
 
