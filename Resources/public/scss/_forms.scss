@@ -189,6 +189,19 @@ textarea {
 	}
 }
 
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.form-control[disabled] + .input-group-addon,
+.form-control[readonly] + .input-group-addon,
+fieldset[disabled] .form-control + .input-group-addon {
+	display: none;
+}
+
 @media only screen and (min-width: 768px) {
 	.sonata-ba-form .sonata-ba-form-actions.well {
 		left: 230px;
