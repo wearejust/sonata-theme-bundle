@@ -1,5 +1,6 @@
 .alert {
 	border-radius: 0;
+	font-weight: bold;
 }
 
 .alert .close {
@@ -33,7 +34,7 @@
 
 @media screen and (min-width: 95em) {
 	.alert-dismissable {
-		left: 315px;
+		left: 20%;
 	}
 }
 

@@ -222,22 +222,32 @@
 @media screen and (min-width: 95em) {
 	.sidebar-collapse .main-sidebar,
 	.sidebar-collapse .left-side {
-		transform: translate(-$nav-width, 0);
+		transform: translate(20%, 0);
 	}
 	.main-header .logo,
 	.main-sidebar,
 	.left-side {
-		width: $nav-width;
+		width: 20%;
 	}
 	.main-header .navbar {
-		margin-left: $nav-width;
+		margin-left: 20%;
 	}
+    .main-sidebar,
+    .content-wrapper {
+        float: left;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main-sidebar {
+        width: 20%;
+    }
+
+    .content-wrapper {
+    	margin-left: calc(1px + 20%);//center fix
+        width: 80%;
+    }
 	.form-actions {
-		left: $nav-width;
-	}
-	.content-wrapper,
-	.right-side,
-	.main-footer {
-		margin-left: $nav-width;
+		left: 20%;
 	}
 }

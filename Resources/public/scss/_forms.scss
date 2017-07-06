@@ -70,7 +70,11 @@ textarea {
 }
 
 .sonata-ba-form {
-	margin: 0 0 85px 0;
+	margin: 0;
+    background-color: #fff;
+    padding-bottom: 100vh;
+    margin-bottom: -100vh;
+    overflow: hidden;
 	.sonata-ba-form-actions.well {
 		background-color: $gray;
 		border: none;
@@ -82,7 +86,7 @@ textarea {
 		z-index: 100;
 		font-size: 0;
 		margin: 0;
-		padding: 6px;
+		padding: 6px 0.85rem;
 		width: 100% !important;
 		.btn {
 			margin: 0.15em;
@@ -189,6 +193,15 @@ textarea {
 	.sonata-ba-form .sonata-ba-form-actions.well {
 		left: 230px;
 	}
+	.form-inline.is-visible {
+		background-color: $gray;
+		position: fixed;
+		bottom: 0;
+		left: 230px;
+		right: 0;
+		margin: 0;
+		padding: 6px 0.85rem;
+	}
 }
 
 @media only screen and (min-width: 50em) {
@@ -219,7 +232,10 @@ textarea {
 
 @media only screen and (min-width: 95em) {
 	.sonata-ba-form .sonata-ba-form-actions.well {
-		left: $nav-width;
+		left: 20%;
+	}
+	.form-inline.is-visible {
+		left: 20%;
 	}
 }
 
