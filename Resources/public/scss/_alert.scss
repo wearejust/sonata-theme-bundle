@@ -7,6 +7,36 @@
 	opacity: 1;
 }
 
+.alert-dismissable {
+	animation: alertShow 1s 0.5s forwards;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	transform: translateY(100%);
+	right: 0;
+	z-index: 10;
+}
+.alert-dismissable.is_dismissed {
+	transform: translateY(100%);
+}
+@keyframes alertShow {
+  0%   { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+@media screen and (min-width: 768px) {
+	.alert-dismissable {
+		left: 230px;
+	}
+}
+
+@media screen and (min-width: 95em) {
+	.alert-dismissable {
+		left: 315px;
+	}
+}
+
 .bg-green,
 .callout.callout-success,
 .alert-success,
@@ -26,6 +56,25 @@
 .label-danger,
 .modal-danger .modal-body {
     background-color: $danger !important;
+}
+
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label,
+.form-group.has-error label {
+	color: $danger !important;
+}
+
+.form-group.has-error .form-control,
+.form-group.has-error .input-group-addon {
+	border-color: $danger !important;
 }
 
 .sonata-ba-list-field-boolean .label-success {

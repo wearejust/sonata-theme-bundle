@@ -21,10 +21,13 @@
         position: relative;
     }
 }
-.sonata-ba-delete {
+.mfp-content .sonata-ba-delete {
     margin: auto;
     max-width: 330px;
     position: relative;
+}
+.sonata-ba-delete {
+
     .box-danger {
         border-top-color: transparent;
         padding-bottom: 1.75em;
