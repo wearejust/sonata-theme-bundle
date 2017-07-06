@@ -19,6 +19,10 @@
     padding: .8em 1.1em;
 }
 
+.has_tabs .add_records {
+    display: none !important;
+}
+
 .delete_link { font-size: 0; }
 
 .editable-buttons .btn i {
@@ -55,7 +59,7 @@
 .js-sortable-move {
     background-color: transparent;
     border-radius: 4px;
-    margin: 0.5em 1em 0.5em 1em !important;
+    margin: 0;
     padding: 5px;
     cursor: move;
     display: inline-block;

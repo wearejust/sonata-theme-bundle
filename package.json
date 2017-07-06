@@ -16,6 +16,7 @@
     "webpack": "^2.4.1"
   },
   "dependencies": {
+    "magnific-popup": "^1.1.0",
     "raf": "^3.3.0"
   }
 }
