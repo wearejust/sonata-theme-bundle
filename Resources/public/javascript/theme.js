@@ -56,7 +56,7 @@ $(function(){
         {
             actionsEl.addClass('is-visible');
         }
-        
+
     });
 
 });
