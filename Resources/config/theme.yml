@@ -3,6 +3,10 @@
 title:                'Just Content'
 title_logo:           bundles/sonataadmin/logo_title.png
 
+options:
+    confirm_exit: false
+    use_icheck: false
+
 templates:
 #    user_block:           'SonataUserBundle:Admin:Core:user_block.html.twig'
 #    add_block:            'SonataAdminBundle:Core:add_block.html.twig'
@@ -45,7 +49,6 @@ assets:
         - bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
         - bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
         - bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
-        - bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
         - bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
         - bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
         - bundles/sonatacore/vendor/select2/select2.css
@@ -73,7 +76,6 @@ assets:
         - bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
         - bundles/sonatacore/vendor/select2/select2.min.js
         - bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
-        - bundles/sonataadmin/vendor/iCheck/icheck.min.js
         - bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
         - bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
         - bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js

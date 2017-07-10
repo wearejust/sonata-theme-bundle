@@ -6,7 +6,7 @@
         {{ admin.parent.toString(admin.parent.subject) }}
     {% else %}
 		{%- set last = breadcrumbs_builder.breadcrumbs(admin, action) | last -%}
-		{%- set translation_domain = last.extra('translation_domain', 'messages') -%}		
+		{%- set translation_domain = last.extra('translation_domain', 'messages') -%}
 	  	{%- set label = last.label -%}
 	  	{%- if translation_domain is not same as(false) -%}
 			{%- set label = label|trans(last.extra('translation_params', {}), translation_domain) -%}
