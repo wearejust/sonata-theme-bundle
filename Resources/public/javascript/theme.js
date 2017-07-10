@@ -6,6 +6,8 @@ $(function(){
         $(this).next('span').click();
     });
 
+    $('#username').focus();
+
     $('.delete_link, .sonata-ba-form-actions .btn-danger').magnificPopup({
         type: 'ajax',
         closeBtnInside: true,
@@ -28,7 +30,6 @@ $(function(){
 
             el.on('mousedown', function(e){
                 e.preventDefault();
-                console.log($(e.target).prop('tagName'));
                 if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
                     window.location.href=linkEl.attr('href')
                 }
