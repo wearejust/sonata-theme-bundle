@@ -9,7 +9,7 @@
 }
 
 .alert-dismissable {
-	animation: alertShow 1s 0.5s forwards;
+	animation: alertShow 0.5s 0s forwards, alertHide 0.5s 3s forwards;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -18,12 +18,15 @@
 	right: 0;
 	z-index: 10;
 }
-.alert-dismissable.is_dismissed {
-	transform: translateY(100%);
-}
+
 @keyframes alertShow {
   0%   { transform: translateY(100%); }
   100% { transform: translateY(0); }
+}
+
+@keyframes alertHide {
+	0%   { transform: translateY(0); }
+	100%   { transform: translateY(100%); }
 }
 
 @media screen and (min-width: 768px) {

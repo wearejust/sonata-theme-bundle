@@ -1,5 +1,20 @@
 $(function(){
 
+    let msg = '<div class="alert alert-dismissable alert-success">%s</div>';
+    let msgAlt = '<div class="alert alert-dismissable alert-danger">%s</div>'
+
+    $(document).on('pixSortableBehaviorBundle.success', (e, data) => {
+        $('body').append(
+            msg.replace('%s', data.result)
+        );
+    });
+
+    $(document).on('pixSortableBehaviorBundle.error', (e, data) => {
+        $('body').append(
+            msgAlt.replace('%s', data.result)
+        );
+    });
+
     // Trigger calendar on input click
     // without changing existing HTML
     $('.date input').on('click', function(){
