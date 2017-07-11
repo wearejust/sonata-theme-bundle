@@ -36,28 +36,4 @@ $(function(){
             })
         }
     });
-
-
-    let inputChecks = $('.sonata-ba-list input');
-    inputChecks.iCheck('uncheck');
-    let actionsEl = $('.box-footer .form-inline');
-    inputChecks.on('ifToggled', function(){
-        let showActions = false;
-        for(i=0; i < inputChecks.length; i++)
-        {
-            if($(inputChecks[i]).prop('checked'))
-            {
-                showActions = true;
-                break;
-            }
-        }
-
-        actionsEl.removeClass('is-visible');
-        if(showActions)
-        {
-            actionsEl.addClass('is-visible');
-        }
-
-    });
-
 });
