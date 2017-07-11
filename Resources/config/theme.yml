@@ -3,6 +3,9 @@
 title:                'Just Content'
 title_logo:           bundles/sonataadmin/logo_title.png
 
+options:
+    confirm_exit: false
+
 templates:
 #    user_block:           'SonataUserBundle:Admin:Core:user_block.html.twig'
 #    add_block:            'SonataAdminBundle:Core:add_block.html.twig'
