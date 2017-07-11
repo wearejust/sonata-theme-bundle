@@ -1,7 +1,7 @@
 $(function(){
 
-    let msg = '<div class="alert alert-dismissable alert-success">%s</div>';
-    let msgAlt = '<div class="alert alert-dismissable alert-danger">%s</div>'
+    let msg = '<div class="alert alert-dismissable alert-success no-delay">%s</div>';
+    let msgAlt = '<div class="alert alert-dismissable alert-danger no-delay">%s</div>'
 
     $(document).on('pixSortableBehaviorBundle.success', (e, data) => {
         $('body').append(
@@ -22,12 +22,6 @@ $(function(){
     });
 
     $('#username').focus();
-
-    $('.delete_link, .sonata-ba-form-actions .btn-danger').magnificPopup({
-        type: 'ajax',
-        closeBtnInside: true,
-        mainClass: 'mfp-fade'
-    });
 
     //Make complete TR linkable
     let preventNavigation = [

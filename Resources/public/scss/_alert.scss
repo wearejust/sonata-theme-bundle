@@ -9,7 +9,7 @@
 }
 
 .alert-dismissable {
-	animation: alertShow 0.5s 0s forwards, alertHide 0.5s 3s forwards;
+	animation: alertShow 0.5s 0.35s forwards, alertHide 0.5s 3s forwards;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -17,6 +17,9 @@
 	transform: translateY(100%);
 	right: 0;
 	z-index: 10;
+}
+.alert-dismissable.no-delay {
+	animation: alertShow 0.5s 0s forwards, alertHide 0.5s 3s forwards;
 }
 
 @keyframes alertShow {
