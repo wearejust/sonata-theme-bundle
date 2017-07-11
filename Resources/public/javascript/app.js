@@ -1,2 +1,3 @@
 require('./theme.js');
-require('./imageremove.js');
+require('./forms.js');
+require('./multipleactions.js');
