@@ -3,7 +3,6 @@
 title:                'Just Content'
 title_logo:           bundles/sonataadmin/logo_title.png
 
-    confirm_exit: false
 options:
     confirm_exit: false
     use_icheck: false
