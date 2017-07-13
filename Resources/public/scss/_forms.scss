@@ -149,46 +149,59 @@ textarea {
 
 .vich-image img {
 	max-width: 100%;
+	transition: 0.15s ease-in-out;
 }
 
 .vich-image {
 	position: relative;
-	a { display: block; }
+	a { 
+		background-color: $light-gray;
+		display: block; 
+		margin-top: 0.3em;
+	}
 	.form-group {
 		padding: 0;
 		border: none;
 	}
 	.checkbox {
 		position: absolute;
-		top: 4.6rem;
+		top: 2.7rem;
 		right: 0;
 		margin: 0;
 		font-size: 0;
 	}
-	.checkbox .icheckbox_square-blue {
+
+	input[type="file"] {
+		width: 100%;
+	}
+
+	input[type="checkbox"] {
+		opacity: 0;
+	}
+
+	.checkbox label {
 		background: url('../images/icons/ic_close_white.svg') $danger no-repeat center;
 		background-size: 18px;
-		width: 3.75rem;
-		height: 3.75rem;
-		margin-right: 0;
-		transform: scale(1);
-		visibility: hidden;
-		opacity: 0;
-		pointer-events: none;
-		transition: 0.15s ease-in-out;
-		&.checked {
-			visibility: visible!important;
-			opacity: 1!important;
-			pointer-events: initial!important;
+		min-height: 55px;
+    	padding-left: 55px;
+    	opacity: 0;
+    	transition: 0.15s ease-in-out;
+	}
+
+	&.is_checked {
+		img {
+			opacity: 0.3;
+		}
+		.checkbox label {
+			opacity: 1;
 		}
 	}
 
 	&:hover {
-		.checkbox .icheckbox_square-blue {
-			visibility: visible;
-			opacity: 0.6;
-			pointer-events: initial;
+		.checkbox label {
+			opacity: 1;
 		}
+
 	}
 }
 

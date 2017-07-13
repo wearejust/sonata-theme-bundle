@@ -1,9 +1,9 @@
 class imageRemove {
     constructor(item) {
         this.item = item
-        this.item.find('.checkbox ins').on('click', this.click.bind(this));
+        this.item.find('input[type="checkbox"]').on('change', this.change.bind(this));
     } 
-    click() {
+    change() {
         this.item.toggleClass('is_checked');
     }
 }
