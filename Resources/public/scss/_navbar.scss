@@ -124,11 +124,11 @@
 }
 
 .navbar-header {
-	float: none;
 	padding: 1em;
 }
 
-.sticky-wrapper .navbar-right:not(.add_records) {
+.just-records-edit .add_records,
+[advanced-filter] {
 	display: none;
 }
 
@@ -179,7 +179,8 @@
 }
 
 .navbar-header + .navbar-collapse .navbar-right {
-	display: none;
+	margin: 1.5em;
+	margin-right: 0;
 }
 .navbar-default .navbar-nav>li>a {
 	color: $primary-color;

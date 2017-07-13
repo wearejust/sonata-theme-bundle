@@ -71,6 +71,7 @@ button {
 .content-wrapper {
     .content-header {
         padding: 15px 16px 0 16px;
+        z-index: 1;
         .nav.navbar-right.btn-group {
             display: none;
         }
