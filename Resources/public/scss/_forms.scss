@@ -154,10 +154,10 @@ textarea {
 			margin: 0.15em;
 			order: 2;
 			&.btn-success:nth-child(2n+1){
-				background-color: #fff !important;
+				background-color: $lighter-gray !important;
 				color: #000 !important;
 				&:hover {
-					background-color: rgba(255, 255, 255, 0.5) !important;
+					background-color: rgba(255, 255, 255, 0.4) !important;
 				}
 			}
 		}
