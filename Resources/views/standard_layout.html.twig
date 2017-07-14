@@ -1,9 +1,17 @@
 {% extends 'SonataAdminBundle::standard_layout.html.twig' %}
 
-{% block javascripts %}
-    {{ parent() }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-{% endblock javascripts %}
+{% block sonata_head_title %}
+    {% set text = parent() | trim | split(' ', 2) %}
+
+    {% spaceless %}
+        {% if text[1] is defined and text[0] is defined %}
+            {{ text[1] | raw }} &mdash; {{ text[0] | raw }}
+        {% else %}
+            {{ text[0] | raw }}
+        {% endif %}
+    {% endspaceless %}
+
+{% endblock %}
 
 {% block body_attributes %}class="sonata-bc skin-black fixed"{% endblock %}
 
