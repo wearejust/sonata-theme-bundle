@@ -1,6 +1,7 @@
 .sonata-filters-box {
 	display: none !important;
 }
+
 .filter-box {
 	display: none;
 	background-color: #fff;
@@ -37,6 +38,10 @@
     width: 1.3em;
     height: 1.3em;
     vertical-align: -4px;
+}
+
+input[type="file"] {
+	height: auto;
 }
 
 .sonata-filter-form .row > .col-sm-9, .sonata-filter-form .row  > .col-sm-3 {
