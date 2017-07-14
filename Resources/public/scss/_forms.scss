@@ -43,6 +43,9 @@
 input[type="file"] {
 	height: auto;
 }
+input[type="checkbox"] {
+	min-height: auto !important;
+}
 
 .sonata-filter-form .row > .col-sm-9, .sonata-filter-form .row  > .col-sm-3 {
 	width: 100%;
