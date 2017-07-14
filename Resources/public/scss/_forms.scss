@@ -1,3 +1,49 @@
+.sonata-filters-box {
+	display: none !important;
+}
+.filter-box {
+	display: none;
+	background-color: #fff;
+	padding-top: 2em;
+    .sonata-filter-form {
+    	box-shadow: inset 0px 28px 20px -33px rgba(0,0,0,0.75);
+    	padding-top: 2rem;
+    }
+	.form-group {
+		display: block !important;
+		border-bottom: none;
+		padding: 1em 3.21428em;
+	}
+	[data-toggle="advanced-filter"], .sonata-toggle-filter {
+		display: none;
+	}
+	.btn {
+		display: block;
+		margin: 1em auto;
+		width: 30%;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.fa-filter:before {
+	content: '';
+	background-image: url('../images/icons/ic_search.svg');
+    display: inline-block;
+    background-image: url(../images/icons/ic_search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: -4px;
+}
+
+.sonata-filter-form .row > .col-sm-9, .sonata-filter-form .row  > .col-sm-3 {
+	width: 100%;
+}
+
+
 .form-logout, .sidebar-form[role="search"] {
 	display: none;
 }
