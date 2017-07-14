@@ -131,6 +131,7 @@ textarea {
 		background-color: $gray;
 		border: none;
 		border-radius: 0;
+		display: flex;
 		position: fixed;
 		bottom: 0;
 		left: 0;
@@ -142,7 +143,23 @@ textarea {
 		width: 100% !important;
 		.btn {
 			margin: 0.15em;
+			order: 2;
+			&.btn-success:nth-child(2n+1){
+				background-color: #fff !important;
+				color: #000 !important;
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.5) !important;
+				}
+			}
 		}
+		.btn[name="btn_update_and_list"],
+		.btn[name="btn_create_and_list"] {
+			order: 1;
+		} 
+		.btn[name="btn_create_and_edit"] {
+			order: 3;
+		} 
+
 	}
 }
 
