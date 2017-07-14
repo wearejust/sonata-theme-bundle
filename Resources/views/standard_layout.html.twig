@@ -55,7 +55,7 @@
                         {% endif %}
                     {% endblock sonata_admin_content_actions_wrappers %}
 
-                    {% if _list_filters_actions is not empty %}
+                    {% if _list_filters_actions is not empty and (_list_filters_actions | split('</li>') | length) > 2 %}
                         {{ _list_filters_actions|raw }}
                     {% endif %}
                 </div>
