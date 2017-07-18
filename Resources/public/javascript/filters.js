@@ -1,5 +1,5 @@
 $(function(){
-    let trigger = $('.dropdown'); 
+    let trigger = $('.dropdown.sonata-actions'); 
     $('.content-header').append('<div class="filter-box"/>');
     $('.sonata-filter-form').appendTo('.filter-box');
     trigger.on('click', click);
