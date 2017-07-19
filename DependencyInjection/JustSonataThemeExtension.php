@@ -42,7 +42,7 @@ class JustSonataThemeExtension extends Extension implements PrependExtensionInte
         $config = $this->processConfiguration(new Configuration(), $configs);
 
         if ($theme = $config['custom_theme']) {
-            $yml = $this->parseYml($theme);
+            $yml = $this->parseYml($container->getParameter('kernel.root_dir') . '/' . $theme);
             $extensionConfig = array_replace_recursive($extensionConfig, $yml);
 
             if (isset($yml['extra_css'])) {
