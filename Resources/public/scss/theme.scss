@@ -71,6 +71,7 @@ button {
 .content-wrapper {
     .content-header {
         padding: 15px 16px 0 16px;
+        z-index: 1;
         .nav.navbar-right.btn-group {
             display: none;
         }
@@ -130,16 +131,10 @@ body.fixed .content-header>.sticky-wrapper {
     text-transform: inherit;
 }
 
-@media screen and (min-width: 50em) {
-    .content-wrapper {
-        padding-right: 50px;
-    }
-}
-
 @media screen and (min-width: 80em) {
     .content,
     .content-header {
-        max-width: 1024px;
+        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
     }

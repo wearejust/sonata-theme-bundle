@@ -95,6 +95,9 @@
 .navbar {
 	border-radius: 0;
 }
+.nav.navbar-nav {
+	margin: 0 -10px;
+}
 
 .navbar.navbar-default {
 	background-color: #FFFFFF;
@@ -114,6 +117,7 @@
 	line-height: 1;
 	padding: 0;
 	pointer-events: none;
+	max-width: 40rem;
 	&:hover,
 	&:focus,
 	&:active {
@@ -123,11 +127,11 @@
 }
 
 .navbar-header {
-	float: none;
 	padding: 1em;
 }
 
-.sticky-wrapper .navbar-right:not(.add_records) {
+.just-records-edit .add_records,
+[advanced-filter] {
 	display: none;
 }
 
@@ -173,11 +177,18 @@
 	background-color: $gray;
 }
 
+.navbar.navbar-default.has_tabs {
+	border-bottom: 2px solid $lighter-gray;
+}
+
 .navbar-header + .navbar-collapse .navbar-right {
-	display: none;
+	margin: 1.5em;
+	margin-right: 0;
 }
 .navbar-default .navbar-nav>li>a {
 	color: $primary-color;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
@@ -214,7 +225,8 @@
 		font-size: 3.5em;
 	}
 	.navbar-header {
-		padding: 3.1428571429em;
+		padding: 3.1428571429em 2.4em;
+		word-break: normal;
 	}
 }
 
@@ -222,22 +234,32 @@
 @media screen and (min-width: 95em) {
 	.sidebar-collapse .main-sidebar,
 	.sidebar-collapse .left-side {
-		transform: translate(-$nav-width, 0);
+		transform: translate(20%, 0);
 	}
 	.main-header .logo,
 	.main-sidebar,
 	.left-side {
-		width: $nav-width;
+		width: 20%;
 	}
 	.main-header .navbar {
-		margin-left: $nav-width;
+		margin-left: 20%;
 	}
+    .main-sidebar,
+    .content-wrapper {
+        float: left;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main-sidebar {
+        width: 20%;
+    }
+
+    .content-wrapper {
+    	margin-left: calc(1px + 20%);//center fix
+        width: 80%;
+    }
 	.form-actions {
-		left: $nav-width;
-	}
-	.content-wrapper,
-	.right-side,
-	.main-footer {
-		margin-left: $nav-width;
+		left: 20%;
 	}
 }

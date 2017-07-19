@@ -1,0 +1,19 @@
+{% extends "SonataAdminBundle:CRUD:list.html.twig" %}
+
+{% block body_attributes %}class="sonata-bc skin-black fixed just-records-list"{% endblock %}
+
+{% block title %}
+	{# TODO REFACTOR THIS CRAP #}
+    {% if admin.isChild and admin.parent.subject %}
+        {{ admin.parent.toString(admin.parent.subject) }}
+    {% else %}
+		{%- set last = breadcrumbs_builder.breadcrumbs(admin, action) | last -%}
+		{%- set translation_domain = last.extra('translation_domain', 'messages') -%}
+	  	{%- set label = last.label -%}
+	  	{%- if translation_domain is not same as(false) -%}
+			{%- set label = label|trans(last.extra('translation_params', {}), translation_domain) -%}
+	    {%- endif -%}
+
+	    {{- label -}}
+	{% endif %}
+{% endblock %}

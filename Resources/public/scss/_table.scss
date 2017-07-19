@@ -27,10 +27,9 @@ table.sonata-ba-list td {
 .sonata-ba-list tr td:last-child {
     position: relative;
     overflow: visible;
-}
-
-.sonata-ba-list tr:hover .delete_link {
-    display: block;
+    width: 58px;
+    margin: 0;
+    padding: 0;
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
@@ -98,7 +97,7 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
      &:hover, &:focus, &:active {
         background-color: transparent;
     }
-} 
+}
 
 .table-striped tbody tr.sonata-ba-list-row-selected td,
 .table-striped tbody tr.sonata-ba-list-row-selected th {

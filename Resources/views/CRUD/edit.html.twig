@@ -1,0 +1,11 @@
+{% extends "SonataAdminBundle:CRUD:edit.html.twig" %}
+
+{% block body_attributes %}class="sonata-bc skin-black fixed just-records-edit"{% endblock %}
+
+{% block title %}
+    {% if admin.id(object) is not null %}
+        {{ admin.toString(object) }}
+    {% else %}
+        {{ "title_create"|trans({}, 'SonataAdminBundle') }}
+    {% endif %}
+{% endblock %}

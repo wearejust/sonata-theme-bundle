@@ -1,5 +1,63 @@
+.sonata-filters-box {
+	display: none !important;
+}
+
+.filter-box {
+	display: none;
+	background-color: #fff;
+	padding-top: 2em;
+    .sonata-filter-form {
+    	box-shadow: inset 0px 28px 20px -33px rgba(0,0,0,0.75);
+    	padding-top: 2rem;
+    }
+	.form-group {
+		display: block !important;
+		border-bottom: none;
+		padding: 1em 3.21428em;
+	}
+	[data-toggle="advanced-filter"], .sonata-toggle-filter {
+		display: none;
+	}
+	.btn {
+		display: block;
+		margin: 1em auto;
+		width: 30%;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.fa-filter:before {
+	content: '';
+	background-image: url('../images/icons/ic_search.svg');
+    display: inline-block;
+    background-image: url(../images/icons/ic_search.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: -4px;
+}
+
+input[type="file"] {
+	height: auto;
+}
+input[type="checkbox"] {
+	min-height: auto !important;
+}
+
+.sonata-filter-form .row > .col-sm-9, .sonata-filter-form .row  > .col-sm-3 {
+	width: 100%;
+}
+
+
 .form-logout, .sidebar-form[role="search"] {
 	display: none;
+}
+
+.checkbox label, .radio label {
+	margin-left: auto;
 }
 
 label,
@@ -66,15 +124,23 @@ textarea {
 	input {
 		min-height: 2.7857142857em;
 		padding: 0.75em 1em;
+		background-color: #fff;
+		border: 1px solid $gray;
 	}
 }
 
 .sonata-ba-form {
-	margin: 0 0 85px 0;
+	margin: 0;
+    background-color: #fff;
+    padding-bottom: 100vh;
+    margin-bottom: -100vh;
+    overflow: hidden;
+    width: 100%;
 	.sonata-ba-form-actions.well {
 		background-color: $gray;
 		border: none;
 		border-radius: 0;
+		display: flex;
 		position: fixed;
 		bottom: 0;
 		left: 0;
@@ -82,26 +148,36 @@ textarea {
 		z-index: 100;
 		font-size: 0;
 		margin: 0;
-		padding: 6px;
+		padding: 6px 0.85rem;
 		width: 100% !important;
 		.btn {
 			margin: 0.15em;
+			order: 2;
+			&.btn-success:nth-child(2n+1){
+				background-color: $lighter-gray !important;
+				color: #000 !important;
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.4) !important;
+				}
+			}
 		}
+		.btn[name="btn_update_and_list"],
+		.btn[name="btn_create_and_list"] {
+			order: 1;
+		} 
+		.btn[name="btn_create_and_edit"] {
+			order: 3;
+		} 
+
 	}
 }
 
-.sonata-filter-form {
-	display: none !important;
-}
+// .sonata-filter-form {
+// 	display: none !important;
+// }
 
 .sonata-ba-list-field-text .edit_link {
 	display: none;
-}
-
-.icheckbox_square-blue,
-.iradio_square-blue {
-	transform: scale(0.7);
-	background-image: url('../images/black.png');
 }
 
 .form-logout {
@@ -145,49 +221,91 @@ textarea {
 
 .vich-image img {
 	max-width: 100%;
+	transition: 0.15s ease-in-out;
 }
 
 .vich-image {
 	position: relative;
-	a { display: block; }
+	a { 
+		background-color: $light-gray;
+		display: block; 
+		margin-top: 0.3em;
+	}
+	.form-group {
+		padding: 0;
+		border: none;
+	}
 	.checkbox {
 		position: absolute;
-		top: 4.6rem;
+		top: 2.7rem;
 		right: 0;
 		margin: 0;
 		font-size: 0;
 	}
 
-	.checkbox .icheckbox_square-blue {
+	input[type="file"] {
+		width: 100%;
+	}
+
+	input[type="checkbox"] {
+		opacity: 0;
+	}
+
+	.checkbox label {
 		background: url('../images/icons/ic_close_white.svg') $danger no-repeat center;
 		background-size: 18px;
-		width: 3.75rem;
-		height: 3.75rem;
-		margin-right: 0;
-		transform: scale(1);
-		visibility: hidden;
-		opacity: 0;
-		pointer-events: none;
-		transition: 0.25s ease-in-out;
-		&.checked {
-			visibility: visible!important;
-			opacity: 1!important;
-			pointer-events: initial!important;
+		min-height: 55px;
+    	padding-left: 55px;
+    	opacity: 0;
+    	transition: 0.15s ease-in-out;
+	}
+
+	&.is_checked {
+		img {
+			opacity: 0.3;
+		}
+		.checkbox label {
+			opacity: 1;
 		}
 	}
 
 	&:hover {
-		.checkbox .icheckbox_square-blue {
-			visibility: visible;
-			opacity: 0.6;
-			pointer-events: initial;
+		.checkbox label {
+			opacity: 1;
 		}
+
 	}
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.form-control[disabled] + .input-group-addon,
+.form-control[readonly] + .input-group-addon,
+fieldset[disabled] .form-control + .input-group-addon {
+	display: none;
+}
+
+span.x-editable.editable.editable-click, .sonata-ba-list-field-boolean .label-danger {
+	margin: 0 -8px;
 }
 
 @media only screen and (min-width: 768px) {
 	.sonata-ba-form .sonata-ba-form-actions.well {
 		left: 230px;
+	}
+	.form-inline.is-visible {
+		background-color: $gray;
+		position: fixed;
+		bottom: 0;
+		left: 230px;
+		right: 0;
+		margin: 0;
+		padding: 6px 0.85rem;
 	}
 }
 
@@ -219,7 +337,10 @@ textarea {
 
 @media only screen and (min-width: 95em) {
 	.sonata-ba-form .sonata-ba-form-actions.well {
-		left: $nav-width;
+		left: 20%;
+	}
+	.form-inline.is-visible {
+		left: 20%;
 	}
 }
 

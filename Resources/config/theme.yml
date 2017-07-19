@@ -3,49 +3,23 @@
 title:                'Just Content'
 title_logo:           bundles/sonataadmin/logo_title.png
 
+options:
+    confirm_exit: false
+    use_icheck: false
+
 templates:
-#    user_block:           'SonataUserBundle:Admin:Core:user_block.html.twig'
-#    add_block:            'SonataAdminBundle:Core:add_block.html.twig'
     layout:               'JustSonataThemeBundle::standard_layout.html.twig'
-#    ajax:                 'SonataAdminBundle::ajax_layout.html.twig'
-#    dashboard:            'SonataAdminBundle:Core:dashboard.html.twig'
-#    search:               'SonataAdminBundle:Core:search.html.twig'
-    # list:                 'JustSonataThemeBundle:CRUD:list.html.twig'
-#    filter:               'SonataAdminBundle:Form:filter_admin_fields.html.twig'
-#    show:                 'SonataAdminBundle:CRUD:show.html.twig'
-#    show_compare:         'SonataAdminBundle:CRUD:show_compare.html.twig'
-    # edit:                 'JustSonataThemeBundle:CRUD:edit.html.twig'
-#    preview:              'SonataAdminBundle:CRUD:preview.html.twig'
-#    history:              'SonataAdminBundle:CRUD:history.html.twig'
-#    acl:                  'SonataAdminBundle:CRUD:acl.html.twig'
-#    history_revision_timestamp:  'SonataAdminBundle:CRUD:history_revision_timestamp.html.twig'
-#    action:               'SonataAdminBundle:CRUD:action.html.twig'
-#    select:               'SonataAdminBundle:CRUD:list__select.html.twig'
-#    list_block:           'SonataAdminBundle:Block:block_admin_list.html.twig'
-    # search_result_block:  'SonataAdminBundle:Block:block_search_result.html.twig'
-#    short_object_description:  'SonataAdminBundle:Helper:short-object-description.html.twig'
-    # delete:               'JustSonataThemeBundle:CRUD:delete.html.twig'
-#    batch:                'SonataAdminBundle:CRUD:list__batch.html.twig'
-#    batch_confirmation:   'JustSonataThemeBundle:CRUD:batch_confirmation.html.twig'
-#    inner_list_row:       'SonataAdminBundle:CRUD:list_inner_row.html.twig'
-#    outer_list_rows_mosaic:  'SonataAdminBundle:CRUD:list_outer_rows_mosaic.html.twig'
-#    outer_list_rows_list:  'SonataAdminBundle:CRUD:list_outer_rows_list.html.twig'
-#    outer_list_rows_tree:  'SonataAdminBundle:CRUD:list_outer_rows_tree.html.twig'
-#    base_list_field:      'SonataAdminBundle:CRUD:base_list_field.html.twig'
-#    pager_links:          'SonataAdminBundle:Pager:links.html.twig'
+    list:                 'JustSonataThemeBundle:CRUD:list.html.twig'
+    edit:                 'JustSonataThemeBundle:CRUD:edit.html.twig'
     pager_results:        'JustSonataThemeBundle:Pager:results.html.twig'
-#    tab_menu_template:    'SonataAdminBundle:Core:tab_menu_template.html.twig'
-#    knp_menu_template:    'SonataAdminBundle:Menu:sonata_menu.html.twig'
 
 assets:
     stylesheets:
-        # Defaults:
         - bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
         - bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
         - bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
         - bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
         - bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
-        - bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
         - bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
         - bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
         - bundles/sonatacore/vendor/select2/select2.css
@@ -59,8 +33,6 @@ assets:
         - bundles/justredactor/redactor.css
 
     javascripts:
-
-        # Defaults:
         - bundles/sonatacore/vendor/jquery/dist/jquery.min.js
         - bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
         - bundles/sonatacore/vendor/moment/min/moment.min.js
@@ -73,19 +45,12 @@ assets:
         - bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
         - bundles/sonatacore/vendor/select2/select2.min.js
         - bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
-        - bundles/sonataadmin/vendor/iCheck/icheck.min.js
         - bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
         - bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
         - bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
         - bundles/sonataadmin/Admin.js
         - bundles/sonataadmin/treeview.js
-        - bundles/justredactor/redactor.js
-        - bundles/justredactor/plugins/video.js
-        - bundles/justredactor/plugins/imagemanager.js
-        - bundles/justredactor/plugins/filemanager.js
-        - bundles/justredactor/langs/nl.js
-        - bundles/justredactor/init.js
-        - bundles/justsonatatheme/javascript/app.bundle.js
-
-        - bundles/pixsortablebehavior/js/jquery-ui.min.js // if you haven't got jQuery UI yet.
+        - //cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js
+        - bundles/pixsortablebehavior/js/jquery-ui.min.js
         - bundles/pixsortablebehavior/js/init.js
+        - bundles/justsonatatheme/javascript/app.bundle.js

@@ -19,6 +19,11 @@
 	.login-box-body {
 		background-color: transparent;
 	}
+	.form-control:focus {
+	    border-color: #999;
+	    outline: none;
+	    background-color: #f2f2f2;
+	}
 	.login-box-msg,
 	.form-control-feedback {
 		display: none;
@@ -49,6 +54,7 @@
 	}
 	.form-group {
 		padding: 0;
+		border: none;
 	}
 	.form-group + .row > .col-xs-8,
 	.form-group + .row > .col-xs-4,
@@ -60,6 +66,7 @@
 	.radio label {
 		font-weight: normal;
 		font-size: 0.875em;
+		line-height: 1.8;
 	}
 	form+a {
 		display: inline-block;
