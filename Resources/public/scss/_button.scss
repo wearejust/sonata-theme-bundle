@@ -104,11 +104,13 @@
     background-color: $danger;
     border-color: $danger;
     color: #fff !important;
-    display: none;
+    transform: perspective(1000px) rotateY(90deg);
+    transform-origin: center left;
+    transition: 0.5s;
 }
 .sonata-ba-list tr:hover {
     .delete_link {
-        display: block;
+        transform: perspective(1000px) rotateY(0deg);
     }
 }
 .sonata-ba-list tr:nth-child(even) .btn-group .delete_link:before {
