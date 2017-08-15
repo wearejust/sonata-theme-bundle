@@ -166,6 +166,7 @@
 	}
 }
 
+.content-header .navbar-nav.navbar-right:last-child { margin-left: 0;}
 .has_tabs .navbar-left .navbar-nav>li.first,
 .has_tabs .navbar-left .navbar-nav>li.active {
 	background-color: $lighter-gray;
@@ -218,9 +219,17 @@
 	.sidebar-toggle {
 		display: none;
 	}
+	.content-header .navbar-nav.navbar-right:last-child {
+		margin-top: 0.75em; margin-bottom: 0.75em;
+		margin-right: -9px;
+	}
 }
 
 @media screen and (min-width: 50em) {
+	.content-header .navbar-nav.navbar-right:last-child {
+		margin-top: 3.75em;
+		margin-bottom: 3.75em;
+	}
 	.navbar-default .navbar-brand {
 		font-size: 3.5em;
 	}
