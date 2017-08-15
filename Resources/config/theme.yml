@@ -30,7 +30,6 @@ assets:
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
         - bundles/justsonatatheme/css/theme.css
-        - bundles/justredactor/redactor.css
 
     javascripts:
         - bundles/sonatacore/vendor/jquery/dist/jquery.min.js
