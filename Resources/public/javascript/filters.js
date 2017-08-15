@@ -7,5 +7,5 @@ $(function(){
 });
 
 function click() {
-    $('.filter-box').slideToggle();
+    $('.filter-box').stop().slideToggle();
 }
