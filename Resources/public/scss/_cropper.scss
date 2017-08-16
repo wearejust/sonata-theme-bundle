@@ -1,5 +1,13 @@
 .cropper {
+	background-color: $light-gray;
 
+	.row * {
+		position: static;
+		&.checkbox {
+			position: absolute;
+			top: 0;
+		}
+	}
 	.btn {
 		color: #fff !important;
 	    background-color: #222 !important;
@@ -10,4 +18,8 @@
 		display: none;
 	}
 
+}
+
+.cropper:hover {
+	cursor: pointer;
 }
