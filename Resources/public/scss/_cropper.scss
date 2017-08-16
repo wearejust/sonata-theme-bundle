@@ -1,12 +1,9 @@
 .cropper {
 	background-color: $light-gray;
-
+	display: flex;
+	flex-direction: column;
 	.col-md-12, .form-group, .sonata-ba-field {
 		position: static;
-	}
-
-	.checkbox {
-		top: 0;
 	}
 	
 	.btn {
@@ -17,6 +14,21 @@
 
 	.image-url-input.input-sm.form-control, .col-md-8.cropper-remote {
 		display: none;
+	}
+
+	.cropper-canvas-container {
+		order: 2;
+	}
+
+	.cropper-local {
+		width: 100%;
+		input.hidden {
+			display: block !important;
+			margin-bottom: 0.15rem;
+		}
+		.btn {
+			display: none;
+		}	
 	}
 
 }
