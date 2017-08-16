@@ -9,7 +9,7 @@ class imageRemove {
 }
 
 $(function(){
-    $('.vich-image').each(function(index,item){
+    $('.vich-image, .cropper').each(function(index,item){
         new imageRemove($(item));
     });
     

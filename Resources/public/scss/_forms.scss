@@ -261,7 +261,7 @@ textarea {
 	}
 
 	&.is_checked {
-		img {
+		img, canvas {
 			opacity: 0.3;
 		}
 		.checkbox label {

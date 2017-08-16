@@ -1,13 +1,14 @@
 .cropper {
 	background-color: $light-gray;
 
-	.row * {
+	.col-md-12, .form-group, .sonata-ba-field {
 		position: static;
-		&.checkbox {
-			position: absolute;
-			top: 0;
-		}
 	}
+
+	.checkbox {
+		top: 0;
+	}
+	
 	.btn {
 		color: #fff !important;
 	    background-color: #222 !important;
@@ -19,6 +20,8 @@
 	}
 
 }
+
+
 
 .cropper:hover {
 	cursor: pointer;
