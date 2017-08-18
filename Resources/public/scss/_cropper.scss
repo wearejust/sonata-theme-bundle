@@ -1,4 +1,9 @@
 .cropper {
+	.cropper-canvas-container {
+		margin-bottom: 0 !important;
+		margin-top: 0.15rem;
+	}
+
 	background-color: $light-gray;
 	display: flex;
 	flex-direction: column;
@@ -24,7 +29,6 @@
 		width: 100%;
 		input.hidden {
 			display: block !important;
-			margin-bottom: 0.15rem;
 		}
 		.btn {
 			display: none;
