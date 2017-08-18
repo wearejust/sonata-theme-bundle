@@ -55,6 +55,13 @@
     }
 }
 
+.sonata-ba-delete.popup-file-delete {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .tab-pane .box {
     border: 0;
 }
