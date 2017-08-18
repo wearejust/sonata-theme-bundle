@@ -60,6 +60,13 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    * {
+        transition: opacity 0.5s;
+    }
+    .box.is_active * {
+        opacity: 0.5;
+        pointer-events: none;
+    }
 }
 
 .tab-pane .box {

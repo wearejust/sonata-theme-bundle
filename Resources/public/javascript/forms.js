@@ -14,6 +14,12 @@ let removePopup = `<div class="sonata-ba-delete popup-file-delete mfp-hide">
                             </div>
                         </div>
                         <button title="Close (Esc)" type="button" class="mfp-close js-trigger-cancel">×</button>
+                        <div class="anim-loading">
+                            <label></label>
+                            <label></label>
+                            <label></label>
+                            <label></label>
+                        </div>
                     </div>`;
 
 class imageRemove {
@@ -40,6 +46,7 @@ class imageRemove {
 }
 
 function forceSave() {
+    $('.popup-file-delete .anim-loading, .popup-file-delete .box').addClass('is_active');
     $('*[name="btn_update_and_edit"]').click();
 }
 
@@ -48,7 +55,7 @@ function cancel() {
 }
 
 $(function(){
-    $('.vich-image').each(function(index,item){
+    $('.vich-image, .cropper').each(function(index,item){
         new imageRemove($(item));
     });
 });
