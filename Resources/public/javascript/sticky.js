@@ -18,16 +18,20 @@ class sticky {
     makeSticky() {
     	windowOffsetTop = $window.scrollTop();
     	elOffsetTop = this.item.offset().top;
-        startPos = elOffsetTop - windowOffsetTop - 50;
-        if(startPos < 0) {
+        startPos = elOffsetTop - windowOffsetTop;
+        if(startPos < 50) {
         	this.item.addClass('is_sticky');
         	this.item.css({
         		'left': elOffsetLeft,
-        		'top': 0
+        		'top': 50
         	});
         }
-        if((windowOffsetTop + this.item.outerHeight() + 10) < elOldPos) {
+        if((windowOffsetTop + (this.item.outerHeight(true))) < elOldPos) {
         	this.item.removeClass('is_sticky');
+        	this.item.css({
+        		'left': 'inherit',
+        		'top': 'inherit'
+        	});
         }
     }
 
@@ -38,7 +42,7 @@ class sticky {
 
 $(function(){
 	let stickyItems = [
-		'.add_records'
+		'.add_records .sonata-action-element'
 	];
 
 	stickyItems.map((item, index) => {
