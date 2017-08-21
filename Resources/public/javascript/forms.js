@@ -10,7 +10,7 @@ let removePopup = `<div class="sonata-ba-delete popup-file-delete mfp-hide">
                                 <button class="btn btn-danger js-trigger-save"><i class="fa fa-trash" aria-hidden="true"></i> Ja, verwijder</button>
                                 <button class="btn btn-success js-trigger-cancel" href="/admin/wearejust/example/post/1/edit">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                                Behouden</button>
+                                Nee, annuleren</button>
                             </div>
                         </div>
                         <button title="Close (Esc)" type="button" class="mfp-close js-trigger-cancel">×</button>
