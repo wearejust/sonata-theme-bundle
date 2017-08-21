@@ -23,8 +23,10 @@ $(function() {
 
 $window.resize(function() { 
 	if($window.width() > minWidth) {
-		$('.add_records.js-sticky').css('left', $('.add_records').not('.js-sticky').offset().left);
-		$('.add_records.js-sticky').show();
+		setTimeout(() => {
+			$('.add_records.js-sticky').show();
+			$('.add_records.js-sticky').css('left', $('.add_records').not('.js-sticky').offset().left);
+		}, 300);
 	} else {
 		$('.add_records.js-sticky').css('left', 'inherit');
 		$('.add_records.js-sticky').hide();
