@@ -4,6 +4,7 @@ let addBtnClone;
 let elOffsetLeft;
 let $window = $(window);
 let minWidth = 940;
+let stickyBtn = $('.add_records.js-sticky');
 
 $(function() {
 	if($window.width() > minWidth) {
@@ -24,11 +25,11 @@ $(function() {
 $window.resize(function() { 
 	if($window.width() > minWidth) {
 		setTimeout(() => {
-			$('.add_records.js-sticky').show();
-			$('.add_records.js-sticky').css('left', $('.add_records').not('.js-sticky').offset().left);
+			stickyBtn.show();
+			stickyBtn.css('left', $('.add_records').not('.js-sticky').offset().left);
 		}, 300);
 	} else {
-		$('.add_records.js-sticky').css('left', 'inherit');
-		$('.add_records.js-sticky').hide();
+		stickyBtn.css('left', 'inherit');
+		stickyBtn.hide();
 	}
 });
