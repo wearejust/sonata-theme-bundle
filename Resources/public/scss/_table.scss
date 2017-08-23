@@ -23,13 +23,22 @@ table.sonata-ba-list td {
 .table>thead>tr>th {
     vertical-align: middle;
 }
-
+.delete_link {
+    max-height: 58px;
+    max-width: 58px;
+}
 .sonata-ba-list tr td:last-child {
     position: relative;
     overflow: visible;
-    width: 58px;
     margin: 0;
     padding: 0;
+    padding-right: 2.375em;
+    text-align: right;
+    .btn-group {
+        .btn:last-child {
+            margin-left: 1em;
+        }
+    }
 }
 
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
