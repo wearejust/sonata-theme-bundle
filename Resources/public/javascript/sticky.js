@@ -1,34 +1,43 @@
 require('@wearejust/sticky');
 
-let addBtnClone;
-let elOffsetLeft;
-let $window = $(window);
-let minWidth = 940;
+const MIN_WIDTH = 940;
+const $window = $(window);
+
+let clone;
+let element;
+let timeout;
 
 $(function() {
-	if($window.width() > minWidth) {
-		$('.add_records').attr('data-sticky-id', 'sticky_add_btn');
-		elOffsetLeft = $('.add_records').offset().left;
-		addBtnClone = $('.add_records').clone().appendTo('.navbar-collapse');
-		addBtnClone.addClass('js-sticky');
-		addBtnClone.css('left', elOffsetLeft);
-		$(addBtnClone).attr('data-sticky-target', 'sticky_add_btn');
-	    $('.js-sticky').sticky({
-	        active: 'is_sticky',
-	        topHeightOffset: -1.1
-	    });
-	    $window.resize();
-	}
+	element = $('.add_records');
+	if(!element.length) return;
+
+	element.attr('data-sticky-id', 'sticky_add_btn');
+	clone = element.clone(true).appendTo('.navbar-collapse');
+	clone.addClass('is-clone');
+	clone.css('left', element.offset().left);
+	clone.attr('data-sticky-target', 'sticky_add_btn');
+
+    clone.sticky({
+        active: 'is-sticky',
+        topHeightOffset: -1.1
+    });
+
+    $window.on('resize', resizeDelayed);
+    resize();
+	
 });
 
-$window.resize(function() { 
-	if($window.width() > minWidth) {
-		setTimeout(() => {
-			$('.add_records.js-sticky').show();
-			$('.add_records.js-sticky').css('left', $('.add_records').not('.js-sticky').offset().left);
-		}, 300);
+function resizeDelayed() {
+	clearTimeout(timeout);
+	timeout = setTimeout(resize, 300);	
+}
+
+function resize() {
+	if($window.width() >= MIN_WIDTH) {
+		clone.css('left', element.not('.js-sticky').offset().left);
+		clone.show();
 	} else {
-		$('.add_records.js-sticky').css('left', 'inherit');
-		$('.add_records.js-sticky').hide();
+		clone.css('left', '');
+		clone.hide();
 	}
-});
+}
