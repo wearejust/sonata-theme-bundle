@@ -23,7 +23,7 @@ table.sonata-ba-list td {
 .table>thead>tr>th {
     vertical-align: middle;
 }
-.delete_link {    
+.delete_link {
     max-width: 58px;
 }
 .sonata-ba-list tr td:last-child {
@@ -39,7 +39,10 @@ table.sonata-ba-list td {
         }
     }
 }
-
+.table-bordered>thead>tr>th:last-child {
+    padding-right: 2.375em;
+    text-align: right;
+}
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
     color: #000;
     font-weight: normal;
