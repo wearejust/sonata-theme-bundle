@@ -24,6 +24,10 @@ table.sonata-ba-list td {
     vertical-align: middle;
 }
 
+.table>thead>.sonata-ba-list-field-header>th {
+    vertical-align: top;
+}
+
 .sonata-ba-list tr td:last-child {
     position: relative;
     overflow: visible;
