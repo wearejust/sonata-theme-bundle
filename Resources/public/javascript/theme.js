@@ -24,25 +24,21 @@ $(function(){
     $('#username').focus();
 
     //Make complete TR linkable
-    let preventNavigation = [
-        'INPUT',
-        'A',
-        'BUTTON',
-        'SPAN',
-        'I'
-    ];
 
-    $('.box-body table tr:not(.sonata-ba-list-field-header)').each(function(index, item){
-        let el = $(item);
-        let linkEl = el.find('a.edit_link');
-        if(linkEl.length) {
+    $('.box-body table tr:not(.sonata-ba-list-field-header) a.edit_link').each(function(index, item){
+        item = $(item);
+        let url = item.attr('href');
+        let el = item.closest('tr');
 
-            el.on('mouseup touchend', function(e){
-                e.preventDefault();
-                if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
-                    window.location.href=linkEl.attr('href')
-                }
-            })
-        }
+        el.on('mouseup touchend', function(e){
+            if (!$(e.target).is('a, button')) {
+               if (e.ctrlKey || e.metaKey || e.which == 2) {
+                   window.open(url);
+               } else if (e.which != 3) {
+                   window.location = url;
+               }
+           }
+        })
+
     });
 });
