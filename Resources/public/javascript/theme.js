@@ -37,7 +37,7 @@ $(function(){
         let linkEl = el.find('a.edit_link');
         if(linkEl.length) {
 
-            el.on('mousedown', function(e){
+            el.on('mouseup touchend', function(e){
                 e.preventDefault();
                 if($.inArray($(e.target).prop('tagName'),preventNavigation) === -1){
                     window.location.href=linkEl.attr('href')
