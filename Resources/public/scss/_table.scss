@@ -23,9 +23,15 @@ table.sonata-ba-list td {
 .table>thead>tr>th {
     vertical-align: middle;
 }
+
 .delete_link {
     max-width: 58px;
 }
+
+.table>thead>.sonata-ba-list-field-header>th {
+    vertical-align: top;
+}
+
 .sonata-ba-list tr td:last-child {
     position: relative;
     overflow: visible;
