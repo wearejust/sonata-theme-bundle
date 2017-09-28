@@ -95,6 +95,7 @@
 .navbar {
 	border-radius: 0;
 }
+
 .nav.navbar-nav {
 	margin: 0 -10px;
 }
@@ -105,6 +106,10 @@
 	border: none;
 	margin-top: -1.1em;
 	width: auto !important;
+}
+
+.navbar.navbar-default .navbar-left {
+	clear:both;
 }
 
 .navbar-default .navbar-brand {
