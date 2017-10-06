@@ -43,17 +43,17 @@ class JustSonataThemeExtension extends Extension implements PrependExtensionInte
 
         if ($theme = $config['custom_theme']) {
             $yml = $this->parseYml($container->getParameter('kernel.root_dir') . '/' . $theme);
-            $extensionConfig = array_replace_recursive($extensionConfig, $yml);
 
-            if (isset($yml['extra_css'])) {
+            if (isset($yml['extra_css']) && $yml['extra_css']) {
                 $extensionConfig['assets']['stylesheets'] = array_merge($extensionConfig['assets']['stylesheets'], $yml['extra_css']);
-                unset($extensionConfig['extra_css']);
             }
-            if (isset($yml['extra_js'])) {
+            if (isset($yml['extra_js']) && $yml['extra_js']) {
                 $extensionConfig['assets']['javascripts'] = array_merge($extensionConfig['assets']['javascripts'], $yml['extra_js']);
-                unset($extensionConfig['extra_js']);
             }
         }
+
+        $extensionConfig['assets']['javascripts'] = array_merge($extensionConfig['assets']['javascripts'], $config['extra_js_assets']);
+        $extensionConfig['assets']['stylesheets'] = array_merge($extensionConfig['assets']['stylesheets'], $config['extra_css_assets']);
 
         $container->prependExtensionConfig('sonata_admin', $extensionConfig);
     }
