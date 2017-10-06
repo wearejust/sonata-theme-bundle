@@ -45,6 +45,14 @@ class AppKernel extends Kernel
 
 Also, enable the [pixSortableBehaviorBundle](https://github.com/pix-digital/pixSortableBehaviorBundle) by following their [installation guide](https://github.com/pix-digital/pixSortableBehaviorBundle).
 
+Also, add routing in your ```routing.yml```
+
+```yml
+// routing.yml
+_wearejust_sonata_theme:
+    resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
+```
+
 Step 3: Add extra config (optional)
 -------------------------
 
