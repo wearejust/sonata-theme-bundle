@@ -1,22 +1,22 @@
-let cropTrigger;
-
-class cropSave {
+class Cropper {
     constructor(item) {
-        this.item = item
-        cropTrigger = $('*[data-method="getCroppedCanvas"]');
-        cropTrigger.on('click', this.save.bind(this));
+        this.item = item;
+        this.item.find($('*[data-method="getCroppedCanvas"]')).on('click', this.save.bind(this));
     } 
+
     save() {
-    	setTimeout(function() {
-    		$('*[name="btn_update_and_edit"]').click();
-    	}, 500);
+        let updateBtn = $('*[name="btn_update_and_edit"]');
+        if(!updateBtn.length) return;
         
+    	setTimeout(function() {
+    		updateBtn.click();
+    	}, 500); 
     }
 }
 
 $(function(){
     $('.cropper').each(function(index,item){
-        new cropSave($(item));
+        new Cropper($(item));
     });
 });
 
