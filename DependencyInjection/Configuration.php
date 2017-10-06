@@ -23,6 +23,8 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('custom_theme')->defaultValue('')->end()
+                ->arrayNode('extra_css_assets')->prototype('scalar')->end()->end()
+                ->arrayNode('extra_js_assets')->prototype('scalar')->end()->end()
             ->end()
         ;
 
