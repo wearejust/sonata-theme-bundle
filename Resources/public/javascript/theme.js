@@ -25,7 +25,7 @@ $(function(){
 
     //Make complete TR linkable
 
-    $('.box-body table tr:not(.sonata-ba-list-field-header) a.edit_link').each(function(index, item){
+    $('.box-body table tr:not(.sonata-ba-list-field-header) a.edit_link .js-sortable-move').each(function(index, item){
         item = $(item);
         let url = item.attr('href');
         let el = item.closest('tr');
