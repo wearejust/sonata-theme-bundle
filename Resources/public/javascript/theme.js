@@ -25,13 +25,13 @@ $(function(){
 
     //Make complete TR linkable
 
-    $('.box-body table tr:not(.sonata-ba-list-field-header) a.edit_link .js-sortable-move').each(function(index, item){
+    $('.box-body table tr:not(.sonata-ba-list-field-header)  a.edit_link').each(function(index, item){
         item = $(item);
         let url = item.attr('href');
         let el = item.closest('tr');
 
         el.on('mouseup touchend', function(e){
-            if (!$(e.target).is('a, button')) {
+            if (!$(e.target).is('a, button, .js-sortable-move')) {
                if (e.ctrlKey || e.metaKey || e.which == 2) {
                    window.open(url);
                } else if (e.which != 3) {
