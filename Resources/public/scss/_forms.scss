@@ -224,7 +224,7 @@ textarea {
 	transition: 0.15s ease-in-out;
 }
 
-.vich-image {
+.vich-image, .cropper {
 	position: relative;
 	a { 
 		background-color: $light-gray;
@@ -261,7 +261,7 @@ textarea {
 	}
 
 	&.is_checked {
-		img {
+		img, canvas {
 			opacity: 0.3;
 		}
 		.checkbox label {
