@@ -53,7 +53,24 @@ _wearejust_sonata_theme:
     resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
 ```
 
-Step 3: Add extra config (optional)
+
+Step 3: Compile assets
+-------------------------
+The assets in this package has not een build yet. This means you have to build the assets yourself (Yarn is needed for this to work). There's webpack already configured for you, locked, loaded and ready to go. Add the following config to your own ```package.json``` file.
+
+```json
+{
+  "scripts": {
+    "build-cms": "cd ./vendor/wearejust/sonata-theme-bundle && yarn && yarn run build",
+  }
+}
+```
+
+You can now run ```yarn run build-cms``` and the assets will be published to the public dir, and symlinked automatically by the Symfony Framework.
+
+
+
+Step 4: Add extra config (optional)
 -------------------------
 
 It's possible to override the config we provide, you can specify an custom yml file ```(as Resources/config/theme.yml)``` the following way:
