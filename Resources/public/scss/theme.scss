@@ -9,6 +9,7 @@
 @import 'table';
 @import 'pagination';
 @import 'login';
+@import 'cropper';
 @import 'miscplugins';
 @import 'icons_overrides';
 
@@ -128,9 +129,8 @@ body.fixed .content-header>.sticky-wrapper {
 }
 
 .info-box-text {
-    font-size: 24px;
     border-bottom: 1px solid transparent;
-    padding: 0 0 0.4em 0;
+    padding: 0;
     text-transform: inherit;
 }
 

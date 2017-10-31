@@ -1,0 +1,51 @@
+.cropper {
+	.cropper-canvas-container {
+		margin-bottom: 0 !important;
+		margin-top: 0.15rem;
+	}
+
+	background-color: $light-gray;
+	display: flex;
+	flex-direction: column;
+	.col-md-12, .form-group, .sonata-ba-field {
+		position: static;
+	}
+	
+	.btn {
+		color: #fff !important;
+	    background-color: #222 !important;
+	    border-color: #222 !important;
+	}
+
+	.image-url-input.input-sm.form-control, .col-md-8.cropper-remote {
+		display: none;
+	}
+
+	.cropper-canvas-container {
+		order: 2;
+	}
+
+	.cropper-local {
+		width: 100%;
+		input.hidden {
+			display: block !important;
+		}
+		.btn {
+			display: none;
+		}	
+	}
+
+	.modal-lg {
+		width: 1000px;
+ 		.modal-content {
+ 			padding: 0 20px;
+ 		}
+	}
+
+}
+
+
+
+.cropper:hover {
+	cursor: pointer;
+}

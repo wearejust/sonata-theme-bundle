@@ -23,7 +23,7 @@
 }
 .mfp-content .sonata-ba-delete {
     margin: auto;
-    max-width: 330px;
+    max-width: 355px;
     position: relative;
 }
 .sonata-ba-delete {
@@ -37,7 +37,7 @@
             padding: 0.75em 2.375em;
         }
         .box-title {
-            font-size: 24px; 
+            font-size: 24px;
         }
         .box-body {
             padding: 0 2.375em 0.75em;
@@ -52,6 +52,20 @@
         .btn {
             margin: 0.5em 1em 0 0;
         }
+    }
+}
+
+.sonata-ba-delete.popup-file-delete {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    * {
+        transition: opacity 0.5s;
+    }
+    .box.is_active * {
+        opacity: 0.5;
+        pointer-events: none;
     }
 }
 
@@ -93,7 +107,6 @@
 }
 
 .info-box-content {
-    background: $lighter-gray;
     margin-left: 0;
     padding: 1.2em 1.5em;
 }

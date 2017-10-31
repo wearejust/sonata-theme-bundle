@@ -3,4 +3,3 @@ require('./forms.js');
 require('./multipleactions.js');
 require('./filters.js');
 require('./popup.js');
-
