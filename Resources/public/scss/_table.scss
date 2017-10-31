@@ -114,6 +114,13 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
     border-radius: 0;
 }
 
+.sonata-ba-list-field-header-batch, .sonata-ba-list-field-batch {
+    padding: 1.35em 0.5em !important;
+    + .sonata-ba-list-field-header-text, + .sonata-ba-list-field-text {
+        padding: 1.35em 0.3rem !important;
+    }
+}
+
 @media screen and (min-width: 50em) {
     .box-body.table-responsive {
         overflow: visible;
