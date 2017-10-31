@@ -29,7 +29,7 @@ assets:
         - bundles/sonataadmin/css/layout.css
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
-        - bundles/justsonatatheme/css/theme.css
+        - bundles/justsonatatheme/build/app.css
 
     javascripts:
         - bundles/sonatacore/vendor/jquery/dist/jquery.min.js
@@ -52,4 +52,4 @@ assets:
         - //cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js
         - bundles/pixsortablebehavior/js/jquery-ui.min.js
         - bundles/pixsortablebehavior/js/init.js
-        - bundles/justsonatatheme/javascript/app.bundle.js
+        - bundles/justsonatatheme/build/app.js
