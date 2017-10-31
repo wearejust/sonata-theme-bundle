@@ -24,6 +24,10 @@ table.sonata-ba-list td {
     vertical-align: middle;
 }
 
+.delete_link {
+    max-width: 58px;
+}
+
 .table>thead>.sonata-ba-list-field-header>th {
     vertical-align: top;
 }
@@ -31,11 +35,20 @@ table.sonata-ba-list td {
 .sonata-ba-list tr td:last-child {
     position: relative;
     overflow: visible;
-    width: 58px;
     margin: 0;
     padding: 0;
+    padding-right: 2.375em;
+    text-align: right;
+    .btn-group {
+        .btn:last-child {
+            margin-left: 1em;
+        }
+    }
 }
-
+.table-bordered>thead>tr>th:last-child {
+    padding-right: 2.375em;
+    text-align: right;
+}
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
     color: #000;
     font-weight: normal;
