@@ -1,10 +1,9 @@
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var Path               = require('path');
-var Config             = require('webpack-config').default;
 var ExtractTextPlugin  = require('extract-text-webpack-plugin');
 var Webpack            = require('webpack');
 
-module.exports = new Config().merge({
+module.exports = {
     context: Path.join(__dirname, './Resources/public'),
     devtool: "source-map",
     entry: {
@@ -57,17 +56,9 @@ module.exports = new Config().merge({
     },
     plugins: [
         new CleanWebpackPlugin(['public/build/*']),
-        new Webpack.LoaderOptionsPlugin({
-            minimize: true,
-            debug: false,
-        }),
-        new Webpack.optimize.UglifyJsPlugin({
-            compress: true,
-            sourceMap: false
-        }),
         new ExtractTextPlugin({
             filename: '[name].css',
             allChunks: true,
         })
     ]
-});
+};
