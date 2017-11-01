@@ -68,6 +68,14 @@ The assets in this package has not een build yet. This means you have to build t
 
 You can now run ```yarn run build-cms``` and the assets will be published to the public dir, and symlinked automatically by the Symfony Framework.
 
+Also add the following to your ```config.yml```.
+```yml
+framework:
+    assets:
+        packages:
+            backend:
+              json_manifest_path: '%kernel.root_dir%/../public/bundles/justsonatatheme/build/manifest.json'
+```
 
 
 Step 4: Add extra config (optional)
