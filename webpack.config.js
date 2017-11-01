@@ -1,7 +1,7 @@
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var ExtractTextPlugin  = require('extract-text-webpack-plugin');
-var ManifestPlugin     = require('webpack-manifest-plugin');
-var Path               = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin  = require('extract-text-webpack-plugin');
+const ManifestPlugin     = require('webpack-manifest-plugin');
+const Path               = require('path');
 
 module.exports = {
     context: Path.join(__dirname, './Resources/public'),
@@ -13,7 +13,7 @@ module.exports = {
     },
     output: {
         path: Path.join(__dirname, './Resources/public/build'),
-        publicPath: '/build/',
+        publicPath: '/bundles/justsonatatheme/build/',
         filename: '[name].[hash].js'
     },
     resolve: {
@@ -61,8 +61,7 @@ module.exports = {
             allChunks: true,
         }),
         new ManifestPlugin({
-            basePath: 'bundles/justsonatatheme/build/',
-            publicPath: '/bundles/justsonatatheme/build/'
+            basePath: 'bundles/justsonatatheme/build/'
         })
     ]
 };
