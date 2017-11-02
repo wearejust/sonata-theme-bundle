@@ -1,3 +1,11 @@
+<p align="center"><a href="https://wearejust.com" target="_blank">
+    <img src="https://user-images.githubusercontent.com/883497/32327075-89640c50-bfd5-11e7-91c8-6abed9964605.png">
+</a></p>
+
+# Sonata Theme Bundle
+
+<p align="center"><a href="https://wearejust.com" target="_blank"><img src="https://user-images.githubusercontent.com/883497/32327076-898059be-bfd5-11e7-927e-69e75323c776.gif"></a></p>
+
 Installation
 ============
 
