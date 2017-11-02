@@ -27,8 +27,8 @@ UPGRADE FROM 1.x to 2.0
 ### Added custom template controller
  * The JS uses an modal which provides some new HTML. A new Controller has been added to make this feature work. Please add the following to your routing.
 
-	```yml
+    ```yml
     # routing.yml
-	_wearejust_sonata_theme:
-    	resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
+    _wearejust_sonata_theme:
+        resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
     ```
