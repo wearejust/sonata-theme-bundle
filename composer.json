@@ -5,6 +5,7 @@
     "keywords": ["sonata", "wearejust", "admin", "symfony"],
     "require": {
         "sonata-project/admin-bundle": "^3.1",
+        "symfony/framework-bundle": "^3.3",
         "pixassociates/sortable-behavior-bundle": "^1.4"
     },
     "license": "MIT",
