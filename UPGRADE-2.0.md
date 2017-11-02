@@ -32,3 +32,19 @@ UPGRADE FROM 1.x to 2.0
     _wearejust_sonata_theme:
         resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
     ```
+
+### Finally, change your composer.json
+ * Don't forget to add the new version to your own composer.json file
+
+	```json
+    # composer.json
+    {
+    	"require": {
+    		"wearejust/sonata-theme-bundle": ^2
+        }
+    }
+    ```
+    
+    And run the following command:
+    
+    ```composer update wearejust/sonata-theme-bundle --with-dependencies```
