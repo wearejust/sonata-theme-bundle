@@ -1,0 +1,12 @@
+.add_records.is-clone {
+	transform: translateY(-200%);
+	visibility: hidden;
+}
+
+.add_records.is-sticky {
+	position: fixed;
+	top: -2px;
+	margin-top: 10px !important;
+	visibility: visible;
+	transform: translateY(100%);
+}
