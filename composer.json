@@ -16,7 +16,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Just\\SonataThemeBundle\\": "" }
+        "psr-4": { "Wearejust\\SonataThemeBundle\\": "" }
     },
     "minimum-stability": "stable",
     "extra": {

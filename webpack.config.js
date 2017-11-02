@@ -13,7 +13,7 @@ module.exports = {
     },
     output: {
         path: Path.join(__dirname, './Resources/public/build'),
-        publicPath: '/bundles/justsonatatheme/build/',
+        publicPath: '/bundles/wearejustsonatatheme/build/',
         filename: '[name].[hash].js'
     },
     resolve: {
@@ -61,7 +61,7 @@ module.exports = {
             allChunks: true,
         }),
         new ManifestPlugin({
-            basePath: 'bundles/justsonatatheme/build/'
+            basePath: 'bundles/wearejustsonatatheme/build/'
         })
     ]
 };

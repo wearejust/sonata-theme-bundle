@@ -41,7 +41,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new Just\SonataThemeBundle\JustSonataThemeBundle(),
+            new Wearejust\SonataThemeBundle\WearejustSonataThemeBundle(),
         );
 
         // ...
@@ -58,7 +58,7 @@ Also, add routing in your ```routing.yml```
 ```yml
 // routing.yml
 _wearejust_sonata_theme:
-    resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
+    resource: "@WearejustSonataThemeBundle/Resources/config/routing.yml"
 ```
 
 
@@ -82,7 +82,7 @@ framework:
     assets:
         packages:
             backend:
-              json_manifest_path: '%kernel.root_dir%/../public/bundles/justsonatatheme/build/manifest.json'
+              json_manifest_path: '%kernel.root_dir%/../public/bundles/wearejustsonatatheme/build/manifest.json'
 ```
 
 
@@ -92,7 +92,7 @@ Step 4: Add extra config (optional)
 It's possible to override the config we provide, you can specify an custom yml file ```(as Resources/config/theme.yml)``` the following way:
 
 ```yml
-just_sonata_theme:
+wearejust_sonata_theme:
     custom_theme: /path/to/custom/yml
 
 ```

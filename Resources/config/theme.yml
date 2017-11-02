@@ -8,10 +8,10 @@ options:
     use_icheck: false
 
 templates:
-    layout:               'JustSonataThemeBundle::standard_layout.html.twig'
-    list:                 'JustSonataThemeBundle:CRUD:list.html.twig'
-    edit:                 'JustSonataThemeBundle:CRUD:edit.html.twig'
-    pager_results:        'JustSonataThemeBundle:Pager:results.html.twig'
+    layout:               'WearejustSonataThemeBundle::standard_layout.html.twig'
+    list:                 'WearejustSonataThemeBundle:CRUD:list.html.twig'
+    edit:                 'WearejustSonataThemeBundle:CRUD:edit.html.twig'
+    pager_results:        'WearejustSonataThemeBundle:Pager:results.html.twig'
 
 assets:
     stylesheets:
@@ -29,7 +29,7 @@ assets:
         - bundles/sonataadmin/css/layout.css
         - bundles/sonataadmin/css/tree.css
         - bundles/sonataadmin/css/colors.css
-        - bundles/justsonatatheme/build/app.css
+        - bundles/wearejustsonatatheme/build/app.css
 
     javascripts:
         - bundles/sonatacore/vendor/jquery/dist/jquery.min.js
@@ -52,4 +52,4 @@ assets:
         - //cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js
         - bundles/pixsortablebehavior/js/jquery-ui.min.js
         - bundles/pixsortablebehavior/js/init.js
-        - bundles/justsonatatheme/build/app.js
+        - bundles/wearejustsonatatheme/build/app.js

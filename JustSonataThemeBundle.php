@@ -1,9 +1,9 @@
 <?php
 
-namespace Just\SonataThemeBundle;
+namespace Wearejust\SonataThemeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class JustSonataThemeBundle extends Bundle
+class WearejustSonataThemeBundle extends Bundle
 {
 }

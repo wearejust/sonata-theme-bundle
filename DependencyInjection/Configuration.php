@@ -1,6 +1,6 @@
 <?php
 
-namespace Just\SonataThemeBundle\DependencyInjection;
+namespace Wearejust\SonataThemeBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('just_sonata_theme');
+        $rootNode = $treeBuilder->root('wearejust_sonata_theme');
 
         $rootNode
             ->children()

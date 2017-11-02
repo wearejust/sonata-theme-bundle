@@ -1,7 +1,7 @@
 wearejust_sonata_theme_template_delete_dialog:
     path: "/wearejust/sonata_theme/delete_dialog"
     defaults:
-        _controller: JustSonataThemeBundle:Template:deleteDialog
+        _controller: WearejustSonataThemeBundle:Template:deleteDialog
     methods: ["GET"]
     options:
         expose: true

@@ -1,6 +1,6 @@
 <?php
 
-namespace Just\SonataThemeBundle\DependencyInjection;
+namespace Wearejust\SonataThemeBundle\DependencyInjection;
 
 use RuntimeException;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -14,7 +14,7 @@ use Symfony\Component\Yaml\Yaml;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class JustSonataThemeExtension extends Extension implements PrependExtensionInterface
+class WearejustSonataThemeExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * {@inheritdoc}

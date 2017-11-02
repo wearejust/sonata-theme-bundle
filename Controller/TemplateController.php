@@ -1,6 +1,6 @@
 <?php
 
-namespace Just\SonataThemeBundle\Controller;
+namespace Wearejust\SonataThemeBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -11,6 +11,6 @@ class TemplateController extends Controller
      */
     public function deleteDialogAction()
     {
-        return $this->render('@JustSonataTheme/Wearejust/AJAX/delete-dialog.html.twig');
+        return $this->render('@WearejustSonataTheme/Wearejust/AJAX/delete-dialog.html.twig');
     }
 }
