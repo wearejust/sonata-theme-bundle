@@ -6,7 +6,7 @@ const $window = $(window);
 let clone;
 let element;
 let timeout;
-let cloneShown;
+let cloneShown = true;
 
 $(function() {
 	element = $('.add_records');
@@ -15,7 +15,6 @@ $(function() {
 	element.attr('data-sticky-id', 'sticky_add_btn');
 	clone = element.clone(true).appendTo('.navbar-collapse');
 	clone.addClass('is-clone');
-	clone.css('left', element.offset().left);
 	clone.attr('data-sticky-target', 'sticky_add_btn');
 
     clone.sticky({
