@@ -6,6 +6,7 @@ const $window = $(window);
 let clone;
 let element;
 let timeout;
+let cloneShown;
 
 $(function() {
 	element = $('.add_records');
@@ -34,10 +35,17 @@ function resizeDelayed() {
 
 function resize() {
 	if($window.width() >= MIN_WIDTH) {
-		clone.css('left', element.not('.js-sticky').offset().left);
-		clone.show();
-	} else {
+		if (!cloneShown) {
+			cloneShown = true;
+			clone.show();
+		}
+	} else if (cloneShown) {
+		cloneShown = false;
 		clone.css('left', '');
 		clone.hide();
+	}
+
+	if (cloneShown) {
+		clone.css('left', element.offset().left);
 	}
 }
