@@ -15,6 +15,18 @@
 
 {% block body_attributes %}class="sonata-bc skin-black fixed"{% endblock %}
 
+{% block stylesheets %}
+    {% for stylesheet in sonata_admin.adminPool.getOption('stylesheets', []) %}
+        <link rel="stylesheet" href="{{ asset(stylesheet, 'backend') }}">
+    {% endfor %}
+{% endblock %}
+
+{% block sonata_javascript_pool %}
+    {% for javascript in sonata_admin.adminPool.getOption('javascripts', []) %}
+        <script src="{{ asset(javascript, 'backend') }}"></script>
+    {% endfor %}
+{% endblock %}
+
 {% block side_bar_after_nav %}{% endblock %}
 
 {% block sonata_page_content_nav %}

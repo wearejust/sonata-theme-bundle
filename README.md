@@ -8,7 +8,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require wearejust/sonata-theme-bundle "~1"
+$ composer require wearejust/sonata-theme-bundle "~2"
 ```
 
 This command requires you to have Composer installed globally, as explained
@@ -53,7 +53,32 @@ _wearejust_sonata_theme:
     resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
 ```
 
-Step 3: Add extra config (optional)
+
+Step 3: Compile assets
+-------------------------
+The assets in this package has not een build yet. This means you have to build the assets yourself (Yarn is needed for this to work). There's webpack already configured for you, locked, loaded and ready to go. Add the following config to your own ```package.json``` file.
+
+```json
+{
+  "scripts": {
+    "build-cms": "cd ./vendor/wearejust/sonata-theme-bundle && yarn && yarn run build",
+  }
+}
+```
+
+You can now run ```yarn run build-cms``` and the assets will be published to the public dir, and symlinked automatically by the Symfony Framework.
+
+Also add the following to your ```config.yml```.
+```yml
+framework:
+    assets:
+        packages:
+            backend:
+              json_manifest_path: '%kernel.root_dir%/../public/bundles/justsonatatheme/build/manifest.json'
+```
+
+
+Step 4: Add extra config (optional)
 -------------------------
 
 It's possible to override the config we provide, you can specify an custom yml file ```(as Resources/config/theme.yml)``` the following way:
