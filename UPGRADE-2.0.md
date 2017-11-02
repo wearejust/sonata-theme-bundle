@@ -40,7 +40,7 @@ UPGRADE FROM 1.x to 2.0
     # composer.json
     {
     	"require": {
-    		"wearejust/sonata-theme-bundle": ^2
+    		"wearejust/sonata-theme-bundle": "^2"
         }
     }
     ```
