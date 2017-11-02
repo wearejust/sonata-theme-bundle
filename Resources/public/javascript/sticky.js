@@ -6,25 +6,26 @@ const $window = $(window);
 let clone;
 let element;
 let timeout;
-let cloneShown = true;
+let cloneShown;
 
 $(function() {
 	element = $('.add_records');
-	if(!element.length) return;
+	if (!element.length) return;
 
 	element.attr('data-sticky-id', 'sticky_add_btn');
-	clone = element.clone(true).appendTo('.navbar-collapse');
+
+	clone = element.clone(true);
 	clone.addClass('is-clone');
 	clone.attr('data-sticky-target', 'sticky_add_btn');
+	clone.hide();
+	clone.appendTo('.navbar-collapse');
+	clone.sticky({
+		active: 'is-sticky',
+		topHeightOffset: -1.1
+	});
 
-    clone.sticky({
-        active: 'is-sticky',
-        topHeightOffset: -1.1
-    });
-
-    $window.on('resize', resizeDelayed);
-    resize();
-	
+	$window.on('resize', resizeDelayed);
+	resize();
 });
 
 function resizeDelayed() {
@@ -33,15 +34,15 @@ function resizeDelayed() {
 }
 
 function resize() {
-	if($window.width() >= MIN_WIDTH) {
+	if ($window.width() >= MIN_WIDTH) {
 		if (!cloneShown) {
 			cloneShown = true;
 			clone.show();
 		}
 	} else if (cloneShown) {
 		cloneShown = false;
-		clone.css('left', '');
 		clone.hide();
+		clone.css('left', '');
 	}
 
 	if (cloneShown) {
