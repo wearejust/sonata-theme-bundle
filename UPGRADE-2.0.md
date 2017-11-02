@@ -23,3 +23,12 @@ UPGRADE FROM 1.x to 2.0
     ```
     
     Please bear in mind that if you use your project in a deploy pipeline (example: [GitLab Pipelines](https://docs.gitlab.com/ee/ci/pipelines.html)) you don't forget to build these assets in this process.
+
+### Added custom template controller
+ * The JS uses an modal which provides some new HTML. A new Controller has been added to make this feature work. Please add the following to your routing.
+
+	```yml
+    # routing.yml
+	_wearejust_sonata_theme:
+    	resource: "@JustSonataThemeBundle/Resources/config/routing.yml"
+    ```
