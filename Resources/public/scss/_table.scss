@@ -129,7 +129,8 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
 
 .sonata-ba-list-field-header-batch, .sonata-ba-list-field-batch {
     padding: 1.35em 0.5em !important;
-    + .sonata-ba-list-field-header-text, + .sonata-ba-list-field-text {
+    width: 1em;
+    + .sonata-ba-list-field-header-text, + .sonata-ba-list-field-tex, + .sonata-ba-list-field-header-boolean, + .sonata-ba-list-field {
         padding: 1.35em 0.3rem !important;
     }
 }
