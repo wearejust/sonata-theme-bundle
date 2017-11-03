@@ -58,9 +58,9 @@ UPGRADE FROM 1.x to 2.0
   }
   ```
   
-This means also in the `config.yml` you need to change the base config key
+This means also in the `config.yml` you need to change the base config key. You need to change this only if you added some custom config in your `app/config/config.yml` file for key `just_sonata_theme`.
 ```yml
-# app/config.yml
+# app/config/config.yml
 
 # Before:
 just_sonata_theme:
