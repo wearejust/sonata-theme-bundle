@@ -9,6 +9,8 @@
 Installation
 ============
 
+__Hint:__ Coming from 1.x? Please check out our [upgrade guide](UPGRADE-2.0.md)
+
 Step 1: Download the Bundle
 ---------------------------
 
