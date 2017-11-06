@@ -143,3 +143,6 @@ body.fixed .content-header>.sticky-wrapper {
         margin-right: auto;
     }
 }
+body.fixed .content-header .navbar.stuck {
+    top: 0 !important;
+}
