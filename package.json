@@ -28,7 +28,7 @@
         "webpack-manifest-plugin": "^1.3.2"
     },
     "engines": {
-        "node": ">=8.8"
+        "node": ">=6"
     },
     "author": {
         "name": "Cees van Egmond",

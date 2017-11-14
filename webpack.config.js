@@ -4,7 +4,7 @@ const ManifestPlugin     = require('webpack-manifest-plugin');
 const Path               = require('path');
 
 module.exports = {
-    context: Path.join(__dirname, './Resources/public'),
+    context: Path.join(__dirname, './Resources/assets'),
     devtool: "source-map",
     entry: {
         app: [

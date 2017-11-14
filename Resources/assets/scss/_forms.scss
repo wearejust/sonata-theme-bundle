@@ -6,10 +6,10 @@
 	display: none;
 	background-color: #fff;
 	padding-top: 2em;
-    .sonata-filter-form {
-    	box-shadow: inset 0px 28px 20px -33px rgba(0,0,0,0.75);
-    	padding-top: 2rem;
-    }
+	.sonata-filter-form {
+		box-shadow: inset 0px 28px 20px -33px rgba(0,0,0,0.75);
+		padding-top: 2rem;
+	}
 	.form-group {
 		display: block !important;
 		border-bottom: none;
@@ -31,13 +31,13 @@
 .fa-filter:before {
 	content: '';
 	background-image: url('../images/icons/ic_search.svg');
-    display: inline-block;
-    background-image: url(../images/icons/ic_search.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1.3em;
-    height: 1.3em;
-    vertical-align: -4px;
+	display: inline-block;
+	background-image: url(../images/icons/ic_search.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1.3em;
+	height: 1.3em;
+	vertical-align: -4px;
 }
 
 input[type="file"] {
@@ -131,11 +131,11 @@ textarea {
 
 .sonata-ba-form {
 	margin: 0;
-    background-color: #fff;
-    padding-bottom: 100vh;
-    margin-bottom: -100vh;
-    overflow: hidden;
-    width: 100%;
+	background-color: #fff;
+	padding-bottom: 100vh;
+	margin-bottom: -100vh;
+	overflow: hidden;
+	width: 100%;
 	.sonata-ba-form-actions.well {
 		background-color: $gray;
 		border: none;
@@ -164,10 +164,10 @@ textarea {
 		.btn[name="btn_update_and_list"],
 		.btn[name="btn_create_and_list"] {
 			order: 1;
-		} 
+		}
 		.btn[name="btn_create_and_edit"] {
 			order: 3;
-		} 
+		}
 
 	}
 }
@@ -226,9 +226,9 @@ textarea {
 
 .vich-image, .cropper {
 	position: relative;
-	a { 
+	a {
 		background-color: $light-gray;
-		display: block; 
+		display: block;
 		margin-top: 0.3em;
 	}
 	.form-group {
@@ -255,9 +255,9 @@ textarea {
 		background: url('../images/icons/ic_close_white.svg') $danger no-repeat center;
 		background-size: 18px;
 		min-height: 55px;
-    	padding-left: 55px;
-    	opacity: 0;
-    	transition: 0.15s ease-in-out;
+		padding-left: 55px;
+		opacity: 0;
+		transition: 0.15s ease-in-out;
 	}
 
 	&.is_checked {
@@ -279,60 +279,141 @@ textarea {
 
 
 .anim-loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
-    pointer-events: none;
-    z-index: -1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	z-index: -1;
 
-    &.is_active {
-    	opacity: 1;
-    	z-index: 2;
-    }
+	&.is_active {
+		opacity: 1;
+		z-index: 2;
+	}
 
-    label {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin: 0 3px;
-        transform: translateY(0);
-        border-radius: 50%;
-        background-color: #333;
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+	label {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 3px;
+		transform: translateY(0);
+		border-radius: 50%;
+		background-color: #333;
+		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
 
-        animation-name: moveDownUp;
-        animation-duration: 0.65s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        @for $i from 1 to 6 {
-            &:nth-child(#{$i}) {
-                animation-delay: $i * 0.085s;
-            }
-        }
-    }
+		animation-name: moveDownUp;
+		animation-duration: 0.65s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		@for $i from 1 to 6 {
+			&:nth-child(#{$i}) {
+				animation-delay: $i * 0.085s;
+			}
+		}
+	}
 }
 
 
 @keyframes moveDownUp {
-    0% {
-        transform: translateY(0);
-    }
-    25% {
-        transform: translateY(-7px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    75% {
-        transform: translateY(7px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-7px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	75% {
+		transform: translateY(7px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
+// OneToManyInlineTable
+
+
+.sonata-ba-field.sonata-ba-field-inline-table {
+	margin: 2.2em -1.1em 0 -1.1em;
+	background-color: #fff;
+	width: auto;
+	float: none;
+	@media only screen and (min-width: 50em) {
+		margin: 2.2em -3.21428em 0 -3.21428em;
+	}
+
+	.btn {
+		margin-left: 1.1em;
+		margin-bottom: 1.1em;
+		margin-top: 1.1em;
+		@media only screen and (min-width: 50em) {
+			margin-left: 3.21428em;
+			margin-bottom: 1.75em;
+		}
+	}
+
+	.table {
+		th:first-child {
+			padding-left: 1.1em;
+			@media only screen and (min-width: 50em) {
+				padding-left: 3.21428em;
+			}
+		}
+	}
+
+	th:last-child {
+		display: none;
+	}
+
+	.ui-sortable-handle {
+		&:nth-child(odd) {
+			background-color: $lighter-gray;
+		}
+		td {
+			padding-top: 0.25em;
+			padding-bottom: 0.25em;
+		}
+		td:first-of-type {
+			padding-left: 1.1em;
+		}
+		td:last-of-type {
+			padding-right: 1.1em;
+		}
+		@media only screen and (min-width: 50em) {
+			td:first-of-type {
+				padding-left: 3.21428em;
+			}
+			td:last-of-type {
+				padding-right: 3.21428em;
+			}
+		}
+
+	}
+
+	.sonata-ba-sortable-handler.ui-icon.ui-icon-grip-solid-horizontal {
+
+		&:before {
+			content: "";
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAASCAYAAABfJS4tAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzU3M0Q3MUJGRTA3MTFFM0JDNTNDMDYxQzBGQkQxNUEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzU3M0Q3MUNGRTA3MTFFM0JDNTNDMDYxQzBGQkQxNUEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NTczRDcxOUZFMDcxMUUzQkM1M0MwNjFDMEZCRDE1QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NTczRDcxQUZFMDcxMUUzQkM1M0MwNjFDMEZCRDE1QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk0AMlMAAAA7SURBVHjaYmBgYNgLxP+pjPcyAYlfDNQHvxgpNeH///9YxZkYaARGDaa9wQyj6Xg0VYym4wFIxwABBgC/6EwlmgMM/gAAAABJRU5ErkJggg==');
+			height: 18px;
+			opacity: .25;
+			vertical-align: top;
+			width: 22px;
+			display: block;
+			cursor: move;
+		}
+
+		background: none!important;
+		height: 18px;
+		width: 22px;
+		float: right;
+	}
 }
 
 
