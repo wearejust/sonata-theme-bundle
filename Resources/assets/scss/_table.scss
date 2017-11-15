@@ -21,7 +21,7 @@ table.sonata-ba-list td {
 .table>tfoot>tr>th,
 .table>thead>tr>td,
 .table>thead>tr>th {
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .delete_link {
@@ -39,6 +39,7 @@ table.sonata-ba-list td {
     padding: 0;
     padding-right: 2.375em;
     text-align: right;
+    vertical-align: middle;
     .btn-group {
         .btn:last-child {
             margin-left: 1em;
