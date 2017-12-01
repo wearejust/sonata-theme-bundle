@@ -7,7 +7,6 @@ $(function(){
             new imageRemove($(item), html);
         });
     });
-
 });
 
 class imageRemove {
@@ -23,10 +22,6 @@ class imageRemove {
     change() {
         this.item.find('input, img, .checkbox, .cropper-local').toggleClass('accessibility');
         this.dialog.toggleClass('is-active');
-    }
-
-    remove(e) {
-        e.preventDefault();
     }
 
     cancel(e) {
