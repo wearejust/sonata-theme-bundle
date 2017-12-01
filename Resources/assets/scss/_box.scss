@@ -69,6 +69,19 @@
     }
 }
 
+.delete-dialog {
+    color: #d73925;
+    display: none;
+    padding: 0.75rem 1rem;
+    &.is-active {
+        display: block;
+    }
+    .delete-dialog__cancel-btn {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
 .tab-pane .box {
     border: 0;
 }
