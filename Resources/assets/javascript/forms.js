@@ -1,40 +1,33 @@
-class imageRemove {
-    constructor(item) {
-        $.get('/wearejust/sonata_theme/delete_dialog', function(html) {
-            $('body').append(html);
-        });
-        
-        this.item = item
-        this.item.find('input[type="checkbox"]').on('change', this.change.bind(this));
-        $('.js-trigger-save').on('click', forceSave);
-        $('.js-trigger-cancel').on('click', cancel);
-    }
-    change() {
-        $.magnificPopup.open({
-            items: {
-                src: '.popup-file-delete'
-            },
-            type: 'inline',
-            callbacks: {
-                close: function(){
-                    $('.vich-image, .cropper').find('input[type="checkbox"]').attr('checked', false);       
-                }
-            }
-        });
-    }
-}
-
-function forceSave() {
-    $('.popup-file-delete .anim-loading, .popup-file-delete .box').addClass('is_active');
-    $('*[name="btn_update_and_edit"]').click();
-}
-
-function cancel() {
-    $.magnificPopup.close();   
-}
-
 $(function(){
-    $('.vich-image, .cropper').each(function(index,item){
-        new imageRemove($(item));
+    let elements = $('.vich-image, .cropper');
+    if(!elements.length) return;
+
+    $.get('/wearejust/sonata_theme/delete_dialog', (html) => {
+        elements.each(function(index,item){
+            new imageRemove($(item), html);
+        });
     });
 });
+
+class imageRemove {
+    constructor(item, html) {
+        this.item = item;
+        this.dialog = $(html);
+        this.checkbox = this.item.find('input[type="checkbox"]');
+        this.item.append(this.dialog);
+        this.checkbox.on('change', this.change.bind(this));
+        this.item.find('.js-delete-cancel').on('click', this.cancel.bind(this));
+    }
+
+    change() {
+        this.item.find('input, img, .checkbox, .cropper-local').toggleClass('accessibility');
+        this.dialog.toggleClass('is-active');
+    }
+
+    cancel(e) {
+        e.preventDefault();
+        this.change();
+        this.checkbox.attr('checked', false);  
+    }
+}
+
