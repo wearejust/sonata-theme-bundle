@@ -84,22 +84,20 @@
 	border-color: $danger !important;
 }
 
-.sonata-ba-list-field-boolean .label-success {
+.sonata-ba-list-field-boolean .label-success,
+.sonata-ba-list-field-boolean .label-danger {
 	background-color: transparent !important;
 	color: $success !important;
 	transition: 0.1s;
-	&:hover {
-		background-color: #999 !important;
-		color: #fff !important;
-	}
 }
-
+.sonata-ba-list-field-boolean .label-success {
+	color: $success !important;
+}
 .sonata-ba-list-field-boolean .label-danger {
-	background-color: transparent !important;
 	color: $danger !important;
-	transition: 0.1s;
-	&:hover {
-		background-color: #999 !important;
-		color: #fff !important;
-	}
+}
+.sonata-ba-list-field-boolean a.label-success:hover,
+.sonata-ba-list-field-boolean a.label-danger:hover  {
+	background-color: #999 !important;
+	color: #fff !important;
 }
