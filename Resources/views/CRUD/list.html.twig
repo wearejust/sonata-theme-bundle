@@ -17,3 +17,9 @@
 	    {{- label -}}
 	{% endif %}
 {% endblock %}
+
+{% block list_footer %}
+    {% if admin.datagrid.results|length > 0 and batchactions | length %}
+        {{ parent() }}
+    {% endif %}
+{% endblock %}

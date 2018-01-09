@@ -31,7 +31,7 @@ $(function(){
         el.on('mouseup touchend', function(e){
             if ($('body').hasClass('is-dragging')) return;
 
-            if (!$(e.target).is('a, button, .js-sortable-move')) {
+            if (!$(e.target).is('input, a, button, .js-sortable-move')) {
                 if (e.ctrlKey || e.metaKey || e.which == 2) {
                     window.open(url);
                 } else if (e.which != 3) {

@@ -10,6 +10,8 @@ file that was distributed with this source code.
 #}
 
 {% block num_results %}
-    {% transchoice admin.datagrid.pager.nbresults with {'%count%': admin.datagrid.pager.nbresults} from 'SonataAdminBundle' %}list_results_count{% endtranschoice %}
-    {#&nbsp;-&nbsp;#}
+    {% if admin.hasRoute('export') and admin.hasAccess('export') and export_formats|length %}
+        {% transchoice admin.datagrid.pager.nbresults with {'%count%': admin.datagrid.pager.nbresults} from 'SonataAdminBundle' %}list_results_count{% endtranschoice %}
+        {#&nbsp;-&nbsp;#}
+    {% endif %}
 {% endblock %}
