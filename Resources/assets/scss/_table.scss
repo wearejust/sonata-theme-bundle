@@ -83,9 +83,25 @@ th.sonata-ba-list-field-header-order-asc a {
 .table-bordered>tbody>tr>td,
 .table-bordered>tfoot>tr>td {
     border: 1px solid transparent;
-    padding: 1.35em;
+    padding: 1.35em 0.5em;
     &:first-child {
-        padding-left: 2.375em
+        padding-left: 2.5em;
+    }
+}
+.table-bordered>thead>tr>.sonata-ba-list-field-header-batch,
+.table-bordered>tbody>tr>.sonata-ba-list-field-batch {
+    padding-left: 0.5em !important;
+    padding-right: 1.05em;
+    input {
+        position: absolute;
+        left: 0.9em;
+    }
+    + .sonata-ba-list-field-header-text,
+    + .sonata-ba-list-field-text,
+    + .sonata-ba-list-field-header-boolean,
+    + .sonata-ba-list-field,
+    + .sonata-ba-list-field-header-integer {
+        // padding-left: 0.1em;
     }
 }
 
@@ -128,13 +144,12 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
     border-radius: 0;
 }
 
-.sonata-ba-list-field-header-batch, .sonata-ba-list-field-batch {
-    padding: 1.35em 0.5em !important;
-    width: 1em;
-    + .sonata-ba-list-field-header-text, + .sonata-ba-list-field-tex, + .sonata-ba-list-field-header-boolean, + .sonata-ba-list-field {
-        padding: 1.35em 0.3rem !important;
-    }
-}
+// .sonata-ba-list-field-header-batch, .sonata-ba-list-field-batch {
+//     width: 1em;
+//     + .sonata-ba-list-field-header-text, + .sonata-ba-list-field-tex, + .sonata-ba-list-field-header-boolean, + .sonata-ba-list-field {
+//         padding: 1.35em 0.3rem !important;
+//     }
+// }
 
 @media screen and (min-width: 50em) {
     .box-body.table-responsive {
