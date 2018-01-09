@@ -147,10 +147,6 @@
 
 .box-footer .form-inline {
     .pull-left {
-        opacity: 0;
-        transition: 0.25s ease-in-out;
-    }
-    &.is-visible .pull-left {
         opacity: 1;
     }
 }
