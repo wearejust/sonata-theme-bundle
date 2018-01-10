@@ -1,242 +1,242 @@
 //Header
 .logo img + span {
-    width: auto!important;
+	width: auto!important;
 }
 .skin-black .main-header .navbar .navbar-nav>li>a {
-    background: $primary-color;
-    color: #FFFFFF;
+	background: $primary-color;
+	color: #FFFFFF;
 }
 
 .skin-black .sidebar-form,
 .skin-black .sidebar-form input[type="text"],
 .skin-black .sidebar-form .btn {
-    border-radius: 0;
+	border-radius: 0;
 }
 
 .skin-black .main-header .navbar {
-    background-color: $lighter-gray;
+	background-color: $lighter-gray;
 }
 
 .skin-black .main-header>.logo,
 .skin-black .main-header>.logo:hover {
-    background-color: #000000;
-    border-right: 1px solid #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-    padding-left: 1.175em;
-    text-align: left;
-    text-transform: uppercase;
+	background-color: #000000;
+	border-right: 1px solid #000000;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 1.175em;
+	text-align: left;
+	text-transform: uppercase;
     line-height: 2.1;
 }
 
 .skin-black .wrapper,
 .skin-black .main-sidebar,
 .skin-black .left-side {
-    background-color: $primary-color;
+	background-color: $primary-color;
 }
 
 .skin-black .sidebar-form input[type="text"],
 .skin-black .sidebar-form .btn {
-    background-color: #222222;
+	background-color: #222222;
 }
 
 //Level 1
 .skin-black .sidebar-menu li {
-    border-bottom: 1px solid $off-black;
-    border-top: 1px solid transparent;
+	border-bottom: 1px solid $off-black;
+	border-top: 1px solid transparent;
 }
 
 .skin-black .sidebar-menu>li:hover>a,
 .skin-black .sidebar-menu>li.active>a {
-    background: #1A1A1A;
-    color: #FFFFFF;
+	background: #1A1A1A;
+	color: #FFFFFF;
 }
 
 .skin-black .sidebar-menu>li:hover>a,
 .skin-black .sidebar-menu>li.active>a {
-    background-color: $off-black;
-    border-left-color: transparent;
+	background-color: $off-black;
+	border-left-color: transparent;
 }
 
 .skin-black .sidebar a {
-    color: $lighter-gray;
-    font-weight: normal;
-    padding: 1em 1.5em;
-    i {
-        display: none;
-    }
+	color: $lighter-gray;
+	font-weight: normal;
+	padding: 1em 1.5em;
+	i {
+		display: none;
+	}
 }
 
 //Menu level 2
 .skin-black .sidebar-menu>li>.treeview-menu {
-    background: $off-black;
-    padding: 0;
-    padding-bottom: 1em;
-    a {
-        color: #ccc;
-        padding: 0.25em 1em 0.25em 3em;
-    }
-    li {
-        border: none;
-        &:hover {
-            background-color: #000000;
-        }
-        &:hover a,
-        &.active a {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-        &.active a {
-            font-weight: bold;
-        }
-    }
+	background: $off-black;
+	padding: 0;
+	padding-bottom: 1em;
+	a {
+		color: #ccc;
+		padding: 0.25em 1em 0.25em 3em;
+	}
+	li {
+		border: none;
+		&:hover {
+			background-color: #000000;
+		}
+		&:hover a,
+		&.active a {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		&.active a {
+			font-weight: bold;
+		}
+	}
 }
 
 .navbar {
-    border-radius: 0;
+	border-radius: 0;
 }
 
 .nav.navbar-nav {
-    margin: 0 -10px;
+	margin: 0 -10px;
 }
 
 .navbar.navbar-default {
-    background-color: #FFFFFF;
-    margin-bottom: -1.1em;
-    border: none;
-    margin-top: -1.1em;
-    width: auto !important;
-    .navbar-nav {
-        margin: 0;
-    }
+	background-color: #FFFFFF;
+	margin-bottom: -1.1em;
+	border: none;
+	margin-top: -1.1em;
+	width: auto !important;
+	.navbar-nav {
+		margin: 0;
+	}
 }
 .navbar-default .navbar-nav > li > a {
-    font-size: 1.25em;
+	font-size: 1.25em;
     padding: 1em 2em;
-    color: $primary-color;
-    font-weight: bold;
+	color: $primary-color;
+	font-weight: bold;
 }
 .navbar-default .navbar-nav > li > .sonata-ba-action,
 .navbar-default .navbar-nav > li > .sonata-action-element {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 .navbar-default .navbar-collapse {
-    margin-left: -15px !important;
-    margin-right: -15px !important;
+	margin-left: -15px !important;
+	margin-right: -15px !important;
     padding: 0;
 }
 .just-records-list--tabs {
-    .navbar-default .navbar-collapse {
-        background-color: #fff;
-        .navbar-left a {
-            background-color: #e7e7e7;
-            border-right: 1px solid #fff;
-            &:hover, &:focus, &:active {
-                background-color: darken(#e7e7e7, 10%);
-            }
-        }
-        .navbar-left .active a {
-            background-color: #fff;
-        }
-    }
+	.navbar-default .navbar-collapse {
+		background-color: #fff;
+		.navbar-left a {
+			background-color: #e7e7e7;
+			border-right: 1px solid #fff;
+			&:hover, &:focus, &:active {
+				background-color: darken(#e7e7e7, 10%);
+			}
+		}
+		.navbar-left .active a {
+			background-color: #fff;
+		}
+	}
 }
 
 .navbar.navbar-default .navbar-left {
-    clear: both;
+	clear: both;
 }
 
 .navbar-default .navbar-brand {
-    color: #000000;
-    display: inline-block;
-    float: none;
-    font-size: 2.5em;
-    font-weight: bold;
-    height: auto;
-    line-height: 1;
-    padding: 0;
-    pointer-events: none;
-    max-width: 40rem;
-    &:hover,
-    &:focus,
-    &:active {
-        color: #000000;
-        cursor: default;
-    }
+	color: #000000;
+	display: inline-block;
+	float: none;
+	font-size: 2.5em;
+	font-weight: bold;
+	height: auto;
+	line-height: 1;
+	padding: 0;
+	pointer-events: none;
+	max-width: 40rem;
+	&:hover,
+	&:focus,
+	&:active {
+		color: #000000;
+		cursor: default;
+	}
 }
 
 .navbar-header {
-    padding: 1em;
+	padding: 1em;
 }
 
 .just-records-edit .add_records,
 [advanced-filter] {
-    display: none;
+	display: none;
 }
 
 //user menu
 .user-footer .pull-left,
 .user-header img {
-    display: none;
+	display: none;
 }
 .navbar-custom-menu {
-    .navbar-nav>li:not(.user-menu) {
-        display: none;
-    }
-    .user-menu {
-        .dropdown-menu {
-            border: none;
-            padding: 0;
+	.navbar-nav>li:not(.user-menu) {
+		display: none;
+	}
+	.user-menu {
+		.dropdown-menu {
+			border: none;
+			padding: 0;
             box-shadow: 0 4px 13px rgba(0,0,0, 0.12);
-        }
-        &>a {
-            background-color: transparent !important;
-            color: $off-black !important;
-            &:hover,
-            &:focus,
-            &:active {
-                opacity: 0.6;
-            }
-        }
-        &.open>a {
-            opacity: 1;
-            background-color: #fff !important;
-        }
-    }
+		}
+		&>a {
+			background-color: transparent !important;
+			color: $off-black !important;
+			&:hover,
+			&:focus,
+			&:active {
+				opacity: 0.6;
+			}
+		}
+		&.open>a {
+			opacity: 1;
+			background-color: #fff !important;
+		}
+	}
 }
 
 .content-header .navbar-nav.navbar-right:last-child { margin-left: 0;}
 .has_tabs .navbar-left .navbar-nav>li.first,
 .has_tabs .navbar-left .navbar-nav>li.active {
-    background-color: $lighter-gray;
+	background-color: $lighter-gray;
 }
 
 .has_tabs .navbar-left .navbar-nav>li:hover,
 .has_tabs .navbar-left .navbar-nav>li:focus,
 .has_tabs .navbar-left .navbar-nav>li:active {
-    background-color: $gray;
+	background-color: $gray;
 }
 
 .navbar.navbar-default.has_tabs {
-    border-bottom: 2px solid $lighter-gray;
+	border-bottom: 2px solid $lighter-gray;
 }
 
 .navbar-header + .navbar-collapse .navbar-right {
-    margin: 1.5em;
-    margin-right: 0;
+	margin: 1.5em;
+	margin-right: 0;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
-    border-color: #fff;
-    border-width: 2px;
-    float: left;
-    margin-right: 10px;
-    width: 45px;
-    height: 45px;
+	border-color: #fff;
+	border-width: 2px;
+	float: left;
+	margin-right: 10px;
+	width: 45px;
+	height: 45px;
 }
 
 .navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
-    color: $off-black;
+	color: $off-black;
     text-align: left;
 }
 
@@ -250,65 +250,69 @@
 }
 
 .content-header .navbar-nav.navbar-right {
-    float: none !important;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
+	float: none !important;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
 }
 
 .just-header-actions {
-    text-align: right;
-    &:before, &:after {
-        content: " ";
-        display: table;
-    }
+	text-align: right;
+	&:before, &:after {
+	    content: " ";
+    	display: table;
+	}
 }
 .just-header-actions__list {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    li {
-        display: inline-block;
-    }
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	li {
+		display: inline-block;
+	}
 }
 
 
 @media screen and (min-width: 48em) {
-    .sidebar-toggle {
-        display: none;
-    }
-    .just-header-actions {
-        position: absolute;
-        right: 2.4em;
-        top: 3.75em;
-    }
+	.sidebar-toggle {
+		display: none;
+	}
+	.just-header-actions {
+	    position: absolute;
+	    right: 2.4em;
+    	top: 3.75em;
+	}
 }
 
 @media screen and (min-width: 50em) {
-    .navbar-default .navbar-brand {
-        font-size: 3.5em;
-    }
-    .navbar-header {
-        float: none;
-        padding: 3.1428571429em 2.4em;
-        word-break: normal;
-    }
+	.content-header .navbar-nav.navbar-right{
+		// margin-top: 3.75em;
+		// margin-bottom: 3.75em;
+	}
+	.navbar-default .navbar-brand {
+		font-size: 3.5em;
+	}
+	.navbar-header {
+		float: none;
+		padding: 3.1428571429em 2.4em;
+		word-break: normal;
+	}
 }
 
 //new nav width
 @media screen and (min-width: 95em) {
-    .sidebar-collapse .main-sidebar,
-    .sidebar-collapse .left-side {
-        transform: translate(20%, 0);
-    }
-    .main-header .logo,
-    .main-sidebar,
-    .left-side {
-        width: 20%;
-    }
-    .main-header .navbar {
-        margin-left: 20%;
-    }
+	.sidebar-collapse .main-sidebar,
+	.sidebar-collapse .left-side {
+		transform: translate(20%, 0);
+	}
+	.main-header .logo,
+	.main-sidebar,
+	.left-side {
+		width: 20%;
+	}
+	.main-header .navbar {
+		margin-left: 20%;
+	}
     .main-sidebar,
     .content-wrapper {
         float: left;
@@ -321,10 +325,10 @@
     }
 
     .content-wrapper {
-        margin-left: calc(1px + 20%);//center fix
+    	margin-left: calc(1px + 20%);//center fix
         width: 80%;
     }
-    .form-actions {
-        left: 20%;
-    }
+	.form-actions {
+		left: 20%;
+	}
 }
