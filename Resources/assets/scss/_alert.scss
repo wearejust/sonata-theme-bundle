@@ -83,7 +83,10 @@
 .form-group.has-error .input-group-addon {
 	border-color: $danger !important;
 }
-
+.sonata-ba-list-field-boolean .label {
+	margin-left: -0.5em;
+	padding: 0.5em;
+}
 .sonata-ba-list-field-boolean .label-success,
 .sonata-ba-list-field-boolean .label-danger {
 	background-color: transparent !important;

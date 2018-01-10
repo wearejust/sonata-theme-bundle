@@ -21,7 +21,7 @@ $(function() {
 	clone.appendTo('.navbar-collapse');
 	clone.sticky({
 		active: 'is-sticky',
-		topHeightOffset: -1.1
+		topHeightOffset: -1
 	});
 
 	$window.on('resize', resizeDelayed);
