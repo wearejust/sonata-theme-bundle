@@ -5,15 +5,21 @@
 .filter-box {
 	display: none;
 	background-color: #e7e7e7;
-	padding: 1em 2em;
+	padding: 2em;
 	margin: 2em -49px 0 -48px;
 	.sonata-filter-form {
 		padding-top: 0;
+		> .row {
+			display: flex;
+		}
 	}
 	.form-group {
 		display: block !important;
 		border-bottom: none;
-		padding: 0.5em;
+		padding: 0.15em 0.5em;
+		.col-sm-1 {
+			display: none;
+		}
 	}
 	[data-toggle="advanced-filter"],
 	.sonata-toggle-filter {
@@ -21,21 +27,33 @@
 	}
 	.btn {
 		display: block;
-		margin: 1em auto;
+		margin: 0;
 		width: 100%;
-		&:first-of-type {
-			margin-top: 0;
-		}
 	}
 	@media only screen and (min-width: 50em) {
-		.col-sm-9 {
-			width: 50%;
-		}
+		padding-right: 3.1em;
 		.col-sm-4 {
-		    width: 50%;
+		    width: 60%;
+		}
+		.col-sm-9 {
+			display: flex!important;
+    		flex-wrap: wrap;
+    		width: 100%;
+    		.form-group {
+    			width: 54%;
+    		}
+		}
+		.col-sm-3 {
+		    display: flex;
+    		flex-direction: column-reverse;
+    		.form-group {
+    			display: flex !important;
+    		}
 		}
 		.control-label {
-			text-align: left;
+			// width: 40%;
+			padding-right: 0;
+			// text-align: left;
 		}
 	}
 }
