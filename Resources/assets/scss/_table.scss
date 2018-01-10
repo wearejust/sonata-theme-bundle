@@ -1,7 +1,10 @@
+table {
+    border-collapse: separate;
+}
+
 .table-bordered {
     border: 0;
 }
-
 
 table.sonata-ba-list th {
     background-image: none;
@@ -46,10 +49,12 @@ table.sonata-ba-list td {
         }
     }
 }
+
 .table-bordered>thead>tr>th:last-child {
     padding-right: 2.375em;
     text-align: right;
 }
+
 .sonata-ba-list td.sonata-ba-list-field a.sonata-link-identifier {
     color: #000;
     font-weight: normal;
@@ -88,20 +93,14 @@ th.sonata-ba-list-field-header-order-asc a {
         padding-left: 2.5em;
     }
 }
+
 .table-bordered>thead>tr>.sonata-ba-list-field-header-batch,
 .table-bordered>tbody>tr>.sonata-ba-list-field-batch {
     padding-left: 0.5em !important;
-    padding-right: 1.05em;
+    width: 2em;
     input {
         position: absolute;
         left: 0.9em;
-    }
-    + .sonata-ba-list-field-header-text,
-    + .sonata-ba-list-field-text,
-    + .sonata-ba-list-field-header-boolean,
-    + .sonata-ba-list-field,
-    + .sonata-ba-list-field-header-integer {
-        // padding-left: 0.1em;
     }
 }
 
@@ -113,8 +112,20 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
 
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: $lighter-gray;
-     &:hover, &:focus, &:active {
+    &:hover, &:focus, &:active {
         background-color: $gray;
+    }
+}
+.just-records-list--tabs {
+    .table-striped {
+        // background-color: $lighter-gray;
+        padding-top: 2em;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd) {
+        // background-color: #fff;
+        // &:hover, &:focus, &:active {
+        //     background-color: $gray;
+        // }
     }
 }
 
@@ -143,13 +154,6 @@ td.sonata-ba-list-field.sonata-ba-list-field-integer {
     font-size: 100%;
     border-radius: 0;
 }
-
-// .sonata-ba-list-field-header-batch, .sonata-ba-list-field-batch {
-//     width: 1em;
-//     + .sonata-ba-list-field-header-text, + .sonata-ba-list-field-tex, + .sonata-ba-list-field-header-boolean, + .sonata-ba-list-field {
-//         padding: 1.35em 0.3rem !important;
-//     }
-// }
 
 @media screen and (min-width: 50em) {
     .box-body.table-responsive {

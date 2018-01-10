@@ -12,8 +12,13 @@
 
 .add_records .sonata-action-element {
     border-radius: 0;
-    padding: .8em 1.1em;
+    padding: 1em 1.5em;
     font-weight: bold;
+    display: block;
+}
+
+.just-records-edit .add_records {
+    display: none;
 }
 
 .has_tabs .add_records {

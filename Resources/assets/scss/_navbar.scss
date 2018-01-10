@@ -107,26 +107,42 @@
 	margin-top: -1.1em;
 	width: auto !important;
 	.navbar-nav {
-		margin: 0 0.7em;
+		margin: 0;
 	}
 }
 .navbar-default .navbar-nav > li > a {
 	font-size: 1.25em;
-    padding: 1em 1.5em;
+    padding: 1em 2em;
 	color: $primary-color;
 	font-weight: bold;
 }
-.navbar-default .navbar-nav > li > .sonata-ba-action {
+.navbar-default .navbar-nav > li > .sonata-ba-action,
+.navbar-default .navbar-nav > li > .sonata-action-element {
 	font-size: 1em;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	background-color: #f2f2f2;
-}
+
 .navbar-default .navbar-collapse {
 	margin-left: -15px !important;
 	margin-right: -15px !important;
-    border-bottom: 30px solid #f2f2f2;
     padding: 0;
+}
+.just-records-list--tabs {
+	.navbar-default .navbar-collapse {
+		background-color: #fff;
+		.navbar-left a {
+			background-color: #e7e7e7;
+			border-right: 1px solid #fff;
+			&:hover, &:focus, &:active {
+				background-color: darken(#e7e7e7, 10%);
+			}
+		}
+		.navbar-left .active a {
+			background-color: #fff;
+		}
+	}
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	
 }
 .navbar.navbar-default .navbar-left {
 	clear: both;
@@ -233,22 +249,39 @@
 .navbar-nav>.user-menu>.dropdown-menu>.user-footer {
     background-color: #fff;
 }
+
 .content-header .navbar-nav.navbar-right {
 	float: none !important;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
 }
+
+.just-header-actions {
+	text-align: right;
+	&:before, &:after {
+	    content: " ";
+    	display: table;
+	}
+}
+.just-header-actions__list {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	li {
+		display: inline-block;
+	}
+}
+
+
 @media screen and (min-width: 48em) {
 	.sidebar-toggle {
 		display: none;
 	}
-	.content-header .navbar-nav.navbar-right {
-		margin-top: 0.75em; margin-bottom: 0.75em;
-		margin-right: -0.5625em;
+	.just-header-actions {
 	    position: absolute;
-	    right: 3em;
-	    top: 3em;
-		.dropdown-toggle  {
-			margin-top: -0.25em;
-		}
+	    right: 2em;
+    	top: 3.75em;
 	}
 }
 
@@ -256,7 +289,6 @@
 	.content-header .navbar-nav.navbar-right{
 		// margin-top: 3.75em;
 		// margin-bottom: 3.75em;
-		// why?
 	}
 	.navbar-default .navbar-brand {
 		font-size: 3.5em;
