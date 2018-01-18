@@ -205,6 +205,12 @@
 	}
 }
 
+.box-footer .dropdown-menu {
+	transform: translateY(-100%);
+    position: absolute;
+    top: -0.1rem;
+}
+
 .content-header .navbar-nav.navbar-right:last-child { margin-left: 0;}
 .has_tabs .navbar-left .navbar-nav>li.first,
 .has_tabs .navbar-left .navbar-nav>li.active {
