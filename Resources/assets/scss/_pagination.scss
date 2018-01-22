@@ -5,6 +5,7 @@
 	font-size: 0.875em;
 	padding: 0.8em 1.05em;
 	line-height: 1;
+	color: tint($primary, 30%);
 }
 
 .pagination > .active > a,
@@ -13,15 +14,15 @@
 .pagination > .active > span,
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
-	background-color: #000;
-	border-color: #000;
+	background-color: shade($primary, 40%);
+	border-color: shade($primary, 40%);
 }
 
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-	color: #666;
+	color: tint($primary, 60%);
 }
 
 .pagination>li:first-child>a, .pagination>li:first-child>span,

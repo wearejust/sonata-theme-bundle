@@ -1,61 +1,10 @@
-.alert {
-	border-radius: 0;
-	font-weight: bold;
-}
-
-.alert .close {
-	text-indent: -999em;
-	opacity: 1;
-}
-
-.alert-dismissable {
-	animation: alertShow 0.5s 0.35s forwards, alertHide 0.5s 3s forwards;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	margin: 0;
-	transform: translateY(100%);
-	right: 0;
-	z-index: 10;
-}
-.alert-dismissable.no-delay {
-	animation: alertShow 0.5s 0s forwards, alertHide 0.5s 3s forwards;
-}
-
-@keyframes alertShow {
-  0%   { transform: translateY(100%); }
-  100% { transform: translateY(0); }
-}
-
-@keyframes alertHide {
-	0%   { transform: translateY(0); }
-	100%   { transform: translateY(100%); }
-}
-
-@media screen and (min-width: 768px) {
-	.alert-dismissable {
-		left: 230px;
-	}
-}
-
-@media screen and (min-width: 95em) {
-	.alert-dismissable {
-		left: 20%;
-	}
-}
-
 .bg-green,
 .callout.callout-success,
 .alert-success,
 .label-success,
 .modal-success .modal-body {
-	background-color: $success !important;
+    background-color: $success !important;
 }
-
-.alert-success {
-	border-color: $success !important;
-}
-
 .bg-red,
 .callout.callout-danger,
 .alert-danger,
@@ -64,7 +13,6 @@
 .modal-danger .modal-body {
     background-color: $danger !important;
 }
-
 .has-error .checkbox,
 .has-error .checkbox-inline,
 .has-error .control-label,
@@ -76,31 +24,45 @@
 .has-error.radio label,
 .has-error.radio-inline label,
 .form-group.has-error label {
-	color: $danger !important;
+    color: $danger !important;
+}
+.alert-dismissable {
+    animation: alertShow 0.5s 0.35s forwards, alertHide 0.5s 3s forwards;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    transform: translateY(100%);
+    right: 0;
+    z-index: 10;
+}
+.alert-dismissable.no-delay {
+    animation: alertShow 0.5s 0s forwards, alertHide 0.5s 3s forwards;
+}
+.alert {
+    border-radius: 0;
+    font-weight: bold;
+}
+.alert .close {
+    text-indent: -999em;
+    opacity: 1;
+}
+.alert-success {
+    border-color: $success !important;
+    color: $contrast-alt;
 }
 
-.form-group.has-error .form-control,
-.form-group.has-error .input-group-addon {
-	border-color: $danger !important;
+@media only screen and (min-width: $break-md) {
+    .alert-dismissable {
+        left: 20%;
+    }
 }
-.sonata-ba-list-field-boolean .label {
-	margin-left: -0.5em;
-	padding: 0.5em;
+@keyframes alertShow {
+  0%   { transform: translateY(100%); }
+  100% { transform: translateY(0); }
 }
-.sonata-ba-list-field-boolean .label-success,
-.sonata-ba-list-field-boolean .label-danger {
-	background-color: transparent !important;
-	color: $success !important;
-	transition: 0.1s;
-}
-.sonata-ba-list-field-boolean .label-success {
-	color: $success !important;
-}
-.sonata-ba-list-field-boolean .label-danger {
-	color: $danger !important;
-}
-.sonata-ba-list-field-boolean a.label-success:hover,
-.sonata-ba-list-field-boolean a.label-danger:hover  {
-	background-color: #999 !important;
-	color: #fff !important;
+
+@keyframes alertHide {
+    0%   { transform: translateY(0); }
+    100%   { transform: translateY(100%); }
 }

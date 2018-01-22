@@ -46,12 +46,16 @@
 .btn-danger {
     background-color: $danger;
     border-color: $danger;
+    &:visited {
+        color: $contrast-alt;
+    }
     &:hover,
     &:focus,
     &:active,
     &:hover:focus,
     &:active:focus {
         background-color: shade($danger, 10%);
+        border-color: shade($danger, 10%);
         outline: none;
         box-shadow: none;
     }
@@ -59,12 +63,16 @@
 .btn-success {
     background-color: $success;
     border-color: $success;
+    &:visited {
+        color: $contrast-alt;
+    }
     &:hover,
     &:focus,
     &:active,
     &:hover:focus,
     &:active:focus {
         background-color: shade($success, 10%);
+        border-color: shade($success, 10%);
         outline: none;
         box-shadow: none;
     }
@@ -78,15 +86,18 @@
     &:hover:focus,
     &:active:focus {
         background-color: shade($info, 10%);
+        border-color: shade($info, 10%);
         outline: none;
         box-shadow: none;
     }
 }
-.sonata-action-element {
+.c-content__actions .sonata-action-element {
     @extend .btn;
     @extend .btn-primary;
 }
-
+.edit_link {
+    display: none;
+}
 .js-sortable-move {
     background-color: transparent;
     border-radius: 4px;
@@ -109,39 +120,45 @@
         vertical-align: top;
         width: 22px;
     }
-}
-
-.btn-group {
-    position: static;
-}
-.btn-group .delete_link {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 100%;
-    top: -1px;
-    bottom: -1px;
-}
-.btn-group .delete_link {
-    background-color: transparent;
-    border-color: transparent;
-    &:hover:after, &:active:after, &:focus:after{
-        background-color: darken($danger,5%);
-        border-color: darken($danger,15%);
+    i {
+        display: none;
     }
 }
-.btn-group .delete_link {
-    background-image: url('../images/icons/ic_close_white.svg');
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position: center;
-    background-color: $danger;
-    border-color: $danger;
-    color: #fff !important;
-    transform: perspective(1000px) rotateY(90deg);
-    transform-origin: center left;
-    transition: 0.5s;
+
+.sonata-ba-list {
+    td:last-child {
+        position: relative;
+        overflow: visible;
+    }
+    .btn-group {
+        position: static;
+    }
+    .btn-group .delete_link {
+        background-color: transparent;
+        border-color: transparent;
+        width: 4rem;
+        position: absolute;
+        top: -1px;
+        left: calc(100% + 1px);
+        height: calc(100% + 1px);
+        text-indent: -999em;
+        background-image: url('../images/icons/ic_close_white.svg');
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: center;
+        background-color: $danger;
+        border-color: $danger;
+        color: #fff !important;
+        transform: perspective(1000px) rotateY(90deg);
+        transform-origin: center left;
+        transition: 0.5s;
+        &:hover:after, &:active:after, &:focus:after{
+            background-color: darken($danger,5%);
+            border-color: darken($danger,15%);
+        }
+    }
 }
+
 .sonata-ba-list tr:hover {
     .delete_link {
         transform: perspective(1000px) rotateY(0deg);

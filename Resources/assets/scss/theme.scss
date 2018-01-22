@@ -6,70 +6,33 @@
 @import "breadcrumbs";
 @import "button";
 @import "filters";
+@import "list";
 @import "edit";
+@import "pagination";
+@import "alert";
+@import "overrides";
 @import "utilities";
 
-.c-content_inner {
-    padding: 0 $padding;
-    clear: both;
-}
-.c-content__title {
-    padding: $padding;
-    max-width: 50rem;
-    @media only screen and (min-width: $break-md) {
-        float: left;
-    }
-}
-.c-content__title__text {
-    font-size: 2.5em;
-    font-weight: 700;
-    line-height: 1;
-    margin: 0;
-    @media only screen and (min-width: $break-md) {
-        font-size: 3.5em;
-    }
-}
-.c-content__actions {
-    padding: 0 calc(15px + 2.7em);
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @media only screen and (min-width: $break-md) {
-        float: right;
-        margin-top: $padding;
-    }
-}
-
-// tables
-table {
-    border-collapse: separate;
-}
-.table-bordered {
-    border: 0;
-}
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
-    vertical-align: top;
-}
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
-    border: 1px solid transparent;
-    padding: $padding/2.5 $padding;
-}
-.table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: tint($primary, 94%);
-}
-.box-footer {
-    padding-left: $padding;
-    padding-right: $padding;
+// modal
+.sonata-ba-delete {
+	background-color: $contrast-alt;
+	max-width: 24rem;
+	margin-left: auto;
+	margin-right: auto;
+	.box {
+		padding: $padding;
+		.box-body {
+			padding: 0.5rem;
+		}
+		.box-footer {
+			padding: 0;
+		}
+		form {
+			font-size: 0;
+			text-align: left;
+		}
+		.btn {
+			margin: 0.5rem;
+		} 
+	}
 }
