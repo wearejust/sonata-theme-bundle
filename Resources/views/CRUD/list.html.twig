@@ -19,7 +19,7 @@
 {% endblock %}
 
 {% block list_footer %}
-    {% if admin.datagrid.results|length > 0 and batchactions | length %}
+    {% if admin.datagrid.results|length > 0 and (batchactions | length or export_formats | length) %}
         {{ parent() }}
     {% endif %}
 {% endblock %}
