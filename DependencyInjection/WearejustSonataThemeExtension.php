@@ -41,16 +41,16 @@ class WearejustSonataThemeExtension extends Extension implements PrependExtensio
         $configs = $container->getExtensionConfig($this->getAlias());
         $config = $this->processConfiguration(new Configuration(), $configs);
 
-        if ($theme = $config['custom_theme']) {
-            $yml = $this->parseYml($container->getParameter('kernel.root_dir') . '/' . $theme);
+        // if ($theme = $config['custom_theme']) {
+        //     $extensionConfig = $this->parseYml($container->getParameter('kernel.root_dir') . '/' . $theme);
 
-            if (isset($yml['extra_css']) && $yml['extra_css']) {
-                $extensionConfig['assets']['stylesheets'] = array_merge($extensionConfig['assets']['stylesheets'], $yml['extra_css']);
-            }
-            if (isset($yml['extra_js']) && $yml['extra_js']) {
-                $extensionConfig['assets']['javascripts'] = array_merge($extensionConfig['assets']['javascripts'], $yml['extra_js']);
-            }
-        }
+        //     if (isset($yml['extra_css']) && $yml['extra_css']) {
+        //         $extensionConfig['assets']['stylesheets'] = array_merge($extensionConfig['assets']['stylesheets'], $yml['extra_css']);
+        //     }
+        //     if (isset($yml['extra_js']) && $yml['extra_js']) {
+        //         $extensionConfig['assets']['javascripts'] = array_merge($extensionConfig['assets']['javascripts'], $yml['extra_js']);
+        //     }
+        // }
 
         $extensionConfig['assets']['javascripts'] = array_merge($extensionConfig['assets']['javascripts'], $config['extra_js_assets']);
         $extensionConfig['assets']['stylesheets'] = array_merge($extensionConfig['assets']['stylesheets'], $config['extra_css_assets']);

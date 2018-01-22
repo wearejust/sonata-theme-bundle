@@ -1,61 +1,90 @@
+// buttons
 .btn {
     border-radius: 0;
-    padding: .8em 1.1em;
-    font-weight: bold;
-    &:active {
+    padding: 0.8em 1.1em;
+    font-weight: 700;
+}
+.btn-default {
+    color: tint($primary, 39%);
+    border-color: tint($primary, 80%);
+}
+.btn-primary {
+    color: $contrast-alt;
+    background-color: shade($primary, 40%);
+    border-color: shade($primary, 40%);
+    &:visited {
+        color: $contrast-alt;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:focus,
+    &:active:focus {
+        background-color: tint($primary, 20%);
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
+}
+.btn-contrast-alt {
+    color: shade($primary, 40%);
+    background-color: $contrast-alt;
+    border-color: $contrast-alt;
+    &:visited {
+        color: shade($primary, 40%);
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:focus,
+    &:active:focus {
+        background-color: shade($contrast-alt, 5%);
+        outline: none;
         box-shadow: none;
     }
-    i {
-        display: none;
-    }
 }
-
-.add_records .sonata-action-element {
-    border-radius: 0;
-    padding: 1em 1.5em;
-    font-weight: bold;
-    display: block;
-}
-
-.just-records-edit .add_records {
-    display: none;
-}
-
-.has_tabs .add_records {
-    display: none !important;
-}
-
-.delete_link { font-size: 0; }
-
-.editable-buttons .btn i {
-    display: block;
-}
-
-.btn-default {
-    background-color: #fff;
-}
-
-.btn-primary,
-.btn-success,
-.add_records .sonata-action-element {
-    color: #fff !important;
-    background-color: $primary-color !important;
-    border-color: $primary-color !important;
-    &:hover, &:focus, &:active, &:active:focus {
-        background-color: lighten($primary-color, 20%) !important;
-        border-color: lighten($primary-color, 20%) !important;
-        outline: none;
-    }
-}
-
 .btn-danger {
     background-color: $danger;
     border-color: $danger;
-    &:hover, &:focus, &:active, &:active:focus {
-        background: lighten($danger,5%)!important;
-        border-color: lighten($danger,5%)!important;
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:focus,
+    &:active:focus {
+        background-color: shade($danger, 10%);
         outline: none;
+        box-shadow: none;
     }
+}
+.btn-success {
+    background-color: $success;
+    border-color: $success;
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:focus,
+    &:active:focus {
+        background-color: shade($success, 10%);
+        outline: none;
+        box-shadow: none;
+    }
+}
+.btn-info {
+    background-color: $info;
+    border-color: $info;
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:focus,
+    &:active:focus {
+        background-color: shade($info, 10%);
+        outline: none;
+        box-shadow: none;
+    }
+}
+.sonata-action-element {
+    @extend .btn;
+    @extend .btn-primary;
 }
 
 .js-sortable-move {
@@ -69,7 +98,7 @@
     border: 0;
     outline: 0;
     &:hover{
-        background-color: $light-gray;
+        background-color: #ccc;
     }
     &:before {
         content: "";
@@ -123,6 +152,3 @@
     border-color: #fff;
 }
 
-.btn-group.open .dropdown-toggle {
-    box-shadow: none;
-}

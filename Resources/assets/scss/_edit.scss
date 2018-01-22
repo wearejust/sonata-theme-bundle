@@ -1,0 +1,94 @@
+// edit form
+.box-title {
+    display: none;
+}
+.box.box-primary {
+    border-top-color: transparent;
+}
+.form-group {
+    border-bottom: 1px solid #fff;
+    padding: 0.85em $padding;
+    margin: 0;
+    margin-left: -$padding;
+    margin-right: -$padding;
+}
+.form-control {
+    border-radius: 0;
+    padding: 1.35em 1em;
+    border-color: tint($primary, 84%);
+    &:focus {
+        border-color: tint($primary, 60%);
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.sonata-ba-form .box-primary {
+    margin-left: -$padding;
+    margin-right: -$padding;
+    padding: 0 $padding;
+    background-color: tint($primary, 94%);
+}
+.sonata-ba-form {
+    margin-bottom: 6rem;
+}
+.c-form-actions {
+    margin-top: 3em;
+    background-color: tint($primary, 80%);
+    font-size: 0;
+    padding: 0.25rem;
+    .btn {
+        margin: 0.25rem;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @media only screen and (min-width: $break-md) {
+        position: fixed;
+        bottom: 0;
+        left: 20%; 
+        right: 0;
+        > div {
+            position: relative;
+        }
+        .btn-danger {
+            position: absolute; 
+            right: 0;
+        }
+    }
+}
+.help-block {
+    display: block;
+    margin: 0;
+    padding: 0.225rem 0;
+    color: tint($primary, 50%);
+    font-size: 0.975em;
+}
+.required:after {
+    content: '*';
+    color: #900;
+    font-size: 1.3em;
+    line-height: 0;
+}
+@media only screen and (min-width: $break-md) {
+    .form-group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .control-label {
+        float: left;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 2px;
+        padding-right: 2em;
+        width: 33.333%;
+    }
+    .sonata-ba-field {
+        float: right;
+        margin: -.5em 0;
+        width: 66.667%;
+    }
+}

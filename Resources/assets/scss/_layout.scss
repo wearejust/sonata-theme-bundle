@@ -1,0 +1,34 @@
+// layout
+@media only screen and (min-width: $break-md) {
+    .c-page__sidebar {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        width: 20%;
+    }
+    .c-page__content-wrapper {
+        left: 20%;
+        width: 80%;
+        position: relative;
+    }
+    .c-main-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 20%;
+        z-index: 1;
+    }
+    .c-main-header__actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 0 1.5em;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+}

@@ -1,28 +1,23 @@
-.login-page,
-.register-page {
-	background-color: #ebebeb !important;
-}
-
 .login-box,
 .register-box {
+    margin-left: auto;
+    margin-right: auto;
 	margin-top: 30vh;
-	max-width: 400px;
+	max-width: 23rem;
 	width: 100%;
 }
 
 .login-page,
 .register-page {
-	background-color: $light-gray;
+	background-color: tint($primary, 91%);
 }
 
 .login-box {
+	form {
+		margin-top: 0.75rem;
+	}
 	.login-box-body {
 		background-color: transparent;
-	}
-	.form-control:focus {
-	    border-color: #999;
-	    outline: none;
-	    background-color: #f2f2f2;
 	}
 	.login-box-msg,
 	.form-control-feedback {
@@ -39,21 +34,23 @@
 			display: block;
 			text-transform: uppercase;
 			text-align: left;
-			margin: 0 0.8em;
-			font-size: 1.3em;
+			margin: 0 0.5em;
+    		font-size: 2.5rem;
 		}
 	}
 	input,
 	button {
-		font-size: 18px;
 		height: auto;
+		font-size: 1.3em;
+	    padding: 1rem 1.2rem;
 	}
 	button:focus,
 	button:active {
-		background-color: #222;
+		background-color: tint($primary, 50%);
 	}
 	.form-group {
 		padding: 0;
+		margin: 0;
 		border: none;
 	}
 	.form-group + .row > .col-xs-8,
@@ -67,15 +64,16 @@
 		font-weight: normal;
 		font-size: 0.875em;
 		line-height: 1.8;
+		color: tint($primary, 55%);
 	}
 	form+a {
 		display: inline-block;
 		margin: 2.5em 0 0;
 		font-size: 0.875em;
-		color: #000;
+		color: shade($primary, 40%);
 		text-decoration: underline;
 		&:visited {
-			color: #000;
+			color: shade($primary, 40%);
 		}
 		&:hover,
 		&:focus,

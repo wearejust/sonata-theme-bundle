@@ -1,0 +1,73 @@
+// filters
+.sonata-filters-box {
+    display: none !important;
+}
+
+.filter-box {
+    display: none;
+    &.is-open {
+        display: block;
+    }
+    margin: 0;
+    background-color: tint($primary, 94%);;
+    padding: 2em;
+    margin: 0 -3.1em;
+    .sonata-filter-form {
+        padding-top: 0;
+        > .row {
+            display: flex;
+        }
+    }
+    .form-group {
+        display: block !important;
+        border-bottom: none;
+        padding: 0.15em 0.5em;
+        .col-sm-1 {
+            display: none;
+        }
+    }
+    [data-toggle="advanced-filter"],
+    .sonata-toggle-filter {
+        display: none;
+    }
+    .btn {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    @media only screen and (min-width: $break-md) {
+        padding-right: 3.1em;
+        .col-sm-4 {
+            width: 60%;
+        }
+        .col-sm-9 {
+            display: flex !important;
+            flex-wrap: wrap;
+            width: 100%;
+            .form-group {
+                width: 54%;
+            }
+        }
+        .col-sm-3 {
+            display: flex;
+            flex-direction: column-reverse;
+            .form-group {
+                display: flex !important;
+            }
+        }
+        .control-label {
+            padding-right: 0;
+        }
+    }
+}
+
+// .fa-filter:before {
+//     content: '';
+//     display: inline-block;
+//     background-image: url('../images/icons/ic_search.svg');
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     width: 1.3em;
+//     height: 1.3em;
+//     vertical-align: -4px;
+// }

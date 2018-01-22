@@ -1,0 +1,27 @@
+// base
+html {
+    font-size: 100%;
+     -webkit-font-smoothing: antialiased; 
+}
+body { 
+    font-size: 87.5%;
+    background-color: tint($primary, 91%);
+    color: shade($primary, 40%);
+    overflow-x: hidden;
+}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+a, a:visited {
+    color: shade($primary, 40%);
+    &:hover,
+    &:focus,
+    &:active {
+        color: tint($primary, 40%);
+    }
+}
+:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
