@@ -70,12 +70,11 @@
     padding: 0.25rem;
     .btn {
         margin: 0.25rem;
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
+    }
+    .btn-container {
+        position: relative;
+        margin-left: -0.25rem;
+        margin-right: -0.25rem;
     }
     @media only screen and (min-width: $break-md) {
         position: fixed;
@@ -88,6 +87,15 @@
         .btn-danger {
             position: absolute; 
             right: 0;
+        }
+        .btn-edit-first {
+            order: -1;
+        }
+        .btn-edit-last {
+            order: 1;
+        }
+        .btn-container {
+            display: flex;
         }
     }
 }

@@ -13,48 +13,50 @@
 {% block formactions %}
     <div class="sonata-ba-form-actions form-actions c-form-actions">
     	<div class="u-container">
-	    {% block sonata_form_actions %}
-	        {% if app.request.isxmlhttprequest %}
-	            {# NEXT_MAJOR: remove default filter #}
-	            {% if objectId|default(admin.id(object)) is not null %}
-	                <button type="submit" class="btn btn-primary" name="btn_update">{{ 'btn_update'|trans({}, 'SonataAdminBundle') }}</button>
-	            {% else %}
-	                <button type="submit" class="btn btn-primary" name="btn_create">{{ 'btn_create'|trans({}, 'SonataAdminBundle') }}</button>
-	            {% endif %}
-	        {% else %}
-	            {% if admin.supportsPreviewMode %}
-	                <button class="btn btn-info persist-preview" name="btn_preview" type="submit">
-	                    {{ 'btn_preview'|trans({}, 'SonataAdminBundle') }}
-	                </button>
-	            {% endif %}
-	            {# NEXT_MAJOR: remove default filter #}
-	            {% if objectId|default(admin.id(object)) is not null %}
-	      
-	                {% if admin.hasRoute('list') and admin.hasAccess('list') %}
-	                    <button type="submit" class="btn btn-primary" name="btn_update_and_list">{{ 'btn_update_and_return_to_list'|trans({}, 'SonataAdminBundle') }}</button>
-	                {% endif %}
+    		<div class="btn-container">
+		    {% block sonata_form_actions %}
+		        {% if app.request.isxmlhttprequest %}
+		            {# NEXT_MAJOR: remove default filter #}
+		            {% if objectId|default(admin.id(object)) is not null %}
+		                <button type="submit" class="btn btn-primary" name="btn_update">{{ 'btn_update'|trans({}, 'SonataAdminBundle') }}</button>
+		            {% else %}
+		                <button type="submit" class="btn btn-primary" name="btn_create">{{ 'btn_create'|trans({}, 'SonataAdminBundle') }}</button>
+		            {% endif %}
+		        {% else %}
+		            {% if admin.supportsPreviewMode %}
+		                <button class="btn btn-info persist-preview" name="btn_preview" type="submit">
+		                    {{ 'btn_preview'|trans({}, 'SonataAdminBundle') }}
+		                </button>
+		            {% endif %}
+		            {# NEXT_MAJOR: remove default filter #}
+		            {% if objectId|default(admin.id(object)) is not null %}
+		      
+		                {% if admin.hasRoute('list') and admin.hasAccess('list') %}
+		                    <button type="submit" class="btn btn-primary yy" name="btn_update_and_list">{{ 'btn_update_and_return_to_list'|trans({}, 'SonataAdminBundle') }}</button>
+		                {% endif %}
 
-	                <button type="submit" class="btn btn-contrast-alt" name="btn_update_and_edit">{{ 'btn_update_and_edit_again'|trans({}, 'SonataAdminBundle') }}</button>
+		                <button type="submit" class="btn btn-contrast-alt" name="btn_update_and_edit">{{ 'btn_update_and_edit_again'|trans({}, 'SonataAdminBundle') }}</button>
 
-	                {% if admin.hasRoute('delete') and admin.hasAccess('delete', object) %}
-	                    {{ 'delete_or'|trans({}, 'SonataAdminBundle') }}
-	                    <a class="btn btn-danger" href="{{ admin.generateObjectUrl('delete', object) }}">{{ 'link_delete'|trans({}, 'SonataAdminBundle') }}</a>
-	                {% endif %}
+		                {% if admin.hasRoute('delete') and admin.hasAccess('delete', object) %}
+		                    {{ 'delete_or'|trans({}, 'SonataAdminBundle') }}
+		                    <a class="btn btn-danger" href="{{ admin.generateObjectUrl('delete', object) }}">{{ 'link_delete'|trans({}, 'SonataAdminBundle') }}</a>
+		                {% endif %}
 
-	                {% if admin.isAclEnabled() and admin.hasRoute('acl') and admin.hasAccess('acl', object) %}
-	                    <a class="btn btn-info" href="{{ admin.generateObjectUrl('acl', object) }}">{{ 'link_edit_acl'|trans({}, 'SonataAdminBundle') }}</a>
-	                {% endif %}
-	            {% else %}
-	                {% if admin.hasroute('edit') and admin.hasAccess('edit') %}
-	                    <button class="btn btn-primary" type="submit" name="btn_create_and_edit">{{ 'btn_create_and_edit_again'|trans({}, 'SonataAdminBundle') }}</button>
-	                {% endif %}
-	                {% if admin.hasroute('list') and admin.hasAccess('list') %}
-	                    <button type="submit" class="btn btn-primary" name="btn_create_and_list">{{ 'btn_create_and_return_to_list'|trans({}, 'SonataAdminBundle') }}</button>
-	                {% endif %}
-	                <button class="btn btn-primary" type="submit" name="btn_create_and_create">{{ 'btn_create_and_create_a_new_one'|trans({}, 'SonataAdminBundle') }}</button>
-	            {% endif %}
-	        {% endif %}
-	    {% endblock %}
+		                {% if admin.isAclEnabled() and admin.hasRoute('acl') and admin.hasAccess('acl', object) %}
+		                    <a class="btn btn-info" href="{{ admin.generateObjectUrl('acl', object) }}">{{ 'link_edit_acl'|trans({}, 'SonataAdminBundle') }}</a>
+		                {% endif %}
+		            {% else %}
+		                {% if admin.hasroute('edit') and admin.hasAccess('edit') %}
+		                    <button class="btn btn-contrast-alt btn-edit-last" type="submit" name="btn_create_and_edit">{{ 'btn_create_and_edit_again'|trans({}, 'SonataAdminBundle') }}</button>
+		                {% endif %}
+		                {% if admin.hasroute('list') and admin.hasAccess('list') %}
+		                    <button type="submit" class="btn btn-primary btn-edit-first" name="btn_create_and_list">{{ 'btn_create_and_return_to_list'|trans({}, 'SonataAdminBundle') }}</button>
+		                {% endif %}
+		                <button class="btn btn-contrast-alt" type="submit" name="btn_create_and_create">{{ 'btn_create_and_create_a_new_one'|trans({}, 'SonataAdminBundle') }}</button>
+		            {% endif %}
+		        {% endif %}
+		    {% endblock %}
+			</div>
 		</div>
     </div>
 {% endblock formactions %}
