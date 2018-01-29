@@ -94,6 +94,12 @@
 .c-content__actions .sonata-action-element {
     @extend .btn;
     @extend .btn-primary;
+    border: 2px solid $primary;
+}
+.c-content__actions a.dropdown-toggle {
+    @extend .btn;
+    @extend .btn-contrast-alt;
+    border: 2px solid $contrast-alt;
 }
 .edit_link {
     display: none;

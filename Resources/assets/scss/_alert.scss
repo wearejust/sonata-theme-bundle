@@ -51,7 +51,11 @@
     border-color: $success !important;
     color: $contrast-alt;
 }
-
+.alert-warning {
+    color: $contrast-alt;;
+    background-color: $warning;
+    border-color: $warning;
+}
 @media only screen and (min-width: $break-md) {
     .alert-dismissable {
         left: 20%;
