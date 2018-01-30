@@ -74,6 +74,20 @@
     vertical-align: middle;
 }
 
+// no results
+.info-box-icon,
+.info-box .progress {
+	display: none;
+}
+.info-box-text {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-left: $padding;
+}
+.info-box-content {
+	padding: $padding/2 0;
+}
+
 //tabs
 .c-tabbed-pages {
 	background-color: tint($primary, 86%);
