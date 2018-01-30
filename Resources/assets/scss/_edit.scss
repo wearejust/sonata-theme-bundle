@@ -112,6 +112,50 @@
     font-size: 1.3em;
     line-height: 0;
 }
+.sonata-ba-field-inline-table {
+    .table {
+        background-color: $contrast-alt;
+        border: 1px solid tint($primary, 84%);
+        margin-bottom: 0.225rem;
+
+    }
+    .table > tbody > tr > td,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > td,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > thead > tr > th {
+        padding: 0.225rem 1rem;
+    }
+    .table > thead > tr > td,
+    .table > thead > tr > th {
+        padding: 1rem;
+    }
+    tr {
+        border-bottom: 1px solid tint($primary, 70%);
+    }
+    .table>tbody>tr:nth-of-type(odd) {
+        background-color: tint($primary, 94%);
+    }
+    .table>tbody>tr:hover {
+        background-color: tint($primary, 86%);
+        cursor: pointer;
+    }
+    .ui-icon-grip-solid-horizontal {
+        background-position: center center;
+        background-image: url('../images/icons/ic_sort.svg');
+        display: inline-block;
+        opacity: 0.25;
+        margin-top: 0.9em;
+        width: 22px;
+        height: 18px;
+    }
+    .btn-success {
+        @extend .btn;
+        @extend .btn-primary;
+        border: 2px solid $primary;
+    }
+}
 @media only screen and (min-width: $break-md) {
     .form-group:after {
         content: "";

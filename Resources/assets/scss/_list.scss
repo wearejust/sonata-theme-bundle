@@ -47,7 +47,7 @@ table {
 }
 .sonata-ba-list-field-header-boolean,
 .sonata-ba-list-field-boolean {
-    width: 4em;
+    // width: 4em;
 }
 .sonata-ba-list-field-header-text:last-child {
     display: none;
@@ -55,6 +55,42 @@ table {
 .sonata-ba-list tr td:last-child {
     text-align: right;
     vertical-align: middle;
+}
+
+th.sonata-ba-list-field-header-order-asc a,
+th.sonata-ba-list-field-header-order-desc a {
+    position: relative;
+}
+th.sonata-ba-list-field-header-order-asc a:after,
+th.sonata-ba-list-field-header-order-asc a:hover:after,
+th.sonata-ba-list-field-header-order-asc.sonata-ba-list-field-order-active a:after,
+th.sonata-ba-list-field-header-order-desc.sonata-ba-list-field-order-active a:hover:after,
+th.sonata-ba-list-field-header-order-desc a:hover:after,
+th.sonata-ba-list-field-header-order-desc.sonata-ba-list-field-order-active a:after,
+th.sonata-ba-list-field-header-order-asc.sonata-ba-list-field-order-active a:hover:after {
+    content: '';
+    display: block;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 0.5rem);
+}
+th.sonata-ba-list-field-header-order-desc a:after,
+th.sonata-ba-list-field-header-order-desc a:hover:after,
+th.sonata-ba-list-field-header-order-desc.sonata-ba-list-field-order-active a:after,
+th.sonata-ba-list-field-header-order-asc.sonata-ba-list-field-order-active a:hover:after {
+    border-bottom: 4px solid black;
+    border-top: 4px solid transparent;
+    margin-top: -5px;
+}
+th.sonata-ba-list-field-header-order-asc a:after,
+th.sonata-ba-list-field-header-order-asc a:hover:after,
+th.sonata-ba-list-field-header-order-asc.sonata-ba-list-field-order-active a:after,
+th.sonata-ba-list-field-header-order-desc.sonata-ba-list-field-order-active a:hover:after {
+    border-top: 4px solid black;
+    border-bottom: 4px solid transparent;
+    margin-top: -1px;
 }
 .ui-sortable-helper {
     background-color: tint($primary, 90%) !important;
@@ -78,6 +114,9 @@ table {
     .pull-right {
         display: none;
     }
+    + hr {
+        display: none;
+    }
 }
 @media only screen and (min-width: $break-md) {
     .table-responsive {
@@ -90,5 +129,6 @@ table {
         bottom: 0;
         left: 20%;
         right: 0;
+        z-index: 5;
     }
 }
