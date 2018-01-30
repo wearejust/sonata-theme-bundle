@@ -113,3 +113,30 @@
 		padding-left: $padding;
 	}
 }
+
+//logout
+.c-user {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	.dropdown-user {
+		left: auto;
+		right: 0;
+	    border: none;
+    	padding: 1rem;
+    	box-shadow: 0 4px 13px rgba(0,0,0,.12);
+	}
+	.user-header img {
+		display: none;
+	}
+	.user-footer .pull-left {
+		display: none;
+	}
+	.dropdown-toggle[aria-expanded="true"] {
+		background-color: $contrast-alt;
+	}
+	.btn-flat {
+		border-color: #fff;
+	}
+}
