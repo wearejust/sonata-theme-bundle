@@ -58,13 +58,20 @@
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
 .datepicker table tr td span.active.disabled,
-.datepicker table tr td span.active.disabled:hover,
-{
+.datepicker table tr td span.active.disabled:hover {
 	background-image: none;
+}
+
+// more datepicker stuff
+.input-group-addon,
+.bootstrap-datetimepicker-widget {
+  border-radius: 0;
+  background-color: #fff;
 }
 
 .select2-container {
 	max-width: 20rem;
+  border: 1px solid tint($primary, 84%);
 }
 
 .select2-container.per-page .select2-chosen {
@@ -79,6 +86,7 @@
 .select2-drop-auto-width,
 .select2-drop.select2-drop-above.select2-drop-active {
 	border-color: #333;
+  border: 0;
 }
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
@@ -92,13 +100,16 @@
 	border-radius: 0!important;
 }
 
-.select2-drop-auto-width {
-    width: 128px !important;
-}
-
 .select2-container .select2-choice,
 select {
 	height: 44px;
+}
+
+.filter-box {
+    .select2-container .select2-choice,
+    select {
+      height: 38px;
+    }
 }
 
 .select2-choice>span:first-child,

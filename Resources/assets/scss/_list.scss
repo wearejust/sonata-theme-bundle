@@ -25,7 +25,7 @@ table {
         padding-left: $padding;
     }
     &:last-child {
-        padding-right:$padding;
+        padding-right: $padding;
     }
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
@@ -42,11 +42,12 @@ table {
 .sonata-ba-list-field-header-batch,
 .sonata-ba-list-field-batch {
     width: 1em;
-    padding-right: 1.08rem !important;
+    padding-right: 0.4rem !important;
+    padding-left: 1.1rem !important;
 }
 .sonata-ba-list-field-header-boolean,
 .sonata-ba-list-field-boolean {
-    width: 6em;
+    width: 4em;
 }
 .sonata-ba-list-field-header-text:last-child {
     display: none;

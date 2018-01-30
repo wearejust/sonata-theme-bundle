@@ -41,11 +41,6 @@
                         {% endif %}
 
                         <div class="c-content__actions js-content__actions">
-                            {% if _tab_menu is not empty %}
-                                <div class="navbar-left">
-                                    {{ _tab_menu|raw }}
-                                </div>
-                            {% endif %}
 
                             {% if action != 'edit' %}
                                 {% block sonata_admin_content_actions_wrappers %}
@@ -69,6 +64,7 @@
                             {% if _list_filters_actions is not empty %}
                                 {{ _list_filters_actions|raw }}
                             {% endif %}
+
                         </div>
 
                         {% block sonata_admin_content %}
@@ -93,9 +89,16 @@
                                     <div class="sonata-ba-form">{{ _form|raw }}</div>
                                 {% endif %}
                             </div>
+
                             {% if _list_filters is not empty %}
                                 <div class="row">
                                     {{ _list_filters|raw }}
+                                </div>
+                            {% endif %}
+
+                            {% if _tab_menu is not empty %}
+                                <div class="c-tabbed-pages">
+                                    {{ _tab_menu|raw }}
                                 </div>
                             {% endif %}
 
@@ -104,6 +107,7 @@
                                     {{ _list_table|raw }}
                                 </div>
                             {% endif %}
+
                         {% endblock sonata_admin_content %}
                     </div>
                 </section>
@@ -195,7 +199,7 @@
 
 {% block sonata_top_nav_menu %}
     {% if app.user and is_granted(sonata_admin.adminPool.getOption('role_admin')) %}
-        <div class="navbar-custom-menu">
+        <div class="navbar-custom-menu c-user">
             <ul class="nav navbar-nav">
                 {% block sonata_top_nav_menu_user_block %}
                     <li class="dropdown user-menu">

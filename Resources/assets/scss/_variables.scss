@@ -10,9 +10,9 @@ $contrast-alt: #fff;
 $header-height: 50px;
 $padding: 2.7rem; //form padding
 
-$break-md: 30em; //media query
+$break-sm: 30em; //media query
 $break-md: 50em; //media query
-$break-md: 70em; //media query
+$break-lg: 70em; //media query
 
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);

@@ -100,6 +100,9 @@
     @extend .btn;
     @extend .btn-contrast-alt;
     border: 2px solid $contrast-alt;
+    &:focus, &:hover {
+        border-color: shade($contrast-alt, 5%);
+    }
 }
 .edit_link {
     display: none;
