@@ -75,9 +75,14 @@
 }
 
 // no results
-.info-box-icon,
-.info-box .progress {
+.info-box-icon {
 	display: none;
+}
+.info-box {
+	.progress,
+	.progress-description {
+		display: none;
+	}
 }
 .info-box-text {
 	font-size: 2rem;
@@ -133,8 +138,11 @@
 	.user-footer .pull-left {
 		display: none;
 	}
-	.dropdown-toggle[aria-expanded="true"] {
+	.open a {
 		background-color: $contrast-alt;
+		&:focus {
+			background-color: $contrast-alt;
+		}
 	}
 	.btn-flat {
 		border-color: #fff;
