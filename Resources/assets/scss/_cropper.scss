@@ -23,7 +23,7 @@
 		margin-top: 0.15rem;
 		order: 2;
 	}
-	.cropper-canvas-has-delete.delete {
+	.cropper-canvas-has-delete {
 		position: relative;
 		z-index: 1;
 		&:after {
@@ -34,6 +34,11 @@
 			left: 0;
 			bottom: 0;
 			position: absolute;
+			opacity: 0;
+			transition: 0.1s;
+		}
+		&.delete:after {
+			opacity: 1;
 		}
 	}
 	.cropper-local {
