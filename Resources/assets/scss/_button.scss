@@ -150,7 +150,7 @@
     .btn-group .delete_link {
         background-color: transparent;
         border-color: transparent;
-        width: 4rem;
+        width: 3.4rem;
         position: absolute;
         top: -1px;
         left: calc(100% + 1px);
@@ -165,10 +165,10 @@
         color: #fff !important;
         transform: perspective(1000px) rotateY(90deg);
         transform-origin: center left;
-        transition: 0.5s;
-        &:hover:after, &:active:after, &:focus:after{
+        transition: 0.1s;
+        &:hover, &:active, &:focus{
             background-color: darken($danger,5%);
-            border-color: darken($danger,15%);
+            border-color: darken($danger,5%);
         }
     }
 }
