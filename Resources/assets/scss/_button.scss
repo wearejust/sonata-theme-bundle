@@ -118,6 +118,10 @@
     vertical-align: top;
     border: 0;
     outline: 0;
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50%;
     &:hover{
         background-color: #ccc;
     }

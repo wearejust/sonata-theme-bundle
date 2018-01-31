@@ -1,0 +1,24 @@
+.c-tabbed-pages {
+	background-color: tint($primary, 86%);
+	.navbar-nav {
+		float: none;
+	}
+	li {
+		border-right: 1px solid $contrast-alt;
+    	&:last-child {
+			border: none;
+    	}
+	}
+	li a {
+    	padding: 1.2em 1.6em;
+    	font-weight: 700;
+    	font-size: 1.125rem;
+    	background-color: tint($primary, 94%);
+	}
+	.active a {
+		background-color: $contrast-alt;
+	}
+	.first a {
+		padding-left: $padding;
+	}
+}

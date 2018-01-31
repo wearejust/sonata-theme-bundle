@@ -15,6 +15,10 @@ $(function(){
         );
     });
 
+    $('.cropper input[type="checkbox"').on('change', function() {
+        $('.cropper').find('.cropper-canvas-has-delete').toggleClass('delete');
+    });
+
     // Trigger calendar on input click
     // without changing existing HTML
     $('.date input').on('click', function(){

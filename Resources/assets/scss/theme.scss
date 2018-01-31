@@ -8,38 +8,13 @@
 @import "filters";
 @import "list";
 @import "edit";
+@import "tabs";
+@import "delete_modal";
+@import "cropper";
 @import "pagination";
 @import "alert";
 @import "overrides";
 @import "utilities";
-
-// modal
-.sonata-ba-delete {
-	background-color: $contrast-alt;
-	max-width: 24rem;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	.box {
-		padding: $padding;
-		.box-body {
-			padding: 0.5rem;
-		}
-		.box-footer {
-			padding: 0;
-		}
-		form {
-			font-size: 0;
-			text-align: left;
-		}
-		.btn {
-			margin: 0.5rem;
-		}
-	}
-	.mfp-close {
-		// styles?
-	}
-}
 
 // icons
 .fa-plus-circle:before,
@@ -91,32 +66,6 @@
 }
 .info-box-content {
 	padding: $padding/2 0;
-}
-
-//tabs
-.c-tabbed-pages {
-	background-color: tint($primary, 86%);
-	.navbar-nav {
-		float: none;
-	}
-	li {
-		border-right: 1px solid $contrast-alt;
-    	&:last-child {
-			border: none;
-    	}
-	}
-	li a {
-    	padding: 1.2em 1.6em;
-    	font-weight: 700;
-    	font-size: 1.125rem;
-    	background-color: tint($primary, 94%);
-	}
-	.active a {
-		background-color: $contrast-alt;
-	}
-	.first a {
-		padding-left: $padding;
-	}
 }
 
 //logout
