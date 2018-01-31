@@ -74,7 +74,7 @@ th.sonata-ba-list-field-header-order-asc.sonata-ba-list-field-order-active a:hov
     border-left: 4px solid transparent;
     position: absolute;
     top: 50%;
-    left: calc(100% + 0.5rem);
+    right: calc(100% + 0.5rem);
 }
 th.sonata-ba-list-field-header-order-desc a:after,
 th.sonata-ba-list-field-header-order-desc a:hover:after,
@@ -108,7 +108,10 @@ th.sonata-ba-list-field-header-order-desc.sonata-ba-list-field-order-active a:ho
 }
 .form-inline .checkbox,
 .form-inline .radio {
-    margin: 0 1em;
+    margin: 0 1.25em;
+    input {
+        margin-right: 0.75em;
+    }
 }
 .form-inline {
     .pull-right {
@@ -122,7 +125,7 @@ th.sonata-ba-list-field-header-order-desc.sonata-ba-list-field-order-active a:ho
     .table-responsive {
         overflow-x: visible;
     }
-    .form-inline {
+    .c-footer-actions .form-inline {
         background-color: tint($primary, 80%);
         padding: 0.25rem;
         position: fixed;

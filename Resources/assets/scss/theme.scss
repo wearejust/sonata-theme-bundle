@@ -34,6 +34,9 @@
     height: 16px;
     display: inline-block;
 }
+.fa-trash {
+	display: none;
+}
 .fa-plus-circle:before {
     background-image: url('../images/icons/ic_add_white.svg');
     margin-right: 0.5em;
