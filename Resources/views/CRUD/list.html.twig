@@ -19,6 +19,7 @@
 {% endblock %}
 
 {% block list_footer %}
+	<div id="formResult" class="white-popup mfp-hide">Heelll yesss</div>
     {% if admin.datagrid.results|length > 0 and batchactions | length %}
         <div class="c-footer-actions box-footer">
             <div class="form-inline clearfix">
@@ -34,6 +35,7 @@
 	                                            $('#list_batch_checkbox').on('ifChanged change', function () {
 	                                                var checkboxes = $(this)
 	                                                    .closest('table')
+	                                                    .closest('form').toggleClass('showSubmit', $(this).is(':checked'))
 	                                                    .find('td.sonata-ba-list-field-batch input[type="checkbox"], div.sonata-ba-list-field-batch input[type="checkbox"]')
 	                                                ;
 	                                                if (window.SONATA_CONFIG.USE_ICHECK) {
@@ -46,6 +48,7 @@
 	                                            $('td.sonata-ba-list-field-batch input[type="checkbox"], div.sonata-ba-list-field-batch input[type="checkbox"]')
 	                                                .on('ifChanged change', function () {
 	                                                    $(this)
+	                                                    	.closest('form').toggleClass('showSubmit', $(this).is(':checked'))
 	                                                        .closest('tr, div.sonata-ba-list-field-batch')
 	                                                        .toggleClass('sonata-ba-list-row-selected', $(this).is(':checked'))
 	                                                    ;

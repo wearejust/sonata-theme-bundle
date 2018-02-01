@@ -26,7 +26,6 @@
 {% endblock %}
 
 {% block sonata_wrapper %}
-
     <div class="c-page">
         <div class="c-page__content-wrapper">
             {% block sonata_page_content %}
@@ -103,7 +102,7 @@
                             {% endif %}
 
                             {% if _list_table is not empty %}
-                                <div class="row">
+                                <div class="js-list-table row">
                                     {{ _list_table|raw }}
                                 </div>
                             {% endif %}

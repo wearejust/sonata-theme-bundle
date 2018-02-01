@@ -5,7 +5,7 @@
 	margin-right: auto;
 	position: relative;
 	.box {
-		padding: $padding;
+		padding: $padding/2;
 		.box-body {
 			padding: 0.5rem;
 		}
@@ -21,6 +21,32 @@
 		}
 	}
 	.mfp-close {
-		// styles?
+        background-image: url('../images/icons/ic_close_white.svg');
+	    background-size: 18px;
+	    background-repeat: no-repeat;
+	    background-color: tint($primary, 35%);
+	    &:hover,
+	    &:focus,
+	    &:active {
+	    	background-color: tint($primary, 25%);
+	    }
+	    background-position: center center;
+	    display: block;
+	    height: 3rem;
+	    width: 3rem;
+	    right: auto;
+	    left: 100%;
+	    top: 1rem;
+	    opacity: 1;
+	    text-indent: -999em;
+	    transition: .15s ease-in-out;
+	    z-index: 2;
+	}
+	.btn-success {
+		@extend .btn;
+		@extend .btn-primary;
+		i {
+			display: none;
+		}
 	}
 }
