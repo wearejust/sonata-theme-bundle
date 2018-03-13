@@ -114,44 +114,6 @@
         </div>
         {% block sonata_left_side %}
             <aside class="main-sidebar c-page__sidebar u-bg-primary">
-                <div class="c-mobile-header">
-                    {% block logo %}
-                        {% spaceless %}
-                            <a class="c-logo u-bg-primary" href="{{ path('sonata_admin_dashboard') }}">
-                                <span>{{ sonata_admin.adminPool.title }}</span>
-                            </a>
-                        {% endspaceless %}
-                    {% endblock %}
-                     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                        <span class="sr-only">Toggle navigation</span>
-                    </a>
-                </div>
-                <section class="sidebar c-page__sidebar__inner">
-                    {% block sonata_side_nav %}
-                        {% block side_bar_before_nav %}{% endblock %}
-                        {% block side_bar_nav %}
-                            {{ knp_menu_render('sonata_admin_sidebar', {template: sonata_admin.adminPool.getTemplate('knp_menu_template')}) }}
-                        {% endblock side_bar_nav %}
-                        {% block side_bar_after_nav %}{% endblock %}
-                    {% endblock sonata_side_nav %}
-                </section>
-            </aside>
-        {% endblock sonata_left_side %}
-    </div>
-
-{% endblock sonata_wrapper %}
-
-{% block sonata_header %}
-    <header class="main-header c-main-header">
-        {% block sonata_header_noscript_warning %}
-            <noscript>
-                <div class="noscript-warning">
-                    {{ 'noscript_warning'|trans({}, 'SonataAdminBundle') }}
-                </div>
-            </noscript>
-        {% endblock %}
-        {% block sonata_nav %}
-            <nav class="navbar navbar-static-top" role="navigation">               
                 {% block sonata_breadcrumb %}
                     <div class="hidden-xs">
                         {% if _breadcrumb is not empty or action is defined %}
@@ -191,6 +153,45 @@
                         {% endif %}
                     </div>
                 {% endblock sonata_breadcrumb %}
+                <section class="sidebar c-page__sidebar__inner">
+                    {% block sonata_side_nav %}
+                        {% block side_bar_before_nav %}{% endblock %}
+                        {% block side_bar_nav %}
+                            {{ knp_menu_render('sonata_admin_sidebar', {template: sonata_admin.adminPool.getTemplate('knp_menu_template')}) }}
+                        {% endblock side_bar_nav %}
+                        {% block side_bar_after_nav %}{% endblock %}
+                    {% endblock sonata_side_nav %}
+                </section>
+                <div class="c-mobile-header">
+                    {% block logo %}
+                        {% spaceless %}
+                            <a class="c-logo u-bg-primary" href="{{ path('sonata_admin_dashboard') }}">
+                                <span>{{ sonata_admin.adminPool.title }}</span>
+                            </a>
+                        {% endspaceless %}
+                    {% endblock %}
+                     <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                </div>
+            </aside>
+        {% endblock sonata_left_side %}
+    </div>
+
+{% endblock sonata_wrapper %}
+
+{% block sonata_header %}
+    <header class="main-header c-main-header">
+        {% block sonata_header_noscript_warning %}
+            <noscript>
+                <div class="noscript-warning">
+                    {{ 'noscript_warning'|trans({}, 'SonataAdminBundle') }}
+                </div>
+            </noscript>
+        {% endblock %}
+        {% block sonata_nav %}
+            <nav class="navbar navbar-static-top" role="navigation">               
+                
             </nav>
         {% endblock sonata_nav %}
     </header>

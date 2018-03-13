@@ -1,6 +1,8 @@
 // layout
 @media only screen and (min-width: $break-md) {
     .c-page__sidebar {
+        display: flex;
+        flex-direction: column;
         top: 0;
         bottom: 0;
         left: 0;
