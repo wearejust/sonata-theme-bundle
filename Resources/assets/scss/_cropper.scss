@@ -99,9 +99,8 @@
 .sonata-ba-field {
 	 input[type="file"] {
 		width: 100%;
-		padding: 0.8em 1em;
-    	border-color: tint($primary, 84%);
+		padding: 0.55rem 1em;
 		background-color: $contrast-alt;
-		border: 1px solid tint($primary, 80%);
+		border: 1px solid tint($primary, 84%);
 	}
 }
