@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     border-radius: 0;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
-    background-color: tint($primary, 94%);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    color: #fff;
 }
 .breadcrumb li {
     vertical-align: middle;
@@ -18,13 +19,11 @@
     }
 }
 
-.breadcrumb,
-.breadcrumb>.active {
-    color: shade($primary, 40%);
-}
 
 .breadcrumb>.active {
     font-weight: bold;
+    color: shade($primary, 40%);
+    color: #f2f2f2;
 }
 
 .breadcrumb>li+li:before {
