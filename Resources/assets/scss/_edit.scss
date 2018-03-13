@@ -4,20 +4,19 @@
     clear: both;
 }
 .c-content__title {
-    padding: $padding;
     max-width: 50rem;
     @media only screen and (min-width: $break-md) {
-        float: left;
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
     }
 }
 .c-content__title__text {
-    font-size: 2.5em;
+    font-size: 1.1rem;
     font-weight: 700;
     line-height: 1;
     margin: 0;
-    @media only screen and (min-width: $break-md) {
-        font-size: 3.5em;
-    }
 }
 .c-content__actions {
     padding: 0 calc(15px + 2.7em);

@@ -32,13 +32,6 @@
         
                 <section class="c-content u-container">
                     <div class="u-bg-contrast-alt u-headerspace" style="position: relative;">
-
-                        {% if _navbar_title is not empty  %}
-                            <div class="c-content__title {% if action != 'edit' %} c-content__title {% endif %}">
-                                <h1 class="c-content__title__text">{{ _navbar_title|raw }}</h1>
-                            </div>
-                        {% endif %}
-
                         <div class="c-content__actions js-content__actions">
 
                             {% if action != 'edit' %}
@@ -190,8 +183,20 @@
             </noscript>
         {% endblock %}
         {% block sonata_nav %}
-            <nav class="navbar navbar-static-top" role="navigation">               
-                
+            <nav class="navbar navbar-static-top c-tabbed-pages" role="navigation">   
+                {% if _navbar_title is not empty  %}
+                    <div class="c-content__title {% if action != 'edit' %} c-content__title {% endif %}">
+                        <h1 class="c-content__title__text">{{ _navbar_title|raw }}</h1>
+                    </div>
+                {% endif %}            
+                <ul class="nav navbar-nav">
+                    <li class="active">                    
+                        <a href="">General</a>
+                    </li>
+                    <li>                    
+                        <a href="">Settings</a>
+                    </li>
+                </ul>
             </nav>
         {% endblock sonata_nav %}
     </header>

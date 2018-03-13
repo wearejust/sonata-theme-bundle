@@ -2,6 +2,8 @@
 	background-color: tint($primary, 86%);
 	.navbar-nav {
 		float: none;
+		max-width: 45rem;
+		margin: 0 auto;
 	}
 	li {
 		border-right: 1px solid $contrast-alt;
@@ -12,7 +14,7 @@
 	li a {
     	padding: 1.2em 1.6em;
     	font-weight: 700;
-    	font-size: 1.125rem;
+    	font-size: 0.875rem;
     	background-color: tint($primary, 94%);
 	}
 	.active a {
