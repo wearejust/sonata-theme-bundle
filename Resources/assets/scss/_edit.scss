@@ -100,6 +100,57 @@
         }
     }
 }
+
+.c-content--general {
+    .sonata-ba-form .box-primary {
+        background-color: #fff;
+    }
+
+    .form-control {
+        border: none;
+        box-shadow: none;
+        height: auto;
+        padding: 1.35rem 0;
+    }
+
+    .redactor-styles {
+        padding: 0;
+    }
+
+    .redactor-toolbar {
+        padding: 0 0 0.8rem;
+    }
+
+    .redactor-box, .redactor-box.redactor-styles-on {
+        border: none;
+    }
+
+    .sonata-ba-field {
+        width: 100%;
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    .control-label {
+        position: absolute;
+        left: 0;
+        top: 1em;
+        font-size: 0.8em;
+        display: none;
+    }
+
+}
+
+.c-edit__title {
+    font-size: 2.8rem;
+}
+
+.c-edit__intro {
+    font-size: 1.4rem;
+}
+
 .help-block {
     display: block;
     margin: 0;
