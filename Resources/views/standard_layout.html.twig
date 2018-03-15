@@ -30,7 +30,7 @@
         <div class="c-page__content-wrapper">
             {% block sonata_page_content %}
         
-                <section class="c-content u-container">
+                <section class="c-content {% block contentClass %}{% endblock %} u-container">
                     <div class="u-bg-contrast-alt u-headerspace" style="position: relative;">
                         <div class="c-content__actions js-content__actions">
 
@@ -120,7 +120,7 @@
                                                 {%- set label = label|trans(menu.extra('translation_params', {}), translation_domain) -%}
                                             {%- endif -%}
 
-                                            {% if not loop.last %}
+                                            {% if loop.first or loop.index == loop.length-1%}
                                                 <li>
                                                     {% if menu.uri is not empty %}
                                                         <a href="{{ menu.uri }}">
@@ -134,8 +134,6 @@
                                                         <span>{{ label }}</span>
                                                     {% endif %}
                                                 </li>
-                                            {% else %}
-                                                <li class="active"><span>{{ label }}</span></li>
                                             {% endif %}
                                         {% endfor %}
                                     {% endif %}
