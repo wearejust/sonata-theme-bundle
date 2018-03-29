@@ -1,0 +1,25 @@
+.box-footer  {
+	.dropdown-menu {
+		transform: translateY(-100%);
+	    position: absolute;
+	    top: -0.1rem;
+	}
+	.dropdown-toggle {
+		font-weight: normal;
+	    padding-right: 1em;
+	    color: #555;
+	    &:hover {
+	    	background-color: #fff;
+	    }
+	    .caret {
+	    	color: #888;
+	    	margin-left: 0.8rem;
+	    	top: -0.1em;
+	    	position: relative;
+	    	border-top: 5px dashed;
+		    border-right: 3px solid transparent;
+		    border-left: 3px solid transparent;
+	    }
+	}
+}
+    
