@@ -52,7 +52,6 @@
 		                {% if admin.hasroute('list') and admin.hasAccess('list') %}
 		                    <button type="submit" class="btn btn-primary btn-edit-first" name="btn_create_and_list">{{ 'btn_create_and_return_to_list'|trans({}, 'SonataAdminBundle') }}</button>
 		                {% endif %}
-		                <button class="btn btn-contrast-alt" type="submit" name="btn_create_and_create">{{ 'btn_create_and_create_a_new_one'|trans({}, 'SonataAdminBundle') }}</button>
 		            {% endif %}
 		        {% endif %}
 		    {% endblock %}
