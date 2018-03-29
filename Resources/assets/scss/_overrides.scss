@@ -85,8 +85,7 @@
 .select2-drop-active,
 .select2-drop-auto-width,
 .select2-drop.select2-drop-above.select2-drop-active {
-	border-color: #333;
-  border: 0;
+  border: 1px solid #ddd;
 }
 
 .select2-dropdown-open.select2-drop-above .select2-choice,
@@ -102,7 +101,7 @@
 
 .select2-container .select2-choice,
 select {
-	height: 44px;
+	height: 40px;
 }
 
 .filter-box {
