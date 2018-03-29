@@ -31,6 +31,12 @@
             clear: both;
         }
     }
+
+    .c-main-container {
+        min-height: 100vh;
+        background-color: #fff;
+        padding-bottom: 8rem;
+    }
 }
 
 @media only screen and (min-width: 85em) {
