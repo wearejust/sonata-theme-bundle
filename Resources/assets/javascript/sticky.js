@@ -1,51 +1,53 @@
-require('@wearejust/sticky');
+let $window = $(window);
+let wrapper,
+ 	element,
+ 	topOffset,
+ 	elementTop,
+ 	fixed;
 
-const MIN_WIDTH = 940;
-const $window = $(window);
+ const MIN_WIDTH = 940;
 
-let clone;
-let element;
-let timeout;
-let cloneShown;
+$(()=>{
+	element = $('.sonata-action-element');
+	if(!element.length) return;
 
-$(function() {
-	element = $('.add_records');
-	if (!element.length) return;
-
-	element.attr('data-sticky-id', 'sticky_add_btn');
-
-	clone = element.clone(true);
-	clone.addClass('is-clone');
-	clone.attr('data-sticky-target', 'sticky_add_btn');
-	clone.hide();
-	clone.appendTo('.navbar-collapse');
-	clone.sticky({
-		active: 'is-sticky',
-		topHeightOffset: -1
+	element.css({
+		'min-width': element.outerWidth(),
+		'left': element.offset().left
 	});
 
-	$window.on('resize', resizeDelayed);
+	elementTop = element.offset().top;
+
+	$window.on('resize', resize);
+	$window.on('scroll', scroll);
 	resize();
 });
 
-function resizeDelayed() {
-	clearTimeout(timeout);
-	timeout = setTimeout(resize, 300);	
-}
 
 function resize() {
-	if ($window.width() >= MIN_WIDTH) {
-		if (!cloneShown) {
-			cloneShown = true;
-			clone.show();
-		}
-	} else if (cloneShown) {
-		cloneShown = false;
-		clone.hide();
-		clone.css('left', '');
-	}
+	element.css({
+		'position': 'static'
+	});
+	scroll();
+}
 
-	if (cloneShown) {
-		clone.css('left', element.offset().left);
+function scroll() {
+	topOffset = $window.scrollTop() - elementTop + $('.navbar-static-top').height();
+	if(topOffset > 0 && !fixed && $window.innerWidth() >= MIN_WIDTH) {
+		element.css({
+			'position': 'fixed',
+			'top': `${$('.navbar-static-top').height()}px`,
+			'left': element.offset().left,
+			'z-index': '20'
+		});
+		fixed = true;
+	} else if(topOffset <= 0 && fixed) {
+		element.css({
+			'position': 'static',
+			'left': '',
+			'top': '',
+			'transform': ''
+		});
+		fixed = false;
 	}
 }
