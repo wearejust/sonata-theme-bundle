@@ -1,6 +1,5 @@
 let $window = $(window);
-let wrapper,
- 	element,
+let element,
  	topOffset,
  	elementTop,
  	fixed;
