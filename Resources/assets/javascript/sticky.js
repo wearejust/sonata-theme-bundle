@@ -24,9 +24,7 @@ $(()=>{
 
 
 function resize() {
-	element.css({
-		'position': 'static'
-	});
+	element.css('position', 'static');
 	scroll();
 }
 
