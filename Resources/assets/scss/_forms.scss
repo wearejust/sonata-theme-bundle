@@ -249,10 +249,9 @@ textarea {
 	transition: 0.15s ease-in-out;
 }
 
-.vich-image, .cropper {
+.vich-image, .cropper, .vich-file {
 	position: relative;
 	a {
-		background-color: $light-gray;
 		display: block;
 		margin-top: 0.3em;
 	}
@@ -262,8 +261,8 @@ textarea {
 	}
 	.checkbox {
 		position: absolute;
-		top: 2.7rem;
-		right: 0;
+		top: 2.9rem;
+		right: 0.055rem;
 		margin: 0;
 		font-size: 0;
 	}
@@ -302,6 +301,16 @@ textarea {
 	}
 }
 
+.vich-file {
+	.checkbox {
+		top: 0;
+		label {
+			background-size: 14px;
+			min-height: 42px;
+			padding-left: 42px;
+		}
+	}
+}
 
 .anim-loading {
 	position: absolute;

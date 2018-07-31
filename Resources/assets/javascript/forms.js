@@ -1,5 +1,5 @@
 $(function(){
-    let elements = $('.vich-image, .cropper');
+    let elements = $('.vich-image, .vich-file,  .cropper');
     if(!elements.length) return;
 
     $.get('/wearejust/sonata_theme/delete_dialog', (html) => {
