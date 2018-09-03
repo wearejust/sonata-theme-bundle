@@ -278,6 +278,19 @@
 	}
 }
 
+.dropdown-menu li {
+	width: 100%;
+}
+
+.dropdown-toggle, .dropdown-toggle:active, .dropdown-toggle:focus   {
+    color: #222;
+	font-weight: bold;
+	margin-left: 5px;
+	&:hover {
+		color: #222;
+		opacity: 0.7;
+	}
+}
 
 @media screen and (min-width: 48em) {
 	.sidebar-toggle {
