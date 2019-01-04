@@ -8,10 +8,10 @@ options:
     use_icheck: false
 
 templates:
-    layout:               'WearejustSonataThemeBundle::standard_layout.html.twig'
-    list:                 'WearejustSonataThemeBundle:CRUD:list.html.twig'
-    edit:                 'WearejustSonataThemeBundle:CRUD:edit.html.twig'
-    pager_results:        'WearejustSonataThemeBundle:Pager:results.html.twig'
+    layout:               '@WearejustSonataTheme/standard_layout.html.twig'
+    list:                 '@WearejustSonataTheme/CRUD/list.html.twig'
+    edit:                 '@WearejustSonataTheme/CRUD/edit.html.twig'
+    pager_results:        '@WearejustSonataTheme/Pager/results.html.twig'
 
 assets:
     stylesheets:
