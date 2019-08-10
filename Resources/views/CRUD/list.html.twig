@@ -2,6 +2,10 @@
 
 {% block body_attributes %}class="sonata-bc skin-black fixed just-records-list {% if _tab_menu is not empty %}just-records-list--tabs{% endif %}"{% endblock %}
 
+{% block navbar_title %}
+    {{ block('title') }}
+{% endblock %}
+
 {% block title %}
 	{# TODO REFACTOR THIS CRAP #}
     {% if admin.isChild and admin.parent.subject %}
